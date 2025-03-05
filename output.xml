@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-03T17:06:57.955260" rpa="false" schemaversion="5">
+<suite id="s1" name="Estrutura" source="C:\Users\Gustavo Zanotto\AppData\Local\Programs\Python\Python313\Scripts\RobotFramework\TestesAutomatizados\Estrutura.robot">
+<test id="s1-t1" name="Cenário 1: Teste de abrir o navegador" line="59">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-03T17:06:58.702211" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.com.br/'.</msg>
+<arg>https://www.google.com.br/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-03T17:06:58.701831" elapsed="5.379949"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-03T17:07:04.082970" elapsed="2.647468"/>
+</kw>
+<status status="PASS" start="2025-03-03T17:06:58.700095" elapsed="8.031012"/>
+</test>
+<test id="s1-t2" name="Cenário 2: Teste abrir a tela de login do card" line="74">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-03T17:07:06.734795" level="INFO">Opening browser 'Chrome' to base url 'https://testescard.limbersoftware.com.br/#/auth/login'.</msg>
+<arg>https://testescard.limbersoftware.com.br/#/auth/login</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-03T17:07:06.734079" elapsed="4.484307"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-03T17:07:11.221339" elapsed="3.214462"/>
+</kw>
+<status status="PASS" start="2025-03-03T17:07:06.732884" elapsed="7.705951"/>
+</test>
+<test id="s1-t3" name="Cenario 3: Teste de logar no card" line="83">
+<kw name="Abrir pagina login card">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-03T17:07:14.452186" level="INFO">Opening browser 'Chrome' to base url 'https://testescard.limbersoftware.com.br/#/auth/login'.</msg>
+<arg>https://testescard.limbersoftware.com.br/#/auth/login</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-03T17:07:14.451395" elapsed="5.375367"/>
+</kw>
+<status status="PASS" start="2025-03-03T17:07:14.449382" elapsed="5.378074"/>
+</kw>
+<kw name="Preencher email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-03T17:07:19.830980" level="INFO">Typing text 'Gustavo@limbersoftware.com.br' into text field 'xpath:/html/body/app-root/login/div/mat-card/form/mat-form-field[1]/div[1]/div/div[2]/input'.</msg>
+<arg>xpath:/html/body/app-root/login/div/mat-card/form/mat-form-field[1]/div[1]/div/div[2]/input</arg>
+<arg>Gustavo@limbersoftware.com.br</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-03T17:07:19.830177" elapsed="0.436838"/>
+</kw>
+<status status="PASS" start="2025-03-03T17:07:19.829368" elapsed="0.437966"/>
+</kw>
+<kw name="Preencher senha">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-03T17:07:20.268990" level="INFO">Typing text 'Gustavo1!' into text field 'xpath:/html/body/app-root/login/div/mat-card/form/mat-form-field[2]/div[1]/div/div[2]/input'.</msg>
+<arg>${xpathSenha}</arg>
+<arg>Gustavo1!</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-03T17:07:20.268655" elapsed="0.173565"/>
+</kw>
+<status status="PASS" start="2025-03-03T17:07:20.268129" elapsed="0.174338"/>
+</kw>
+<kw name="clicar em continuar">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-03T17:07:20.446878" level="INFO">Clicking element 'xpath:/html/body/app-root/login/div/mat-card/button'.</msg>
+<arg>xpath:/html/body/app-root/login/div/mat-card/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-03T17:07:20.446397" elapsed="0.210882"/>
+</kw>
+<status status="PASS" start="2025-03-03T17:07:20.445806" elapsed="0.211653"/>
+</kw>
+<kw name="Fechar navegador">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-03T17:07:20.658757" elapsed="2.505727"/>
+</kw>
+<status status="PASS" start="2025-03-03T17:07:20.658106" elapsed="2.506602"/>
+</kw>
+<status status="PASS" start="2025-03-03T17:07:14.446656" elapsed="8.718599"/>
+</test>
+<test id="s1-t4" name="Cenario 4: erro" line="94">
+<status status="FAIL" start="2025-03-03T17:07:23.181197" elapsed="0.000884">Test cannot be empty.</status>
+</test>
+<status status="FAIL" start="2025-03-03T17:06:57.960486" elapsed="25.223851"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Estrutura" id="s1" pass="3" fail="1" skip="0">Estrutura</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
