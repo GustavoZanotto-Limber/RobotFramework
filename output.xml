@@ -1,96 +1,208 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-03T17:06:57.955260" rpa="false" schemaversion="5">
-<suite id="s1" name="Estrutura" source="C:\Users\Gustavo Zanotto\AppData\Local\Programs\Python\Python313\Scripts\RobotFramework\TestesAutomatizados\Estrutura.robot">
-<test id="s1-t1" name="Cenário 1: Teste de abrir o navegador" line="59">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-03-03T17:06:58.702211" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.com.br/'.</msg>
-<arg>https://www.google.com.br/</arg>
-<arg>Chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-03-03T17:06:58.701831" elapsed="5.379949"/>
+<robot generator="Robot 7.2.2 (Python 3.11.0 on win32)" generated="2025-03-07T17:22:04.377720" rpa="false" schemaversion="5">
+<suite id="s1" name="EstruturaDesktop" source="C:\Users\Gustavo Zanotto\AppData\Local\Programs\Python\Python311\Scripts\RobotFramework\EstruturasBase\EstruturaDesktop.robot">
+<test id="s1-t1" name="Abrindo a tela do manager" line="72">
+<kw name="Carregar os elementos do app">
+<kw name="Add Image Path" owner="SikuliLibrary">
+<arg>${EXECDIR}\\EstruturasBase\\Elements</arg>
+<doc>Add image path</doc>
+<status status="PASS" start="2025-03-07T17:22:12.565944" elapsed="0.068003"/>
 </kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-03-03T17:07:04.082970" elapsed="2.647468"/>
+<status status="PASS" start="2025-03-07T17:22:12.565944" elapsed="0.068003"/>
 </kw>
-<status status="PASS" start="2025-03-03T17:06:58.700095" elapsed="8.031012"/>
+<kw name="Selecionando a bilheteria manager">
+<kw name="Iniciar sessao manager">
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2025-03-07T17:22:14.389907" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1741378933576.png'/&gt;
+[log] CLICK on L[664,747]@S(0) (592 msec)</msg>
+<arg>Abrir-Manager.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2025-03-07T17:22:12.633947" elapsed="1.755960"/>
+</kw>
+<status status="PASS" start="2025-03-07T17:22:12.633947" elapsed="1.755960"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-07T17:22:18.390494" level="INFO">Slept 4 seconds.</msg>
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-07T17:22:14.389907" elapsed="4.000587"/>
+</kw>
+<kw name="Press Keys" owner="RPA.Desktop">
+<msg time="2025-03-07T17:22:18.390494" level="INFO">Pressing keys: Key.enter</msg>
+<arg>enter</arg>
+<doc>Press multiple keys down simultaneously.</doc>
+<status status="PASS" start="2025-03-07T17:22:18.390494" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-07T17:22:21.391231" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-03-07T17:22:21.391231" level="INFO">Carregando a base...</msg>
+<arg>3s</arg>
+<arg>Carregando a base...</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-07T17:22:18.390494" elapsed="3.000737"/>
+</kw>
+<kw name="Type Text" owner="RPA.Desktop">
+<arg>lbadmin940</arg>
+<doc>Type text one letter at a time.</doc>
+<status status="PASS" start="2025-03-07T17:22:21.391231" elapsed="0.015633"/>
+</kw>
+<kw name="Press Keys" owner="RPA.Desktop">
+<msg time="2025-03-07T17:22:21.406864" level="INFO">Pressing keys: Key.enter</msg>
+<arg>enter</arg>
+<doc>Press multiple keys down simultaneously.</doc>
+<status status="PASS" start="2025-03-07T17:22:21.406864" elapsed="0.107269"/>
+</kw>
+<kw name="Press Keys" owner="RPA.Desktop">
+<msg time="2025-03-07T17:22:21.514133" level="INFO">Pressing keys: Key.enter</msg>
+<arg>enter</arg>
+<doc>Press multiple keys down simultaneously.</doc>
+<status status="PASS" start="2025-03-07T17:22:21.514133" elapsed="0.104843"/>
+</kw>
+<status status="PASS" start="2025-03-07T17:22:12.633947" elapsed="8.985029"/>
+</kw>
+<kw name="Abrindo cadastro bilhetes">
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2025-03-07T17:22:23.650845" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1741378942875.png'/&gt;
+[log] CLICK on L[34,32]@S(0) (583 msec)</msg>
+<arg>Cadastros.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2025-03-07T17:22:21.621512" elapsed="2.030328"/>
+</kw>
+<kw name="Click Text" owner="SikuliLibrary">
+<msg time="2025-03-07T17:22:27.533302" level="INFO">[log] CLICK on L[91,290]@S(0) (567 msec)</msg>
+<arg>Bilhetes</arg>
+<doc>Click Text</doc>
+<status status="PASS" start="2025-03-07T17:22:23.651840" elapsed="3.881462"/>
+</kw>
+<status status="PASS" start="2025-03-07T17:22:21.618976" elapsed="5.914326"/>
+</kw>
+<kw name="Encerrar teste manager">
+<kw name="Close Application" owner="SikuliLibrary">
+<arg>cde_win_bca_manager</arg>
+<doc>Close application</doc>
+<status status="PASS" start="2025-03-07T17:22:27.533302" elapsed="0.041191"/>
+</kw>
+<status status="PASS" start="2025-03-07T17:22:27.533302" elapsed="0.041191"/>
+</kw>
+<status status="PASS" start="2025-03-07T17:22:12.565944" elapsed="15.008549"/>
 </test>
-<test id="s1-t2" name="Cenário 2: Teste abrir a tela de login do card" line="74">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-03-03T17:07:06.734795" level="INFO">Opening browser 'Chrome' to base url 'https://testescard.limbersoftware.com.br/#/auth/login'.</msg>
-<arg>https://testescard.limbersoftware.com.br/#/auth/login</arg>
-<arg>Chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-03-03T17:07:06.734079" elapsed="4.484307"/>
+<test id="s1-t2" name="Abrindo a tela do front" line="78">
+<kw name="Carregar os elementos do app">
+<kw name="Add Image Path" owner="SikuliLibrary">
+<arg>${EXECDIR}\\EstruturasBase\\Elements</arg>
+<doc>Add image path</doc>
+<status status="PASS" start="2025-03-07T17:22:27.591992" elapsed="0.011967"/>
 </kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-03-03T17:07:11.221339" elapsed="3.214462"/>
+<status status="PASS" start="2025-03-07T17:22:27.590995" elapsed="0.012964"/>
 </kw>
-<status status="PASS" start="2025-03-03T17:07:06.732884" elapsed="7.705951"/>
+<kw name="Selecionando a bilheteria front">
+<kw name="Iniciar sessao front">
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2025-03-07T17:22:28.760925" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1741378947870.png'/&gt;
+[log] CLICK on L[715,748]@S(0) (686 msec)</msg>
+<arg>Abrir-Front.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2025-03-07T17:22:27.607094" elapsed="1.153831"/>
+</kw>
+<status status="PASS" start="2025-03-07T17:22:27.607094" elapsed="1.153831"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-07T17:22:32.761650" level="INFO">Slept 4 seconds.</msg>
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-07T17:22:28.760925" elapsed="4.000725"/>
+</kw>
+<kw name="Press Keys" owner="RPA.Desktop">
+<msg time="2025-03-07T17:22:32.761650" level="INFO">Pressing keys: Key.enter</msg>
+<arg>enter</arg>
+<doc>Press multiple keys down simultaneously.</doc>
+<status status="PASS" start="2025-03-07T17:22:32.761650" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-07T17:22:35.762459" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-03-07T17:22:35.762459" level="INFO">Carregando a base...</msg>
+<arg>3s</arg>
+<arg>Carregando a base...</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-07T17:22:32.761650" elapsed="3.000809"/>
+</kw>
+<kw name="Type Text" owner="RPA.Desktop">
+<arg>lbadmin940</arg>
+<doc>Type text one letter at a time.</doc>
+<status status="PASS" start="2025-03-07T17:22:35.762459" elapsed="0.031261"/>
+</kw>
+<kw name="Press Keys" owner="RPA.Desktop">
+<msg time="2025-03-07T17:22:35.793720" level="INFO">Pressing keys: Key.enter</msg>
+<arg>enter</arg>
+<doc>Press multiple keys down simultaneously.</doc>
+<status status="PASS" start="2025-03-07T17:22:35.793720" elapsed="0.106950"/>
+</kw>
+<kw name="Press Keys" owner="RPA.Desktop">
+<msg time="2025-03-07T17:22:35.900670" level="INFO">Pressing keys: Key.enter</msg>
+<arg>enter</arg>
+<doc>Press multiple keys down simultaneously.</doc>
+<status status="PASS" start="2025-03-07T17:22:35.900670" elapsed="0.106749"/>
+</kw>
+<status status="PASS" start="2025-03-07T17:22:27.606018" elapsed="8.401401"/>
+</kw>
+<kw name="Abrindo emissão de bilhetes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-07T17:22:37.008055" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-07T17:22:36.007419" elapsed="1.000636"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2025-03-07T17:22:38.021226" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1741378957275.png'/&gt;
+[log] CLICK on L[34,32]@S(0) (564 msec)</msg>
+<arg>Cadastros.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2025-03-07T17:22:37.008055" elapsed="1.013171"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-07T17:22:39.022710" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-07T17:22:38.022233" elapsed="1.000477"/>
+</kw>
+<kw name="Press Keys" owner="RPA.Desktop">
+<msg time="2025-03-07T17:22:39.022710" level="INFO">Pressing keys: Key.right</msg>
+<arg>right</arg>
+<doc>Press multiple keys down simultaneously.</doc>
+<status status="PASS" start="2025-03-07T17:22:39.022710" elapsed="0.000000"/>
+</kw>
+<kw name="Find Element" owner="RPA.Desktop">
+<msg time="2025-03-07T17:22:39.022710" level="INFO">Resolving locator: ocr:"Emissão de Bilhetes"</msg>
+<msg time="2025-03-07T17:22:39.022710" level="FAIL">ValueError: Locator type not supported, please install the rpaframework-recognition package</msg>
+<var>${region}</var>
+<arg>ocr:"Emissão de Bilhetes"</arg>
+<doc>Find an element defined by locator, and return its position.
+Raises ``ElementNotFound`` if` no matches were found, or
+``MultipleElementsFound`` if there were multiple matches.</doc>
+<status status="FAIL" start="2025-03-07T17:22:39.022710" elapsed="0.031260">ValueError: Locator type not supported, please install the rpaframework-recognition package</status>
+</kw>
+<kw name="Click" owner="RPA.Desktop">
+<arg>${region}</arg>
+<doc>Click at the element indicated by locator.</doc>
+<status status="NOT RUN" start="2025-03-07T17:22:39.053970" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-03-07T17:22:36.007419" elapsed="3.046551">ValueError: Locator type not supported, please install the rpaframework-recognition package</status>
+</kw>
+<kw name="Encerrar teste front">
+<status status="NOT RUN" start="2025-03-07T17:22:39.053970" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-03-07T17:22:27.588998" elapsed="11.464972">ValueError: Locator type not supported, please install the rpaframework-recognition package</status>
 </test>
-<test id="s1-t3" name="Cenario 3: Teste de logar no card" line="83">
-<kw name="Abrir pagina login card">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-03-03T17:07:14.452186" level="INFO">Opening browser 'Chrome' to base url 'https://testescard.limbersoftware.com.br/#/auth/login'.</msg>
-<arg>https://testescard.limbersoftware.com.br/#/auth/login</arg>
-<arg>Chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-03-03T17:07:14.451395" elapsed="5.375367"/>
-</kw>
-<status status="PASS" start="2025-03-03T17:07:14.449382" elapsed="5.378074"/>
-</kw>
-<kw name="Preencher email">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-03-03T17:07:19.830980" level="INFO">Typing text 'Gustavo@limbersoftware.com.br' into text field 'xpath:/html/body/app-root/login/div/mat-card/form/mat-form-field[1]/div[1]/div/div[2]/input'.</msg>
-<arg>xpath:/html/body/app-root/login/div/mat-card/form/mat-form-field[1]/div[1]/div/div[2]/input</arg>
-<arg>Gustavo@limbersoftware.com.br</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-03T17:07:19.830177" elapsed="0.436838"/>
-</kw>
-<status status="PASS" start="2025-03-03T17:07:19.829368" elapsed="0.437966"/>
-</kw>
-<kw name="Preencher senha">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-03-03T17:07:20.268990" level="INFO">Typing text 'Gustavo1!' into text field 'xpath:/html/body/app-root/login/div/mat-card/form/mat-form-field[2]/div[1]/div/div[2]/input'.</msg>
-<arg>${xpathSenha}</arg>
-<arg>Gustavo1!</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-03T17:07:20.268655" elapsed="0.173565"/>
-</kw>
-<status status="PASS" start="2025-03-03T17:07:20.268129" elapsed="0.174338"/>
-</kw>
-<kw name="clicar em continuar">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-03-03T17:07:20.446878" level="INFO">Clicking element 'xpath:/html/body/app-root/login/div/mat-card/button'.</msg>
-<arg>xpath:/html/body/app-root/login/div/mat-card/button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-03T17:07:20.446397" elapsed="0.210882"/>
-</kw>
-<status status="PASS" start="2025-03-03T17:07:20.445806" elapsed="0.211653"/>
-</kw>
-<kw name="Fechar navegador">
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-03-03T17:07:20.658757" elapsed="2.505727"/>
-</kw>
-<status status="PASS" start="2025-03-03T17:07:20.658106" elapsed="2.506602"/>
-</kw>
-<status status="PASS" start="2025-03-03T17:07:14.446656" elapsed="8.718599"/>
-</test>
-<test id="s1-t4" name="Cenario 4: erro" line="94">
-<status status="FAIL" start="2025-03-03T17:07:23.181197" elapsed="0.000884">Test cannot be empty.</status>
-</test>
-<status status="FAIL" start="2025-03-03T17:06:57.960486" elapsed="25.223851"/>
+<status status="FAIL" start="2025-03-07T17:22:04.377720" elapsed="34.691865"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Estrutura" id="s1" pass="3" fail="1" skip="0">Estrutura</stat>
+<stat name="EstruturaDesktop" id="s1" pass="1" fail="1" skip="0">EstruturaDesktop</stat>
 </suite>
 </statistics>
 <errors>

@@ -87,7 +87,7 @@ Cenario 3: Teste de logar no card
     clicar em continuar
     Fechar navegador
 
-#Esse test case tem a key word criada na sessão keywords    
+#Esse test case tem a keys words criada na sessão keywords    
 
 
 
