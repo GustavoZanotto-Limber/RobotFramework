@@ -1,208 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.11.0 on win32)" generated="2025-03-07T17:22:04.377720" rpa="false" schemaversion="5">
-<suite id="s1" name="EstruturaDesktop" source="C:\Users\Gustavo Zanotto\AppData\Local\Programs\Python\Python311\Scripts\RobotFramework\EstruturasBase\EstruturaDesktop.robot">
-<test id="s1-t1" name="Abrindo a tela do manager" line="72">
-<kw name="Carregar os elementos do app">
-<kw name="Add Image Path" owner="SikuliLibrary">
-<arg>${EXECDIR}\\EstruturasBase\\Elements</arg>
-<doc>Add image path</doc>
-<status status="PASS" start="2025-03-07T17:22:12.565944" elapsed="0.068003"/>
-</kw>
-<status status="PASS" start="2025-03-07T17:22:12.565944" elapsed="0.068003"/>
-</kw>
-<kw name="Selecionando a bilheteria manager">
-<kw name="Iniciar sessao manager">
-<kw name="Click" owner="SikuliLibrary">
-<msg time="2025-03-07T17:22:14.389907" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1741378933576.png'/&gt;
-[log] CLICK on L[664,747]@S(0) (592 msec)</msg>
-<arg>Abrir-Manager.png</arg>
-<doc>Click</doc>
-<status status="PASS" start="2025-03-07T17:22:12.633947" elapsed="1.755960"/>
-</kw>
-<status status="PASS" start="2025-03-07T17:22:12.633947" elapsed="1.755960"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-07T17:22:18.390494" level="INFO">Slept 4 seconds.</msg>
-<arg>4s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-07T17:22:14.389907" elapsed="4.000587"/>
-</kw>
-<kw name="Press Keys" owner="RPA.Desktop">
-<msg time="2025-03-07T17:22:18.390494" level="INFO">Pressing keys: Key.enter</msg>
-<arg>enter</arg>
-<doc>Press multiple keys down simultaneously.</doc>
-<status status="PASS" start="2025-03-07T17:22:18.390494" elapsed="0.000000"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-07T17:22:21.391231" level="INFO">Slept 3 seconds.</msg>
-<msg time="2025-03-07T17:22:21.391231" level="INFO">Carregando a base...</msg>
-<arg>3s</arg>
-<arg>Carregando a base...</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-07T17:22:18.390494" elapsed="3.000737"/>
-</kw>
-<kw name="Type Text" owner="RPA.Desktop">
-<arg>lbadmin940</arg>
-<doc>Type text one letter at a time.</doc>
-<status status="PASS" start="2025-03-07T17:22:21.391231" elapsed="0.015633"/>
-</kw>
-<kw name="Press Keys" owner="RPA.Desktop">
-<msg time="2025-03-07T17:22:21.406864" level="INFO">Pressing keys: Key.enter</msg>
-<arg>enter</arg>
-<doc>Press multiple keys down simultaneously.</doc>
-<status status="PASS" start="2025-03-07T17:22:21.406864" elapsed="0.107269"/>
-</kw>
-<kw name="Press Keys" owner="RPA.Desktop">
-<msg time="2025-03-07T17:22:21.514133" level="INFO">Pressing keys: Key.enter</msg>
-<arg>enter</arg>
-<doc>Press multiple keys down simultaneously.</doc>
-<status status="PASS" start="2025-03-07T17:22:21.514133" elapsed="0.104843"/>
-</kw>
-<status status="PASS" start="2025-03-07T17:22:12.633947" elapsed="8.985029"/>
-</kw>
-<kw name="Abrindo cadastro bilhetes">
-<kw name="Click" owner="SikuliLibrary">
-<msg time="2025-03-07T17:22:23.650845" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1741378942875.png'/&gt;
-[log] CLICK on L[34,32]@S(0) (583 msec)</msg>
-<arg>Cadastros.png</arg>
-<doc>Click</doc>
-<status status="PASS" start="2025-03-07T17:22:21.621512" elapsed="2.030328"/>
-</kw>
-<kw name="Click Text" owner="SikuliLibrary">
-<msg time="2025-03-07T17:22:27.533302" level="INFO">[log] CLICK on L[91,290]@S(0) (567 msec)</msg>
-<arg>Bilhetes</arg>
-<doc>Click Text</doc>
-<status status="PASS" start="2025-03-07T17:22:23.651840" elapsed="3.881462"/>
-</kw>
-<status status="PASS" start="2025-03-07T17:22:21.618976" elapsed="5.914326"/>
-</kw>
-<kw name="Encerrar teste manager">
-<kw name="Close Application" owner="SikuliLibrary">
-<arg>cde_win_bca_manager</arg>
-<doc>Close application</doc>
-<status status="PASS" start="2025-03-07T17:22:27.533302" elapsed="0.041191"/>
-</kw>
-<status status="PASS" start="2025-03-07T17:22:27.533302" elapsed="0.041191"/>
-</kw>
-<status status="PASS" start="2025-03-07T17:22:12.565944" elapsed="15.008549"/>
-</test>
-<test id="s1-t2" name="Abrindo a tela do front" line="78">
-<kw name="Carregar os elementos do app">
-<kw name="Add Image Path" owner="SikuliLibrary">
-<arg>${EXECDIR}\\EstruturasBase\\Elements</arg>
-<doc>Add image path</doc>
-<status status="PASS" start="2025-03-07T17:22:27.591992" elapsed="0.011967"/>
-</kw>
-<status status="PASS" start="2025-03-07T17:22:27.590995" elapsed="0.012964"/>
-</kw>
+<robot generator="Robot 7.2.2 (Python 3.9.13 on win32)" generated="2025-03-19T11:16:43.431241" rpa="false" schemaversion="5">
+<suite id="s1" name="Abrir Executaveis" source="C:\Users\Gustavo Zanotto\AppData\Local\Programs\Python\Python39\Scripts\RobotFramework\EstruturasBase\DESKTOP\Tests\Abrir_Executaveis.robot">
+<test id="s1-t1" name="Abrindo a tela do front" line="69">
 <kw name="Selecionando a bilheteria front">
-<kw name="Iniciar sessao front">
-<kw name="Click" owner="SikuliLibrary">
-<msg time="2025-03-07T17:22:28.760925" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1741378947870.png'/&gt;
-[log] CLICK on L[715,748]@S(0) (686 msec)</msg>
-<arg>Abrir-Front.png</arg>
-<doc>Click</doc>
-<status status="PASS" start="2025-03-07T17:22:27.607094" elapsed="1.153831"/>
+<kw name="Iniciar sessao front" owner="BaseDesktop">
+<kw name="Carregar os elementos do app" owner="BaseDesktop">
+<kw name="Add Image Path" owner="SikuliLibrary">
+<arg>${EXECDIR}\\EstruturasBase\\DESKTOP\\Elements</arg>
+<doc>Add image path</doc>
+<status status="PASS" start="2025-03-19T11:16:56.376155" elapsed="0.097902"/>
 </kw>
-<status status="PASS" start="2025-03-07T17:22:27.607094" elapsed="1.153831"/>
+<status status="PASS" start="2025-03-19T11:16:56.372168" elapsed="0.101889"/>
+</kw>
+<kw name="Open Application" owner="RPA.Desktop">
+<msg time="2025-03-19T11:16:56.476050" level="INFO">Starting application: C:\Limber\Turismo-PARQUES-NATURAIS\cde_win_bca_frontR10-25.exe</msg>
+<msg time="2025-03-19T11:16:56.498708" level="INFO">${front} = Application("cde_win_bca_frontR10-25.exe", pid:22320)</msg>
+<var>${front}</var>
+<arg>C:\\Limber\\Turismo-PARQUES-NATURAIS\\cde_win_bca_frontR10-25.exe</arg>
+<doc>Start a given application by name (if in PATH),
+or by path to executable.</doc>
+<status status="PASS" start="2025-03-19T11:16:56.475055" elapsed="0.023653"/>
+</kw>
+<status status="PASS" start="2025-03-19T11:16:56.369262" elapsed="0.129446"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-07T17:22:32.761650" level="INFO">Slept 4 seconds.</msg>
-<arg>4s</arg>
+<msg time="2025-03-19T11:17:01.503955" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-07T17:22:28.760925" elapsed="4.000725"/>
+<status status="PASS" start="2025-03-19T11:16:56.498708" elapsed="5.005247"/>
 </kw>
 <kw name="Press Keys" owner="RPA.Desktop">
-<msg time="2025-03-07T17:22:32.761650" level="INFO">Pressing keys: Key.enter</msg>
+<msg time="2025-03-19T11:17:01.503955" level="INFO">Pressing keys: Key.enter</msg>
 <arg>enter</arg>
 <doc>Press multiple keys down simultaneously.</doc>
-<status status="PASS" start="2025-03-07T17:22:32.761650" elapsed="0.000000"/>
+<status status="PASS" start="2025-03-19T11:17:01.503955" elapsed="0.000000"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-07T17:22:35.762459" level="INFO">Slept 3 seconds.</msg>
-<msg time="2025-03-07T17:22:35.762459" level="INFO">Carregando a base...</msg>
-<arg>3s</arg>
+<msg time="2025-03-19T11:17:08.518829" level="INFO">Slept 7 seconds.</msg>
+<msg time="2025-03-19T11:17:08.518829" level="INFO">Carregando a base...</msg>
+<arg>7s</arg>
 <arg>Carregando a base...</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-07T17:22:32.761650" elapsed="3.000809"/>
+<status status="PASS" start="2025-03-19T11:17:01.503955" elapsed="7.014874"/>
 </kw>
 <kw name="Type Text" owner="RPA.Desktop">
 <arg>lbadmin940</arg>
 <doc>Type text one letter at a time.</doc>
-<status status="PASS" start="2025-03-07T17:22:35.762459" elapsed="0.031261"/>
+<status status="PASS" start="2025-03-19T11:17:08.518829" elapsed="0.002036"/>
 </kw>
 <kw name="Press Keys" owner="RPA.Desktop">
-<msg time="2025-03-07T17:22:35.793720" level="INFO">Pressing keys: Key.enter</msg>
+<msg time="2025-03-19T11:17:08.528902" level="INFO">Pressing keys: Key.enter</msg>
 <arg>enter</arg>
 <doc>Press multiple keys down simultaneously.</doc>
-<status status="PASS" start="2025-03-07T17:22:35.793720" elapsed="0.106950"/>
+<status status="PASS" start="2025-03-19T11:17:08.520865" elapsed="0.119338"/>
 </kw>
 <kw name="Press Keys" owner="RPA.Desktop">
-<msg time="2025-03-07T17:22:35.900670" level="INFO">Pressing keys: Key.enter</msg>
+<msg time="2025-03-19T11:17:08.642237" level="INFO">Pressing keys: Key.enter</msg>
 <arg>enter</arg>
 <doc>Press multiple keys down simultaneously.</doc>
-<status status="PASS" start="2025-03-07T17:22:35.900670" elapsed="0.106749"/>
+<status status="PASS" start="2025-03-19T11:17:08.640203" elapsed="0.100778"/>
 </kw>
-<status status="PASS" start="2025-03-07T17:22:27.606018" elapsed="8.401401"/>
+<status status="PASS" start="2025-03-19T11:16:56.361852" elapsed="12.379129"/>
 </kw>
-<kw name="Abrindo emissão de bilhetes">
+<kw name="selecionando dentro de manutenções">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-07T17:22:37.008055" level="INFO">Slept 1 second.</msg>
+<msg time="2025-03-19T11:17:10.749960" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-19T11:17:08.740981" elapsed="2.008979"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-19T11:17:11.753528" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-07T17:22:36.007419" elapsed="1.000636"/>
+<status status="PASS" start="2025-03-19T11:17:10.749960" elapsed="1.003568"/>
 </kw>
 <kw name="Click" owner="SikuliLibrary">
-<msg time="2025-03-07T17:22:38.021226" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1741378957275.png'/&gt;
-[log] CLICK on L[34,32]@S(0) (564 msec)</msg>
-<arg>Cadastros.png</arg>
+<msg time="2025-03-19T11:17:15.894460" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1742393834422.png'/&gt;
+[log] CLICK on L[108,32]@S(0) (1023 msec)</msg>
+<arg>Manutenções</arg>
 <doc>Click</doc>
-<status status="PASS" start="2025-03-07T17:22:37.008055" elapsed="1.013171"/>
+<status status="PASS" start="2025-03-19T11:17:11.753528" elapsed="4.140932"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-07T17:22:39.022710" level="INFO">Slept 1 second.</msg>
+<msg time="2025-03-19T11:17:16.913319" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-07T17:22:38.022233" elapsed="1.000477"/>
+<status status="PASS" start="2025-03-19T11:17:15.894460" elapsed="1.018859"/>
 </kw>
-<kw name="Press Keys" owner="RPA.Desktop">
-<msg time="2025-03-07T17:22:39.022710" level="INFO">Pressing keys: Key.right</msg>
-<arg>right</arg>
-<doc>Press multiple keys down simultaneously.</doc>
-<status status="PASS" start="2025-03-07T17:22:39.022710" elapsed="0.000000"/>
+<kw name="Click" owner="RPA.Windows">
+<msg time="2025-03-19T11:17:16.913319" level="INFO">Getting element with locator: Cancelamento de Bilhetes</msg>
+<msg time="2025-03-19T11:17:16.997938" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x00000193901E1700&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-19T11:17:16.997938" level="INFO">Locator 'Cancelamento de Bilhetes' produced matcher: MatchObject(locators=[('Name', 'Cancelamento de Bilhetes', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-19T11:17:17.546053" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.MenuItemControl object at 0x00000193901E1820&gt;, locator='Cancelamento de Bilhetes', name='Cancelamento de Bilhetes', automation_id='68', control_type='MenuItemControl', class_name='', left=69, right=344, top=89, bottom=111, width=275, height=22, xcenter=206, ycenter=100)</msg>
+<arg>Cancelamento de Bilhetes</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<status status="PASS" start="2025-03-19T11:17:16.913319" elapsed="1.202972"/>
 </kw>
-<kw name="Find Element" owner="RPA.Desktop">
-<msg time="2025-03-07T17:22:39.022710" level="INFO">Resolving locator: ocr:"Emissão de Bilhetes"</msg>
-<msg time="2025-03-07T17:22:39.022710" level="FAIL">ValueError: Locator type not supported, please install the rpaframework-recognition package</msg>
-<var>${region}</var>
-<arg>ocr:"Emissão de Bilhetes"</arg>
-<doc>Find an element defined by locator, and return its position.
-Raises ``ElementNotFound`` if` no matches were found, or
-``MultipleElementsFound`` if there were multiple matches.</doc>
-<status status="FAIL" start="2025-03-07T17:22:39.022710" elapsed="0.031260">ValueError: Locator type not supported, please install the rpaframework-recognition package</status>
+<arg>Emissao-de-bilhetes</arg>
+<status status="PASS" start="2025-03-19T11:17:08.740981" elapsed="9.776309"/>
 </kw>
-<kw name="Click" owner="RPA.Desktop">
-<arg>${region}</arg>
-<doc>Click at the element indicated by locator.</doc>
-<status status="NOT RUN" start="2025-03-07T17:22:39.053970" elapsed="0.000000"/>
-</kw>
-<status status="FAIL" start="2025-03-07T17:22:36.007419" elapsed="3.046551">ValueError: Locator type not supported, please install the rpaframework-recognition package</status>
-</kw>
-<kw name="Encerrar teste front">
-<status status="NOT RUN" start="2025-03-07T17:22:39.053970" elapsed="0.000000"/>
-</kw>
-<status status="FAIL" start="2025-03-07T17:22:27.588998" elapsed="11.464972">ValueError: Locator type not supported, please install the rpaframework-recognition package</status>
+<status status="PASS" start="2025-03-19T11:16:56.360801" elapsed="22.156489"/>
 </test>
-<status status="FAIL" start="2025-03-07T17:22:04.377720" elapsed="34.691865"/>
+<doc>Suite de teste do manager</doc>
+<status status="PASS" start="2025-03-19T11:16:43.431241" elapsed="35.101665"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="EstruturaDesktop" id="s1" pass="1" fail="1" skip="0">EstruturaDesktop</stat>
+<stat name="Abrir Executaveis" id="s1" pass="1" fail="0" skip="0">Abrir Executaveis</stat>
 </suite>
 </statistics>
 <errors>
