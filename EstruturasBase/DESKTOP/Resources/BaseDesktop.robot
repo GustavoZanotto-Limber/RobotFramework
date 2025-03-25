@@ -23,33 +23,38 @@ Carregar os elementos do app
     #dessa biblioteca no link: https://rainmanwy.github.io/robotframework-SikuliLibrary/doc/SikuliLibrary.html
     Add Image Path      ${EXECDIR}\\EstruturasBase\\DESKTOP\\Elements
 
-Iniciar sessao manager
-    Carregar os elementos do app
-    SikuliLibrary.Click       Abrir-Manager.png
-
 Iniciar sessao front
     Carregar os elementos do app
     ${front}=   RPA.Desktop.Open Application      C:\\Limber\\Turismo-PARQUES-NATURAIS\\cde_win_bca_frontR10-25.exe
+    Sleep           5s
+    Press keys      enter
+    Sleep           7s      Carregando a base...
+    #Press keys      enter 
+    Type text       1
+    Press keys      enter
+    Press keys      enter
+
+Screenshot
+    [Arguments]               ${janela}    ${Caminho}
+    RPA.Windows.Screenshot    ${janela}    ${Caminho}.png
 
 Terminar sessao 
     Stop Remote Server
 
-Encerrar teste manager
-    SikuliLibrary.Close application       [Limber Bilheteria Manager - Standard Version]   #O nome da aplication deve ser o mesmo que aparece no aplicativo na barra inferior
-
+#O nome da aplication deve ser o mesmo que aparece no aplicativo na barra inferior
 Encerrar teste front
     SikuliLibrary.Close application       [Limber Bilheteria Front - Standard Version]
+    Press Keys                                 Left
+    Press Keys                                 Enter
 
 Encerrar tudo
     RPA.Desktop.Close all applications
 
-Abrindo cadastro bilhetes
-        Sleep                               2s
-        SikuliLibrary.Click                 Cadastros.png
-        SikuliLibrary.Click Text            Bilhetes
-
-Abrindo emissão de bilhetes
-        Sleep                               1s
-        SikuliLibrary.Click                 Cadastros.png
-        Sleep                               1s
-        Press keys                          right
+repetidor de teclas
+        [Arguments]                     ${tecla}        ${quantidade_de_clicks}                
+        FOR    ${quantidade_de_clicks}    IN RANGE    1    ${quantidade_de_clicks}+1
+        RPA.Desktop.Press Keys          ${tecla}
+        END
+    
+Print 
+    Screenshot  [Limber Bilheteria Front - Standard Version] - Versão 2.25 (Release 10 Build 2506)      ${EXECDIR}/EstruturasBase/DESKTOP/Tests/SmokeTest/Parques_Naturais/Front/Erro

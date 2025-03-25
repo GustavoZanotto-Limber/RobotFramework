@@ -1,120 +1,833 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.9.13 on win32)" generated="2025-03-19T11:16:43.431241" rpa="false" schemaversion="5">
-<suite id="s1" name="Abrir Executaveis" source="C:\Users\Gustavo Zanotto\AppData\Local\Programs\Python\Python39\Scripts\RobotFramework\EstruturasBase\DESKTOP\Tests\Abrir_Executaveis.robot">
-<test id="s1-t1" name="Abrindo a tela do front" line="69">
-<kw name="Selecionando a bilheteria front">
-<kw name="Iniciar sessao front" owner="BaseDesktop">
+<robot generator="Robot 7.2.2 (Python 3.9.13 on win32)" generated="2025-03-25T11:52:30.975954" rpa="false" schemaversion="5">
+<suite id="s1" name="Cadastros" source="C:\Users\Gustavo Zanotto\AppData\Local\Programs\Python\Python39\Scripts\RobotFramework\EstruturasBase\DESKTOP\Tests\SmokeTest\Parques_Naturais\Front\Cadastros.robot">
+<kw name="Iniciar sessao front" owner="BaseDesktop" type="SETUP">
 <kw name="Carregar os elementos do app" owner="BaseDesktop">
 <kw name="Add Image Path" owner="SikuliLibrary">
 <arg>${EXECDIR}\\EstruturasBase\\DESKTOP\\Elements</arg>
 <doc>Add image path</doc>
-<status status="PASS" start="2025-03-19T11:16:56.376155" elapsed="0.097902"/>
+<status status="PASS" start="2025-03-25T11:52:45.087118" elapsed="0.067341"/>
 </kw>
-<status status="PASS" start="2025-03-19T11:16:56.372168" elapsed="0.101889"/>
+<status status="PASS" start="2025-03-25T11:52:45.084127" elapsed="0.070332"/>
 </kw>
 <kw name="Open Application" owner="RPA.Desktop">
-<msg time="2025-03-19T11:16:56.476050" level="INFO">Starting application: C:\Limber\Turismo-PARQUES-NATURAIS\cde_win_bca_frontR10-25.exe</msg>
-<msg time="2025-03-19T11:16:56.498708" level="INFO">${front} = Application("cde_win_bca_frontR10-25.exe", pid:22320)</msg>
+<msg time="2025-03-25T11:52:45.155456" level="INFO">Starting application: C:\Limber\Turismo-PARQUES-NATURAIS\cde_win_bca_frontR10-25.exe</msg>
+<msg time="2025-03-25T11:52:45.170415" level="INFO">${front} = Application("cde_win_bca_frontR10-25.exe", pid:740)</msg>
 <var>${front}</var>
 <arg>C:\\Limber\\Turismo-PARQUES-NATURAIS\\cde_win_bca_frontR10-25.exe</arg>
 <doc>Start a given application by name (if in PATH),
 or by path to executable.</doc>
-<status status="PASS" start="2025-03-19T11:16:56.475055" elapsed="0.023653"/>
-</kw>
-<status status="PASS" start="2025-03-19T11:16:56.369262" elapsed="0.129446"/>
+<status status="PASS" start="2025-03-25T11:52:45.155456" elapsed="0.015957"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-19T11:17:01.503955" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-03-25T11:52:50.186618" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-19T11:16:56.498708" elapsed="5.005247"/>
+<status status="PASS" start="2025-03-25T11:52:45.171413" elapsed="5.015205"/>
 </kw>
 <kw name="Press Keys" owner="RPA.Desktop">
-<msg time="2025-03-19T11:17:01.503955" level="INFO">Pressing keys: Key.enter</msg>
+<msg time="2025-03-25T11:52:50.187614" level="INFO">Pressing keys: Key.enter</msg>
 <arg>enter</arg>
 <doc>Press multiple keys down simultaneously.</doc>
-<status status="PASS" start="2025-03-19T11:17:01.503955" elapsed="0.000000"/>
+<status status="PASS" start="2025-03-25T11:52:50.186618" elapsed="0.001994"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-19T11:17:08.518829" level="INFO">Slept 7 seconds.</msg>
-<msg time="2025-03-19T11:17:08.518829" level="INFO">Carregando a base...</msg>
+<msg time="2025-03-25T11:52:57.194216" level="INFO">Slept 7 seconds.</msg>
+<msg time="2025-03-25T11:52:57.194216" level="INFO">Carregando a base...</msg>
 <arg>7s</arg>
 <arg>Carregando a base...</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-19T11:17:01.503955" elapsed="7.014874"/>
+<status status="PASS" start="2025-03-25T11:52:50.189608" elapsed="7.004608"/>
 </kw>
 <kw name="Type Text" owner="RPA.Desktop">
-<arg>lbadmin940</arg>
+<arg>1</arg>
 <doc>Type text one letter at a time.</doc>
-<status status="PASS" start="2025-03-19T11:17:08.518829" elapsed="0.002036"/>
+<status status="PASS" start="2025-03-25T11:52:57.195210" elapsed="0.000997"/>
 </kw>
 <kw name="Press Keys" owner="RPA.Desktop">
-<msg time="2025-03-19T11:17:08.528902" level="INFO">Pressing keys: Key.enter</msg>
+<msg time="2025-03-25T11:52:57.197206" level="INFO">Pressing keys: Key.enter</msg>
 <arg>enter</arg>
 <doc>Press multiple keys down simultaneously.</doc>
-<status status="PASS" start="2025-03-19T11:17:08.520865" elapsed="0.119338"/>
+<status status="PASS" start="2025-03-25T11:52:57.196207" elapsed="0.110704"/>
 </kw>
 <kw name="Press Keys" owner="RPA.Desktop">
-<msg time="2025-03-19T11:17:08.642237" level="INFO">Pressing keys: Key.enter</msg>
+<msg time="2025-03-25T11:52:57.307910" level="INFO">Pressing keys: Key.enter</msg>
 <arg>enter</arg>
 <doc>Press multiple keys down simultaneously.</doc>
-<status status="PASS" start="2025-03-19T11:17:08.640203" elapsed="0.100778"/>
+<status status="PASS" start="2025-03-25T11:52:57.307910" elapsed="0.108224"/>
 </kw>
-<status status="PASS" start="2025-03-19T11:16:56.361852" elapsed="12.379129"/>
+<status status="PASS" start="2025-03-25T11:52:45.083143" elapsed="12.332991"/>
 </kw>
-<kw name="selecionando dentro de manutenções">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-19T11:17:10.749960" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-19T11:17:08.740981" elapsed="2.008979"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-19T11:17:11.753528" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-19T11:17:10.749960" elapsed="1.003568"/>
-</kw>
+<test id="s1-t1" name="Guias" line="24">
+<kw name="Cadastros">
 <kw name="Click" owner="SikuliLibrary">
-<msg time="2025-03-19T11:17:15.894460" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1742393834422.png'/&gt;
-[log] CLICK on L[108,32]@S(0) (1023 msec)</msg>
-<arg>Manutenções</arg>
+<msg time="2025-03-25T11:53:00.605787" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1742914379605.png'/&gt;
+[log] CLICK on L[34,32]@S(0) (689 msec)</msg>
+<arg>Cadastros.png</arg>
 <doc>Click</doc>
-<status status="PASS" start="2025-03-19T11:17:11.753528" elapsed="4.140932"/>
+<status status="PASS" start="2025-03-25T11:52:57.419125" elapsed="3.186662"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-19T11:17:16.913319" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-19T11:17:15.894460" elapsed="1.018859"/>
+<status status="PASS" start="2025-03-25T11:52:57.418128" elapsed="3.188656"/>
 </kw>
 <kw name="Click" owner="RPA.Windows">
-<msg time="2025-03-19T11:17:16.913319" level="INFO">Getting element with locator: Cancelamento de Bilhetes</msg>
-<msg time="2025-03-19T11:17:16.997938" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x00000193901E1700&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
-<msg time="2025-03-19T11:17:16.997938" level="INFO">Locator 'Cancelamento de Bilhetes' produced matcher: MatchObject(locators=[('Name', 'Cancelamento de Bilhetes', 0)], _classes=set(), max_level=0)</msg>
-<msg time="2025-03-19T11:17:17.546053" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.MenuItemControl object at 0x00000193901E1820&gt;, locator='Cancelamento de Bilhetes', name='Cancelamento de Bilhetes', automation_id='68', control_type='MenuItemControl', class_name='', left=69, right=344, top=89, bottom=111, width=275, height=22, xcenter=206, ycenter=100)</msg>
-<arg>Cancelamento de Bilhetes</arg>
+<msg time="2025-03-25T11:53:00.609776" level="INFO">Getting element with locator: Guias</msg>
+<msg time="2025-03-25T11:53:00.629722" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B3B2B0&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:53:00.629722" level="INFO">Locator 'Guias' produced matcher: MatchObject(locators=[('Name', 'Guias', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:01.742247" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.MenuItemControl object at 0x0000021157B3B3A0&gt;, locator='Guias', name='Guias', automation_id='35', control_type='MenuItemControl', class_name='', left=3, right=249, top=45, bottom=67, width=246, height=22, xcenter=126, ycenter=56)</msg>
+<arg>Guias</arg>
 <tag>action</tag>
 <tag>mouse</tag>
 <doc>Mouse click on element matching given locator.</doc>
-<status status="PASS" start="2025-03-19T11:17:16.913319" elapsed="1.202972"/>
+<status status="PASS" start="2025-03-25T11:53:00.608780" elapsed="1.710923"/>
 </kw>
-<arg>Emissao-de-bilhetes</arg>
-<status status="PASS" start="2025-03-19T11:17:08.740981" elapsed="9.776309"/>
+<kw name="Get Text" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:02.373561" level="INFO">Getting element with locator: Principal</msg>
+<msg time="2025-03-25T11:53:02.377549" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B3B400&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:53:02.378547" level="INFO">Locator 'Principal' produced matcher: MatchObject(locators=[('Name', 'Principal', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:03.941975" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B3B730&gt;, locator='Principal', name='Principal', automation_id='4917574', control_type='PaneControl', class_name='TTabSheet', left=5, right=1361, top=211, bottom=684, width=1356, height=473, xcenter=683, ycenter=447)</msg>
+<arg>Principal</arg>
+<tag>action</tag>
+<doc>Get text from Control element defined by the locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:02.372561" elapsed="1.571410"/>
 </kw>
-<status status="PASS" start="2025-03-19T11:16:56.360801" elapsed="22.156489"/>
+<kw name="Screenshot" owner="BaseDesktop">
+<kw name="Screenshot" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:03.945966" level="INFO">Getting element with locator: Espaço de trabalho</msg>
+<msg time="2025-03-25T11:53:03.948955" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B3BF10&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:53:03.948955" level="INFO">Locator 'Espaço de trabalho' produced matcher: MatchObject(locators=[('Name', 'Espaço de trabalho', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:04.823615" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B5F160&gt;, locator='Espaço de trabalho', name='Espaço de trabalho', automation_id='', control_type='PaneControl', class_name='MDIClient', left=0, right=1366, top=86, bottom=708, width=1366, height=622, xcenter=683, ycenter=397)</msg>
+<arg>${janela}</arg>
+<arg>${Caminho}.png</arg>
+<tag>action</tag>
+<doc>Take a screenshot of the element defined by the locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:03.945966" elapsed="0.995337"/>
+</kw>
+<arg>Espaço de trabalho</arg>
+<arg>${Caminho_Screenshots}Guias</arg>
+<status status="PASS" start="2025-03-25T11:53:03.944967" elapsed="0.996336"/>
+</kw>
+<kw name="Fechar janela">
+<kw name="Set Anchor" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:04.946289" level="INFO">Getting element with locator: Aplicativo</msg>
+<msg time="2025-03-25T11:53:04.950277" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B5F8B0&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:53:04.950277" level="INFO">Locator 'Aplicativo' produced matcher: MatchObject(locators=[('Name', 'Aplicativo', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:06.817032" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.MenuBarControl object at 0x0000021157B3BE20&gt;, locator='Aplicativo', name='Aplicativo', automation_id='MenuBar', control_type='MenuBarControl', class_name='', left=0, right=1366, top=23, bottom=42, width=1366, height=19, xcenter=683, ycenter=32)</msg>
+<arg>Aplicativo</arg>
+<doc>Set anchor to an element specified by the locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:04.945293" elapsed="1.872737"/>
+</kw>
+<kw name="Click" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:06.819027" level="INFO">Getting element with locator: Fechar</msg>
+<msg time="2025-03-25T11:53:06.821020" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.MenuBarControl object at 0x0000021157B3BE20&gt;, locator='Aplicativo', name='Aplicativo', automation_id='MenuBar', control_type='MenuBarControl', class_name='', left=0, right=1366, top=23, bottom=42, width=1366, height=19, xcenter=683, ycenter=32)</msg>
+<msg time="2025-03-25T11:53:06.821020" level="INFO">Locator 'Fechar' produced matcher: MatchObject(locators=[('Name', 'Fechar', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:07.543839" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.ButtonControl object at 0x0000021157B5F5E0&gt;, locator='Fechar', name='Fechar', automation_id='', control_type='ButtonControl', class_name='', left=1347, right=1366, top=23, bottom=42, width=19, height=19, xcenter=1356, ycenter=32)</msg>
+<arg>Fechar</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:06.818030" elapsed="1.307307"/>
+</kw>
+<kw name="Clear Anchor" owner="RPA.Windows">
+<doc>Clears control anchor set by ``Set Anchor``</doc>
+<status status="PASS" start="2025-03-25T11:53:08.125337" elapsed="0.000998"/>
+</kw>
+<status status="PASS" start="2025-03-25T11:53:04.945293" elapsed="3.182039"/>
+</kw>
+<kw name="Run Keyword If Test Failed" owner="BuiltIn" type="TEARDOWN">
+<arg>Take Screenshot</arg>
+<arg>${Caminho_Screenshots_erros}Guias</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" start="2025-03-25T11:53:08.128329" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-03-25T11:52:57.416134" elapsed="10.713194"/>
 </test>
-<doc>Suite de teste do manager</doc>
-<status status="PASS" start="2025-03-19T11:16:43.431241" elapsed="35.101665"/>
+<test id="s1-t2" name="Isentos" line="32">
+<kw name="Cadastros">
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2025-03-25T11:53:09.369639" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1742914388464.png'/&gt;
+[log] CLICK on L[34,32]@S(0) (599 msec)</msg>
+<arg>Cadastros.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2025-03-25T11:53:08.133316" elapsed="1.237322"/>
+</kw>
+<status status="PASS" start="2025-03-25T11:53:08.132318" elapsed="1.238320"/>
+</kw>
+<kw name="Click" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:09.375623" level="INFO">Getting element with locator: Isentos</msg>
+<msg time="2025-03-25T11:53:09.429479" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B6A0D0&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:53:09.429479" level="INFO">Locator 'Isentos' produced matcher: MatchObject(locators=[('Name', 'Isentos', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:10.632274" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.MenuItemControl object at 0x0000021157B6A460&gt;, locator='Isentos', name='Isentos', automation_id='36', control_type='MenuItemControl', class_name='', left=3, right=249, top=67, bottom=89, width=246, height=22, xcenter=126, ycenter=78)</msg>
+<arg>Isentos</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:09.374626" elapsed="1.861387"/>
+</kw>
+<kw name="Get Text" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:11.250017" level="INFO">Getting element with locator: Cadastro de Isento (1)</msg>
+<msg time="2025-03-25T11:53:11.308032" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B6A490&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:53:11.309026" level="INFO">Locator 'Cadastro de Isento (1)' produced matcher: MatchObject(locators=[('Name', 'Cadastro de Isento (1)', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:12.476654" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.WindowControl object at 0x0000021157B6A6A0&gt;, locator='Cadastro de Isento (1)', name='Cadastro de Isento (1)', automation_id='65280', control_type='WindowControl', class_name='TFrmBcaCadIsento', left=-8, right=1374, top=55, bottom=716, width=1382, height=661, xcenter=683, ycenter=385)</msg>
+<arg>Cadastro de Isento (1)</arg>
+<tag>action</tag>
+<doc>Get text from Control element defined by the locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:11.249018" elapsed="1.228635"/>
+</kw>
+<kw name="Screenshot" owner="BaseDesktop">
+<kw name="Screenshot" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:12.480643" level="INFO">Getting element with locator: Cadastro de Isento (1)</msg>
+<msg time="2025-03-25T11:53:12.482640" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B6AD90&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:53:12.482640" level="INFO">Locator 'Cadastro de Isento (1)' produced matcher: MatchObject(locators=[('Name', 'Cadastro de Isento (1)', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:13.346903" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.WindowControl object at 0x0000021157B6AE80&gt;, locator='Cadastro de Isento (1)', name='Cadastro de Isento (1)', automation_id='65280', control_type='WindowControl', class_name='TFrmBcaCadIsento', left=-8, right=1374, top=55, bottom=716, width=1382, height=661, xcenter=683, ycenter=385)</msg>
+<arg>${janela}</arg>
+<arg>${Caminho}.png</arg>
+<tag>action</tag>
+<doc>Take a screenshot of the element defined by the locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:12.479648" elapsed="0.984940"/>
+</kw>
+<arg>Cadastro de Isento (1)</arg>
+<arg>${Caminho_Screenshots}Isentos</arg>
+<status status="PASS" start="2025-03-25T11:53:12.478650" elapsed="0.985938"/>
+</kw>
+<kw name="Fechar janela">
+<kw name="Set Anchor" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:13.479547" level="INFO">Getting element with locator: Aplicativo</msg>
+<msg time="2025-03-25T11:53:13.499495" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B72490&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:53:13.500493" level="INFO">Locator 'Aplicativo' produced matcher: MatchObject(locators=[('Name', 'Aplicativo', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:15.201472" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.MenuBarControl object at 0x0000021157B726D0&gt;, locator='Aplicativo', name='Aplicativo', automation_id='MenuBar', control_type='MenuBarControl', class_name='', left=0, right=1366, top=23, bottom=42, width=1366, height=19, xcenter=683, ycenter=32)</msg>
+<arg>Aplicativo</arg>
+<doc>Set anchor to an element specified by the locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:13.479547" elapsed="1.721925"/>
+</kw>
+<kw name="Click" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:15.203468" level="INFO">Getting element with locator: Fechar</msg>
+<msg time="2025-03-25T11:53:15.205462" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.MenuBarControl object at 0x0000021157B726D0&gt;, locator='Aplicativo', name='Aplicativo', automation_id='MenuBar', control_type='MenuBarControl', class_name='', left=0, right=1366, top=23, bottom=42, width=1366, height=19, xcenter=683, ycenter=32)</msg>
+<msg time="2025-03-25T11:53:15.205462" level="INFO">Locator 'Fechar' produced matcher: MatchObject(locators=[('Name', 'Fechar', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:15.937802" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.ButtonControl object at 0x0000021157B72850&gt;, locator='Fechar', name='Fechar', automation_id='', control_type='ButtonControl', class_name='', left=1347, right=1366, top=23, bottom=42, width=19, height=19, xcenter=1356, ycenter=32)</msg>
+<arg>Fechar</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:15.202471" elapsed="1.323903"/>
+</kw>
+<kw name="Clear Anchor" owner="RPA.Windows">
+<doc>Clears control anchor set by ``Set Anchor``</doc>
+<status status="PASS" start="2025-03-25T11:53:16.529367" elapsed="0.000998"/>
+</kw>
+<status status="PASS" start="2025-03-25T11:53:13.478550" elapsed="3.051815"/>
+</kw>
+<kw name="Run Keyword If Test Failed" owner="BuiltIn" type="TEARDOWN">
+<arg>Take Screenshot</arg>
+<arg>${Caminho_Screenshots_erros}Isentos</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" start="2025-03-25T11:53:16.531361" elapsed="0.000999"/>
+</kw>
+<status status="PASS" start="2025-03-25T11:53:08.131322" elapsed="8.401038"/>
+</test>
+<test id="s1-t3" name="Agências" line="40">
+<kw name="Cadastros">
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2025-03-25T11:53:17.831615" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1742914396849.png'/&gt;
+[log] CLICK on L[34,32]@S(0) (736 msec)</msg>
+<arg>Cadastros.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2025-03-25T11:53:16.537346" elapsed="1.294269"/>
+</kw>
+<status status="PASS" start="2025-03-25T11:53:16.536348" elapsed="1.296266"/>
+</kw>
+<kw name="Click" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:17.836602" level="INFO">Getting element with locator: Agências</msg>
+<msg time="2025-03-25T11:53:17.839594" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B76190&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:53:17.839594" level="INFO">Locator 'Agências' produced matcher: MatchObject(locators=[('Name', 'Agências', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:19.004362" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.MenuItemControl object at 0x0000021157B76550&gt;, locator='Agências', name='Agências', automation_id='', control_type='MenuItemControl', class_name='', left=3, right=249, top=89, bottom=111, width=246, height=22, xcenter=126, ycenter=100)</msg>
+<arg>Agências</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:17.835605" elapsed="1.756186"/>
+</kw>
+<kw name="Press Keys" owner="RPA.Desktop">
+<msg time="2025-03-25T11:53:19.606750" level="INFO">Pressing keys: 'a'</msg>
+<arg>A</arg>
+<doc>Press multiple keys down simultaneously.</doc>
+<status status="PASS" start="2025-03-25T11:53:19.606750" elapsed="0.001995"/>
+</kw>
+<kw name="Get Text" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:19.617723" level="INFO">Getting element with locator: Cadastro de Terceiros (1)</msg>
+<msg time="2025-03-25T11:53:19.669584" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B76700&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:53:19.669584" level="INFO">Locator 'Cadastro de Terceiros (1)' produced matcher: MatchObject(locators=[('Name', 'Cadastro de Terceiros (1)', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:22.912443" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.WindowControl object at 0x0000021157B768E0&gt;, locator='Cadastro de Terceiros (1)', name='Cadastro de Terceiros (1)', automation_id='65280', control_type='WindowControl', class_name='TfrmCadTerceiros', left=-8, right=1374, top=55, bottom=725, width=1382, height=670, xcenter=683, ycenter=390)</msg>
+<arg>Cadastro de Terceiros (1)</arg>
+<tag>action</tag>
+<doc>Get text from Control element defined by the locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:19.616725" elapsed="3.296714"/>
+</kw>
+<kw name="Screenshot" owner="BaseDesktop">
+<kw name="Screenshot" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:22.917430" level="INFO">Getting element with locator: Cadastro de Terceiros (1)</msg>
+<msg time="2025-03-25T11:53:22.922417" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B7C040&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:53:22.922417" level="INFO">Locator 'Cadastro de Terceiros (1)' produced matcher: MatchObject(locators=[('Name', 'Cadastro de Terceiros (1)', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:23.857915" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.WindowControl object at 0x0000021157B7C250&gt;, locator='Cadastro de Terceiros (1)', name='Cadastro de Terceiros (1)', automation_id='65280', control_type='WindowControl', class_name='TfrmCadTerceiros', left=-8, right=1374, top=55, bottom=725, width=1382, height=670, xcenter=683, ycenter=390)</msg>
+<arg>${janela}</arg>
+<arg>${Caminho}.png</arg>
+<tag>action</tag>
+<doc>Take a screenshot of the element defined by the locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:22.916432" elapsed="1.066661"/>
+</kw>
+<arg>Cadastro de Terceiros (1)</arg>
+<arg>${Caminho_Screenshots}Agências</arg>
+<status status="PASS" start="2025-03-25T11:53:22.915436" elapsed="1.067657"/>
+</kw>
+<kw name="Fechar janela">
+<kw name="Set Anchor" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:23.988078" level="INFO">Getting element with locator: Aplicativo</msg>
+<msg time="2025-03-25T11:53:23.999050" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B76DC0&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:53:23.999050" level="INFO">Locator 'Aplicativo' produced matcher: MatchObject(locators=[('Name', 'Aplicativo', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:25.860322" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.MenuBarControl object at 0x0000021157B767C0&gt;, locator='Aplicativo', name='Aplicativo', automation_id='MenuBar', control_type='MenuBarControl', class_name='', left=0, right=1366, top=23, bottom=42, width=1366, height=19, xcenter=683, ycenter=32)</msg>
+<arg>Aplicativo</arg>
+<doc>Set anchor to an element specified by the locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:23.987084" elapsed="1.873238"/>
+</kw>
+<kw name="Click" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:25.862316" level="INFO">Getting element with locator: Fechar</msg>
+<msg time="2025-03-25T11:53:25.865310" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.MenuBarControl object at 0x0000021157B767C0&gt;, locator='Aplicativo', name='Aplicativo', automation_id='MenuBar', control_type='MenuBarControl', class_name='', left=0, right=1366, top=23, bottom=42, width=1366, height=19, xcenter=683, ycenter=32)</msg>
+<msg time="2025-03-25T11:53:25.865310" level="INFO">Locator 'Fechar' produced matcher: MatchObject(locators=[('Name', 'Fechar', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:26.583389" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.ButtonControl object at 0x0000021157B72B80&gt;, locator='Fechar', name='Fechar', automation_id='', control_type='ButtonControl', class_name='', left=1347, right=1366, top=23, bottom=42, width=19, height=19, xcenter=1356, ycenter=32)</msg>
+<arg>Fechar</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:25.861321" elapsed="1.321930"/>
+</kw>
+<kw name="Clear Anchor" owner="RPA.Windows">
+<doc>Clears control anchor set by ``Set Anchor``</doc>
+<status status="PASS" start="2025-03-25T11:53:27.184249" elapsed="0.000997"/>
+</kw>
+<status status="PASS" start="2025-03-25T11:53:23.986087" elapsed="3.200156"/>
+</kw>
+<kw name="Run Keyword If Test Failed" owner="BuiltIn" type="TEARDOWN">
+<arg>Take Screenshot</arg>
+<arg>${Caminho_Screenshots_erros}Agências</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" start="2025-03-25T11:53:27.188238" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-03-25T11:53:16.535351" elapsed="10.652887"/>
+</test>
+<test id="s1-t4" name="Grupo de Agências" line="49">
+<kw name="Cadastros">
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2025-03-25T11:53:28.392050" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1742914407525.png'/&gt;
+[log] CLICK on L[34,32]@S(0) (618 msec)</msg>
+<arg>Cadastros.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2025-03-25T11:53:27.193224" elapsed="1.198826"/>
+</kw>
+<status status="PASS" start="2025-03-25T11:53:27.192226" elapsed="1.199824"/>
+</kw>
+<kw name="Click" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:28.408007" level="INFO">Getting element with locator: Agências</msg>
+<msg time="2025-03-25T11:53:28.410999" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B6ABE0&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:53:28.411997" level="INFO">Locator 'Agências' produced matcher: MatchObject(locators=[('Name', 'Agências', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:29.567744" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.MenuItemControl object at 0x0000021157B6AC40&gt;, locator='Agências', name='Agências', automation_id='', control_type='MenuItemControl', class_name='', left=3, right=249, top=89, bottom=111, width=246, height=22, xcenter=126, ycenter=100)</msg>
+<arg>Agências</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:28.407010" elapsed="1.746168"/>
+</kw>
+<kw name="Press Keys" owner="RPA.Desktop">
+<msg time="2025-03-25T11:53:30.157169" level="INFO">Pressing keys: 'g'</msg>
+<arg>G</arg>
+<doc>Press multiple keys down simultaneously.</doc>
+<status status="PASS" start="2025-03-25T11:53:30.156172" elapsed="0.001993"/>
+</kw>
+<kw name="Get Text" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:30.170133" level="INFO">Getting element with locator: Cadastro de Grupos de Agências (1)</msg>
+<msg time="2025-03-25T11:53:30.203048" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B6A610&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:53:30.203048" level="INFO">Locator 'Cadastro de Grupos de Agências (1)' produced matcher: MatchObject(locators=[('Name', 'Cadastro de Grupos de Agências (1)', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:31.334537" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.WindowControl object at 0x0000021157B6A850&gt;, locator='Cadastro de Grupos de Agências (1)', name='Cadastro de Grupos de Agências (1)', automation_id='65280', control_type='WindowControl', class_name='TfrmBcaCadGruposAgencias', left=-8, right=1374, top=55, bottom=716, width=1382, height=661, xcenter=683, ycenter=385)</msg>
+<arg>Cadastro de Grupos de Agências (1)</arg>
+<tag>action</tag>
+<doc>Get text from Control element defined by the locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:30.169136" elapsed="1.166396"/>
+</kw>
+<kw name="Screenshot" owner="BaseDesktop">
+<kw name="Screenshot" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:31.337529" level="INFO">Getting element with locator: Cadastro de Grupos de Agências (1)</msg>
+<msg time="2025-03-25T11:53:31.340520" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B5FE20&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:53:31.340520" level="INFO">Locator 'Cadastro de Grupos de Agências (1)' produced matcher: MatchObject(locators=[('Name', 'Cadastro de Grupos de Agências (1)', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:32.246268" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.WindowControl object at 0x0000021157B5FA00&gt;, locator='Cadastro de Grupos de Agências (1)', name='Cadastro de Grupos de Agências (1)', automation_id='65280', control_type='WindowControl', class_name='TfrmBcaCadGruposAgencias', left=-8, right=1374, top=55, bottom=716, width=1382, height=661, xcenter=683, ycenter=385)</msg>
+<arg>${janela}</arg>
+<arg>${Caminho}.png</arg>
+<tag>action</tag>
+<doc>Take a screenshot of the element defined by the locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:31.336532" elapsed="1.011466"/>
+</kw>
+<arg>Cadastro de Grupos de Agências (1)</arg>
+<arg>${Caminho_Screenshots}Grupo de Agências</arg>
+<status status="PASS" start="2025-03-25T11:53:31.336532" elapsed="1.011466"/>
+</kw>
+<kw name="Fechar janela">
+<kw name="Set Anchor" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:32.353981" level="INFO">Getting element with locator: Aplicativo</msg>
+<msg time="2025-03-25T11:53:32.366946" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B3B5E0&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:53:32.366946" level="INFO">Locator 'Aplicativo' produced matcher: MatchObject(locators=[('Name', 'Aplicativo', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:33.907564" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.MenuBarControl object at 0x0000021157B3BBB0&gt;, locator='Aplicativo', name='Aplicativo', automation_id='MenuBar', control_type='MenuBarControl', class_name='', left=0, right=1366, top=23, bottom=42, width=1366, height=19, xcenter=683, ycenter=32)</msg>
+<arg>Aplicativo</arg>
+<doc>Set anchor to an element specified by the locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:32.352983" elapsed="1.555580"/>
+</kw>
+<kw name="Click" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:33.909561" level="INFO">Getting element with locator: Fechar</msg>
+<msg time="2025-03-25T11:53:33.912551" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.MenuBarControl object at 0x0000021157B3BBB0&gt;, locator='Aplicativo', name='Aplicativo', automation_id='MenuBar', control_type='MenuBarControl', class_name='', left=0, right=1366, top=23, bottom=42, width=1366, height=19, xcenter=683, ycenter=32)</msg>
+<msg time="2025-03-25T11:53:33.912551" level="INFO">Locator 'Fechar' produced matcher: MatchObject(locators=[('Name', 'Fechar', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:34.634279" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.ButtonControl object at 0x0000021157B3B640&gt;, locator='Fechar', name='Fechar', automation_id='', control_type='ButtonControl', class_name='', left=1347, right=1366, top=23, bottom=42, width=19, height=19, xcenter=1356, ycenter=32)</msg>
+<arg>Fechar</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:33.908563" elapsed="1.320906"/>
+</kw>
+<kw name="Clear Anchor" owner="RPA.Windows">
+<doc>Clears control anchor set by ``Set Anchor``</doc>
+<status status="PASS" start="2025-03-25T11:53:35.230467" elapsed="0.000998"/>
+</kw>
+<status status="PASS" start="2025-03-25T11:53:32.351986" elapsed="2.879479"/>
+</kw>
+<kw name="Run Keyword If Test Failed" owner="BuiltIn" type="TEARDOWN">
+<arg>Take Screenshot</arg>
+<arg>${Caminho_Screenshots_erros}Grupo de Agências</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" start="2025-03-25T11:53:35.233459" elapsed="0.000999"/>
+</kw>
+<status status="PASS" start="2025-03-25T11:53:27.191233" elapsed="8.043225"/>
+</test>
+<test id="s1-t5" name="Locais Estacionamento" line="58">
+<kw name="Cadastros">
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2025-03-25T11:53:36.497628" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1742914415636.png'/&gt;
+[log] CLICK on L[34,32]@S(0) (586 msec)</msg>
+<arg>Cadastros.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2025-03-25T11:53:35.239444" elapsed="1.259181"/>
+</kw>
+<status status="PASS" start="2025-03-25T11:53:35.238446" elapsed="1.260179"/>
+</kw>
+<kw name="Click" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:36.500621" level="INFO">Getting element with locator: Locais Estacionamento</msg>
+<msg time="2025-03-25T11:53:36.504609" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B7C940&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:53:36.504609" level="INFO">Locator 'Locais Estacionamento' produced matcher: MatchObject(locators=[('Name', 'Locais Estacionamento', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:37.715170" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.MenuItemControl object at 0x0000021157B7CCD0&gt;, locator='Locais Estacionamento', name='Locais Estacionamento', automation_id='40', control_type='MenuItemControl', class_name='', left=3, right=249, top=111, bottom=133, width=246, height=22, xcenter=126, ycenter=122)</msg>
+<arg>Locais Estacionamento</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:36.499622" elapsed="1.803489"/>
+</kw>
+<kw name="Get Text" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:38.381902" level="INFO">Getting element with locator: Cadastro Locais de Estacionamento (1)</msg>
+<msg time="2025-03-25T11:53:38.384894" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B7CD00&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:53:38.385891" level="INFO">Locator 'Cadastro Locais de Estacionamento (1)' produced matcher: MatchObject(locators=[('Name', 'Cadastro Locais de Estacionamento (1)', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:39.943064" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.WindowControl object at 0x0000021157B7CE80&gt;, locator='Cadastro Locais de Estacionamento (1)', name='Cadastro Locais de Estacionamento (1)', automation_id='65280', control_type='WindowControl', class_name='TfrmCadEstacionamento', left=-8, right=1374, top=55, bottom=716, width=1382, height=661, xcenter=683, ycenter=385)</msg>
+<arg>Cadastro Locais de Estacionamento (1)</arg>
+<tag>action</tag>
+<doc>Get text from Control element defined by the locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:38.379909" elapsed="1.565149"/>
+</kw>
+<kw name="Screenshot" owner="BaseDesktop">
+<kw name="Screenshot" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:39.948051" level="INFO">Getting element with locator: Cadastro Locais de Estacionamento (1)</msg>
+<msg time="2025-03-25T11:53:39.951043" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B85610&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:53:39.951043" level="INFO">Locator 'Cadastro Locais de Estacionamento (1)' produced matcher: MatchObject(locators=[('Name', 'Cadastro Locais de Estacionamento (1)', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:40.857313" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.WindowControl object at 0x0000021157B85700&gt;, locator='Cadastro Locais de Estacionamento (1)', name='Cadastro Locais de Estacionamento (1)', automation_id='65280', control_type='WindowControl', class_name='TfrmCadEstacionamento', left=-8, right=1374, top=55, bottom=716, width=1382, height=661, xcenter=683, ycenter=385)</msg>
+<arg>${janela}</arg>
+<arg>${Caminho}.png</arg>
+<tag>action</tag>
+<doc>Take a screenshot of the element defined by the locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:39.947055" elapsed="1.641301"/>
+</kw>
+<arg>Cadastro Locais de Estacionamento (1)</arg>
+<arg>${Caminho_Screenshots}Locais Estacionamento</arg>
+<status status="PASS" start="2025-03-25T11:53:39.946057" elapsed="1.642299"/>
+</kw>
+<kw name="Fechar janela">
+<kw name="Set Anchor" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:41.592346" level="INFO">Getting element with locator: Aplicativo</msg>
+<msg time="2025-03-25T11:53:41.595339" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B85CD0&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:53:41.596335" level="INFO">Locator 'Aplicativo' produced matcher: MatchObject(locators=[('Name', 'Aplicativo', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:42.914839" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.MenuBarControl object at 0x0000021157B85F10&gt;, locator='Aplicativo', name='Aplicativo', automation_id='MenuBar', control_type='MenuBarControl', class_name='', left=0, right=1366, top=23, bottom=42, width=1366, height=19, xcenter=683, ycenter=32)</msg>
+<arg>Aplicativo</arg>
+<doc>Set anchor to an element specified by the locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:41.591349" elapsed="1.324489"/>
+</kw>
+<kw name="Click" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:42.916836" level="INFO">Getting element with locator: Fechar</msg>
+<msg time="2025-03-25T11:53:42.918829" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.MenuBarControl object at 0x0000021157B85F10&gt;, locator='Aplicativo', name='Aplicativo', automation_id='MenuBar', control_type='MenuBarControl', class_name='', left=0, right=1366, top=23, bottom=42, width=1366, height=19, xcenter=683, ycenter=32)</msg>
+<msg time="2025-03-25T11:53:42.918829" level="INFO">Locator 'Fechar' produced matcher: MatchObject(locators=[('Name', 'Fechar', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:43.655233" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.ButtonControl object at 0x0000021157B820D0&gt;, locator='Fechar', name='Fechar', automation_id='', control_type='ButtonControl', class_name='', left=1347, right=1366, top=23, bottom=42, width=19, height=19, xcenter=1356, ycenter=32)</msg>
+<arg>Fechar</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:42.915838" elapsed="1.317040"/>
+</kw>
+<kw name="Clear Anchor" owner="RPA.Windows">
+<doc>Clears control anchor set by ``Set Anchor``</doc>
+<status status="PASS" start="2025-03-25T11:53:44.233876" elapsed="0.001000"/>
+</kw>
+<status status="PASS" start="2025-03-25T11:53:41.590351" elapsed="2.645522"/>
+</kw>
+<kw name="Run Keyword If Test Failed" owner="BuiltIn" type="TEARDOWN">
+<arg>Take Screenshot</arg>
+<arg>${Caminho_Screenshots_erros}Locais Estacionamento</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" start="2025-03-25T11:53:44.237868" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-03-25T11:53:35.237449" elapsed="9.001416"/>
+</test>
+<test id="s1-t6" name="Grupos de Bilhetes Totem" line="66">
+<kw name="Cadastros">
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2025-03-25T11:53:45.467355" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1742914424603.png'/&gt;
+[log] CLICK on L[34,32]@S(0) (618 msec)</msg>
+<arg>Cadastros.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2025-03-25T11:53:44.248837" elapsed="1.219514"/>
+</kw>
+<status status="PASS" start="2025-03-25T11:53:44.246843" elapsed="1.221508"/>
+</kw>
+<kw name="Click" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:45.474336" level="INFO">Getting element with locator: Grupo Bilhetes Totem</msg>
+<msg time="2025-03-25T11:53:45.482315" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B854C0&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:53:45.482315" level="INFO">Locator 'Grupo Bilhetes Totem' produced matcher: MatchObject(locators=[('Name', 'Grupo Bilhetes Totem', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:46.668141" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.MenuItemControl object at 0x0000021157B850D0&gt;, locator='Grupo Bilhetes Totem', name='Grupo Bilhetes Totem', automation_id='42', control_type='MenuItemControl', class_name='', left=3, right=249, top=140, bottom=162, width=246, height=22, xcenter=126, ycenter=151)</msg>
+<arg>Grupo Bilhetes Totem</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:45.473337" elapsed="1.779312"/>
+</kw>
+<kw name="Get Text" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:47.255643" level="INFO">Getting element with locator: Cadastro de Grupos de Bilhetes Totem (1)</msg>
+<msg time="2025-03-25T11:53:47.258633" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B7C910&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:53:47.258633" level="INFO">Locator 'Cadastro de Grupos de Bilhetes Totem (1)' produced matcher: MatchObject(locators=[('Name', 'Cadastro de Grupos de Bilhetes Totem (1)', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:48.490064" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.WindowControl object at 0x0000021157B7CF70&gt;, locator='Cadastro de Grupos de Bilhetes Totem (1)', name='Cadastro de Grupos de Bilhetes Totem (1)', automation_id='65280', control_type='WindowControl', class_name='TfrmBcaCadGruposBilhetesTotem', left=-8, right=1374, top=55, bottom=716, width=1382, height=661, xcenter=683, ycenter=385)</msg>
+<arg>Cadastro de Grupos de Bilhetes Totem (1)</arg>
+<tag>action</tag>
+<doc>Get text from Control element defined by the locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:47.254644" elapsed="1.237416"/>
+</kw>
+<kw name="Screenshot" owner="BaseDesktop">
+<kw name="Screenshot" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:48.495051" level="INFO">Getting element with locator: Cadastro de Grupos de Bilhetes Totem (1)</msg>
+<msg time="2025-03-25T11:53:48.498043" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B7C370&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:53:48.498043" level="INFO">Locator 'Cadastro de Grupos de Bilhetes Totem (1)' produced matcher: MatchObject(locators=[('Name', 'Cadastro de Grupos de Bilhetes Totem (1)', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:49.375215" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.WindowControl object at 0x0000021157B7C460&gt;, locator='Cadastro de Grupos de Bilhetes Totem (1)', name='Cadastro de Grupos de Bilhetes Totem (1)', automation_id='65280', control_type='WindowControl', class_name='TfrmBcaCadGruposBilhetesTotem', left=-8, right=1374, top=55, bottom=716, width=1382, height=661, xcenter=683, ycenter=385)</msg>
+<arg>${janela}</arg>
+<arg>${Caminho}.png</arg>
+<tag>action</tag>
+<doc>Take a screenshot of the element defined by the locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:48.494055" elapsed="0.972913"/>
+</kw>
+<arg>Cadastro de Grupos de Bilhetes Totem (1)</arg>
+<arg>${Caminho_Screenshots}Grupos de Bilhetes Totem</arg>
+<status status="PASS" start="2025-03-25T11:53:48.492060" elapsed="0.975906"/>
+</kw>
+<kw name="Fechar janela">
+<kw name="Set Anchor" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:49.477939" level="INFO">Getting element with locator: Aplicativo</msg>
+<msg time="2025-03-25T11:53:49.485920" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B3BC10&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:53:49.485920" level="INFO">Locator 'Aplicativo' produced matcher: MatchObject(locators=[('Name', 'Aplicativo', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:51.085986" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.MenuBarControl object at 0x0000021157B5FC10&gt;, locator='Aplicativo', name='Aplicativo', automation_id='MenuBar', control_type='MenuBarControl', class_name='', left=0, right=1366, top=23, bottom=42, width=1366, height=19, xcenter=683, ycenter=32)</msg>
+<arg>Aplicativo</arg>
+<doc>Set anchor to an element specified by the locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:49.476943" elapsed="1.609043"/>
+</kw>
+<kw name="Click" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:51.086986" level="INFO">Getting element with locator: Fechar</msg>
+<msg time="2025-03-25T11:53:51.089976" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.MenuBarControl object at 0x0000021157B5FC10&gt;, locator='Aplicativo', name='Aplicativo', automation_id='MenuBar', control_type='MenuBarControl', class_name='', left=0, right=1366, top=23, bottom=42, width=1366, height=19, xcenter=683, ycenter=32)</msg>
+<msg time="2025-03-25T11:53:51.089976" level="INFO">Locator 'Fechar' produced matcher: MatchObject(locators=[('Name', 'Fechar', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:51.820024" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.ButtonControl object at 0x0000021157B5FBB0&gt;, locator='Fechar', name='Fechar', automation_id='', control_type='ButtonControl', class_name='', left=1347, right=1366, top=23, bottom=42, width=19, height=19, xcenter=1356, ycenter=32)</msg>
+<arg>Fechar</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:51.086986" elapsed="1.316486"/>
+</kw>
+<kw name="Clear Anchor" owner="RPA.Windows">
+<doc>Clears control anchor set by ``Set Anchor``</doc>
+<status status="PASS" start="2025-03-25T11:53:52.405468" elapsed="0.000997"/>
+</kw>
+<status status="PASS" start="2025-03-25T11:53:49.475945" elapsed="2.930520"/>
+</kw>
+<kw name="Run Keyword If Test Failed" owner="BuiltIn" type="TEARDOWN">
+<arg>Take Screenshot</arg>
+<arg>${Caminho_Screenshots_erros}Grupos de Bilhetes Totem</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" start="2025-03-25T11:53:52.407463" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-03-25T11:53:44.241856" elapsed="8.166605"/>
+</test>
+<test id="s1-t7" name="Grupos de Isenção" line="74">
+<kw name="Cadastros">
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2025-03-25T11:53:53.706124" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1742914432837.png'/&gt;
+[log] CLICK on L[34,32]@S(0) (598 msec)</msg>
+<arg>Cadastros.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2025-03-25T11:53:52.413446" elapsed="1.292678"/>
+</kw>
+<status status="PASS" start="2025-03-25T11:53:52.412449" elapsed="1.294672"/>
+</kw>
+<kw name="Click" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:53.710112" level="INFO">Getting element with locator: Grupos de Isenção</msg>
+<msg time="2025-03-25T11:53:53.718091" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B6A0D0&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:53:53.719088" level="INFO">Locator 'Grupos de Isenção' produced matcher: MatchObject(locators=[('Name', 'Grupos de Isenção', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:54.920873" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.MenuItemControl object at 0x0000021157B6AE20&gt;, locator='Grupos de Isenção', name='Grupos de Isenção', automation_id='43', control_type='MenuItemControl', class_name='', left=3, right=249, top=162, bottom=184, width=246, height=22, xcenter=126, ycenter=173)</msg>
+<arg>Grupos de Isenção</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:53.709114" elapsed="1.819707"/>
+</kw>
+<kw name="Get Text" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:55.550763" level="INFO">Getting element with locator: Cadastro de Grupos de Isenção (1)</msg>
+<msg time="2025-03-25T11:53:55.566720" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B6A4C0&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:53:55.567717" level="INFO">Locator 'Cadastro de Grupos de Isenção (1)' produced matcher: MatchObject(locators=[('Name', 'Cadastro de Grupos de Isenção (1)', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:56.743593" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.WindowControl object at 0x0000021157B6AD90&gt;, locator='Cadastro de Grupos de Isenção (1)', name='Cadastro de Grupos de Isenção (1)', automation_id='65280', control_type='WindowControl', class_name='TFrmBcaGruposIsencao', left=-8, right=1374, top=55, bottom=716, width=1382, height=661, xcenter=683, ycenter=385)</msg>
+<arg>Cadastro de Grupos de Isenção (1)</arg>
+<tag>action</tag>
+<doc>Get text from Control element defined by the locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:55.549766" elapsed="1.194824"/>
+</kw>
+<kw name="Screenshot" owner="BaseDesktop">
+<kw name="Screenshot" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:56.747582" level="INFO">Getting element with locator: Cadastro de Grupos de Isenção (1)</msg>
+<msg time="2025-03-25T11:53:56.750576" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B72250&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:53:56.751573" level="INFO">Locator 'Cadastro de Grupos de Isenção (1)' produced matcher: MatchObject(locators=[('Name', 'Cadastro de Grupos de Isenção (1)', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:57.608304" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.WindowControl object at 0x0000021157B727C0&gt;, locator='Cadastro de Grupos de Isenção (1)', name='Cadastro de Grupos de Isenção (1)', automation_id='65280', control_type='WindowControl', class_name='TFrmBcaGruposIsencao', left=-8, right=1374, top=55, bottom=716, width=1382, height=661, xcenter=683, ycenter=385)</msg>
+<arg>${janela}</arg>
+<arg>${Caminho}.png</arg>
+<tag>action</tag>
+<doc>Take a screenshot of the element defined by the locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:56.746586" elapsed="0.956465"/>
+</kw>
+<arg>Cadastro de Grupos de Isenção (1)</arg>
+<arg>${Caminho_Screenshots}Grupos de Isenção</arg>
+<status status="PASS" start="2025-03-25T11:53:56.745589" elapsed="0.957462"/>
+</kw>
+<kw name="Fechar janela">
+<kw name="Set Anchor" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:57.725990" level="INFO">Getting element with locator: Aplicativo</msg>
+<msg time="2025-03-25T11:53:57.730977" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B769D0&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:53:57.731975" level="INFO">Locator 'Aplicativo' produced matcher: MatchObject(locators=[('Name', 'Aplicativo', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:53:59.344110" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.MenuBarControl object at 0x0000021157B76310&gt;, locator='Aplicativo', name='Aplicativo', automation_id='MenuBar', control_type='MenuBarControl', class_name='', left=0, right=1366, top=23, bottom=42, width=1366, height=19, xcenter=683, ycenter=32)</msg>
+<arg>Aplicativo</arg>
+<doc>Set anchor to an element specified by the locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:57.724993" elapsed="1.619117"/>
+</kw>
+<kw name="Click" owner="RPA.Windows">
+<msg time="2025-03-25T11:53:59.345106" level="INFO">Getting element with locator: Fechar</msg>
+<msg time="2025-03-25T11:53:59.348098" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.MenuBarControl object at 0x0000021157B76310&gt;, locator='Aplicativo', name='Aplicativo', automation_id='MenuBar', control_type='MenuBarControl', class_name='', left=0, right=1366, top=23, bottom=42, width=1366, height=19, xcenter=683, ycenter=32)</msg>
+<msg time="2025-03-25T11:53:59.348098" level="INFO">Locator 'Fechar' produced matcher: MatchObject(locators=[('Name', 'Fechar', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:54:00.189888" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.ButtonControl object at 0x0000021157B76DC0&gt;, locator='Fechar', name='Fechar', automation_id='', control_type='ButtonControl', class_name='', left=1347, right=1366, top=23, bottom=42, width=19, height=19, xcenter=1356, ycenter=32)</msg>
+<arg>Fechar</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<status status="PASS" start="2025-03-25T11:53:59.344110" elapsed="1.444388"/>
+</kw>
+<kw name="Clear Anchor" owner="RPA.Windows">
+<doc>Clears control anchor set by ``Set Anchor``</doc>
+<status status="PASS" start="2025-03-25T11:54:00.808444" elapsed="0.025931"/>
+</kw>
+<status status="PASS" start="2025-03-25T11:53:57.723996" elapsed="3.110379"/>
+</kw>
+<kw name="Run Keyword If Test Failed" owner="BuiltIn" type="TEARDOWN">
+<arg>Take Screenshot</arg>
+<arg>${Caminho_Screenshots_erros}Grupos de Isenção</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" start="2025-03-25T11:54:00.841358" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-03-25T11:53:52.411453" elapsed="8.459823"/>
+</test>
+<test id="s1-t8" name="Tipos de Autorização" line="82">
+<kw name="Cadastros">
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2025-03-25T11:54:02.357099" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1742914441344.png'/&gt;
+[log] CLICK on L[34,32]@S(0) (729 msec)</msg>
+<arg>Cadastros.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2025-03-25T11:54:00.968260" elapsed="1.388839"/>
+</kw>
+<status status="PASS" start="2025-03-25T11:54:00.967263" elapsed="1.390834"/>
+</kw>
+<kw name="Click" owner="RPA.Windows">
+<msg time="2025-03-25T11:54:02.369101" level="INFO">Getting element with locator: Tipos de Autorização</msg>
+<msg time="2025-03-25T11:54:02.430050" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B829A0&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:54:02.430050" level="INFO">Locator 'Tipos de Autorização' produced matcher: MatchObject(locators=[('Name', 'Tipos de Autorização', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:54:03.709924" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.MenuItemControl object at 0x0000021157B82D30&gt;, locator='Tipos de Autorização', name='Tipos de Autorização', automation_id='44', control_type='MenuItemControl', class_name='', left=3, right=249, top=184, bottom=206, width=246, height=22, xcenter=126, ycenter=195)</msg>
+<arg>Tipos de Autorização</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<status status="PASS" start="2025-03-25T11:54:02.368104" elapsed="1.918829"/>
+</kw>
+<kw name="Get Text" owner="RPA.Windows">
+<msg time="2025-03-25T11:54:04.294912" level="INFO">Getting element with locator: Cadastro de Tipos de Autorização (1)</msg>
+<msg time="2025-03-25T11:54:04.298901" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B82D60&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:54:04.299899" level="INFO">Locator 'Cadastro de Tipos de Autorização (1)' produced matcher: MatchObject(locators=[('Name', 'Cadastro de Tipos de Autorização (1)', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:54:05.731939" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.WindowControl object at 0x0000021157B761F0&gt;, locator='Cadastro de Tipos de Autorização (1)', name='Cadastro de Tipos de Autorização (1)', automation_id='65280', control_type='WindowControl', class_name='TFrmBcaCadTiposAutorizacao', left=-8, right=1374, top=55, bottom=716, width=1382, height=661, xcenter=683, ycenter=385)</msg>
+<arg>Cadastro de Tipos de Autorização (1)</arg>
+<tag>action</tag>
+<doc>Get text from Control element defined by the locator.</doc>
+<status status="PASS" start="2025-03-25T11:54:04.293915" elapsed="1.439085"/>
+</kw>
+<kw name="Screenshot" owner="BaseDesktop">
+<kw name="Screenshot" owner="RPA.Windows">
+<msg time="2025-03-25T11:54:05.740959" level="INFO">Getting element with locator: Cadastro de Tipos de Autorização (1)</msg>
+<msg time="2025-03-25T11:54:05.747938" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B6ADC0&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:54:05.747938" level="INFO">Locator 'Cadastro de Tipos de Autorização (1)' produced matcher: MatchObject(locators=[('Name', 'Cadastro de Tipos de Autorização (1)', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:54:06.673957" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.WindowControl object at 0x0000021157B6AEB0&gt;, locator='Cadastro de Tipos de Autorização (1)', name='Cadastro de Tipos de Autorização (1)', automation_id='65280', control_type='WindowControl', class_name='TFrmBcaCadTiposAutorizacao', left=-8, right=1374, top=55, bottom=716, width=1382, height=661, xcenter=683, ycenter=385)</msg>
+<arg>${janela}</arg>
+<arg>${Caminho}.png</arg>
+<tag>action</tag>
+<doc>Take a screenshot of the element defined by the locator.</doc>
+<status status="PASS" start="2025-03-25T11:54:05.739961" elapsed="1.030983"/>
+</kw>
+<arg>Cadastro de Tipos de Autorização (1)</arg>
+<arg>${Caminho_Screenshots}Tipos de Autorização</arg>
+<status status="PASS" start="2025-03-25T11:54:05.737964" elapsed="1.032980"/>
+</kw>
+<kw name="Fechar janela">
+<kw name="Set Anchor" owner="RPA.Windows">
+<msg time="2025-03-25T11:54:06.786937" level="INFO">Getting element with locator: Aplicativo</msg>
+<msg time="2025-03-25T11:54:06.795949" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B6A910&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:54:06.796946" level="INFO">Locator 'Aplicativo' produced matcher: MatchObject(locators=[('Name', 'Aplicativo', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:54:08.574938" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.MenuBarControl object at 0x0000021157B6A850&gt;, locator='Aplicativo', name='Aplicativo', automation_id='MenuBar', control_type='MenuBarControl', class_name='', left=0, right=1366, top=23, bottom=42, width=1366, height=19, xcenter=683, ycenter=32)</msg>
+<arg>Aplicativo</arg>
+<doc>Set anchor to an element specified by the locator.</doc>
+<status status="PASS" start="2025-03-25T11:54:06.785941" elapsed="1.788997"/>
+</kw>
+<kw name="Click" owner="RPA.Windows">
+<msg time="2025-03-25T11:54:08.576935" level="INFO">Getting element with locator: Fechar</msg>
+<msg time="2025-03-25T11:54:08.579926" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.MenuBarControl object at 0x0000021157B6A850&gt;, locator='Aplicativo', name='Aplicativo', automation_id='MenuBar', control_type='MenuBarControl', class_name='', left=0, right=1366, top=23, bottom=42, width=1366, height=19, xcenter=683, ycenter=32)</msg>
+<msg time="2025-03-25T11:54:08.579926" level="INFO">Locator 'Fechar' produced matcher: MatchObject(locators=[('Name', 'Fechar', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:54:09.407956" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.ButtonControl object at 0x0000021157B6A670&gt;, locator='Fechar', name='Fechar', automation_id='', control_type='ButtonControl', class_name='', left=1347, right=1366, top=23, bottom=42, width=19, height=19, xcenter=1356, ycenter=32)</msg>
+<arg>Fechar</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<status status="PASS" start="2025-03-25T11:54:08.575939" elapsed="1.428001"/>
+</kw>
+<kw name="Clear Anchor" owner="RPA.Windows">
+<doc>Clears control anchor set by ``Set Anchor``</doc>
+<status status="PASS" start="2025-03-25T11:54:10.004938" elapsed="0.001995"/>
+</kw>
+<status status="PASS" start="2025-03-25T11:54:06.784942" elapsed="3.221991"/>
+</kw>
+<kw name="Run Keyword If Test Failed" owner="BuiltIn" type="TEARDOWN">
+<arg>Take Screenshot</arg>
+<arg>${Caminho_Screenshots_erros}Tipos de Autorização</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" start="2025-03-25T11:54:10.026948" elapsed="0.000998"/>
+</kw>
+<status status="PASS" start="2025-03-25T11:54:00.949240" elapsed="9.090714"/>
+</test>
+<test id="s1-t9" name="Tipos de Documentos" line="90">
+<kw name="Cadastros">
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2025-03-25T11:54:11.683000" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1742914450444.png'/&gt;
+[log] CLICK on L[34,32]@S(0) (955 msec)</msg>
+<arg>Cadastros.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2025-03-25T11:54:10.045941" elapsed="1.638040"/>
+</kw>
+<status status="PASS" start="2025-03-25T11:54:10.044942" elapsed="1.639039"/>
+</kw>
+<kw name="Click" owner="RPA.Windows">
+<msg time="2025-03-25T11:54:11.724034" level="INFO">Getting element with locator: Tipos de Documentos</msg>
+<msg time="2025-03-25T11:54:11.765966" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B12580&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:54:11.766962" level="INFO">Locator 'Tipos de Documentos' produced matcher: MatchObject(locators=[('Name', 'Tipos de Documentos', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:54:13.025950" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.MenuItemControl object at 0x0000021157B7CC10&gt;, locator='Tipos de Documentos', name='Tipos de Documentos', automation_id='45', control_type='MenuItemControl', class_name='', left=3, right=249, top=206, bottom=228, width=246, height=22, xcenter=126, ycenter=217)</msg>
+<arg>Tipos de Documentos</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<status status="PASS" start="2025-03-25T11:54:11.722523" elapsed="1.891415"/>
+</kw>
+<kw name="Get Text" owner="RPA.Windows">
+<msg time="2025-03-25T11:54:13.619923" level="INFO">Getting element with locator: Cadastro de Tipos de Documentos (1)</msg>
+<msg time="2025-03-25T11:54:13.624948" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B7C580&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:54:13.625946" level="INFO">Locator 'Cadastro de Tipos de Documentos (1)' produced matcher: MatchObject(locators=[('Name', 'Cadastro de Tipos de Documentos (1)', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:54:14.874944" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.WindowControl object at 0x0000021157B7CA30&gt;, locator='Cadastro de Tipos de Documentos (1)', name='Cadastro de Tipos de Documentos (1)', automation_id='65280', control_type='WindowControl', class_name='TFrmBcaCadTiposDoc', left=-8, right=604, top=55, bottom=216, width=612, height=161, xcenter=298, ycenter=135)</msg>
+<arg>Cadastro de Tipos de Documentos (1)</arg>
+<tag>action</tag>
+<doc>Get text from Control element defined by the locator.</doc>
+<status status="PASS" start="2025-03-25T11:54:13.618925" elapsed="1.257017"/>
+</kw>
+<kw name="Screenshot" owner="BaseDesktop">
+<kw name="Screenshot" owner="RPA.Windows">
+<msg time="2025-03-25T11:54:14.879932" level="INFO">Getting element with locator: Cadastro de Tipos de Documentos (1)</msg>
+<msg time="2025-03-25T11:54:14.883968" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B7CF70&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:54:14.883968" level="INFO">Locator 'Cadastro de Tipos de Documentos (1)' produced matcher: MatchObject(locators=[('Name', 'Cadastro de Tipos de Documentos (1)', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:54:15.839583" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.WindowControl object at 0x0000021157B85DF0&gt;, locator='Cadastro de Tipos de Documentos (1)', name='Cadastro de Tipos de Documentos (1)', automation_id='65280', control_type='WindowControl', class_name='TFrmBcaCadTiposDoc', left=-8, right=604, top=55, bottom=216, width=612, height=161, xcenter=298, ycenter=135)</msg>
+<arg>${janela}</arg>
+<arg>${Caminho}.png</arg>
+<tag>action</tag>
+<doc>Take a screenshot of the element defined by the locator.</doc>
+<status status="PASS" start="2025-03-25T11:54:14.877938" elapsed="1.017494"/>
+</kw>
+<arg>Cadastro de Tipos de Documentos (1)</arg>
+<arg>${Caminho_Screenshots}Tipos de Documentos</arg>
+<status status="PASS" start="2025-03-25T11:54:14.876939" elapsed="1.018493"/>
+</kw>
+<kw name="Fechar janela">
+<kw name="Set Anchor" owner="RPA.Windows">
+<msg time="2025-03-25T11:54:15.913383" level="INFO">Getting element with locator: Aplicativo</msg>
+<msg time="2025-03-25T11:54:15.935325" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000021157B859A0&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-03-25T11:54:15.935325" level="INFO">Locator 'Aplicativo' produced matcher: MatchObject(locators=[('Name', 'Aplicativo', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:54:17.522460" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.MenuBarControl object at 0x0000021157B85190&gt;, locator='Aplicativo', name='Aplicativo', automation_id='MenuBar', control_type='MenuBarControl', class_name='', left=0, right=1366, top=23, bottom=42, width=1366, height=19, xcenter=683, ycenter=32)</msg>
+<arg>Aplicativo</arg>
+<doc>Set anchor to an element specified by the locator.</doc>
+<status status="PASS" start="2025-03-25T11:54:15.912389" elapsed="1.610071"/>
+</kw>
+<kw name="Click" owner="RPA.Windows">
+<msg time="2025-03-25T11:54:17.523459" level="INFO">Getting element with locator: Fechar</msg>
+<msg time="2025-03-25T11:54:17.526450" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.MenuBarControl object at 0x0000021157B85190&gt;, locator='Aplicativo', name='Aplicativo', automation_id='MenuBar', control_type='MenuBarControl', class_name='', left=0, right=1366, top=23, bottom=42, width=1366, height=19, xcenter=683, ycenter=32)</msg>
+<msg time="2025-03-25T11:54:17.526450" level="INFO">Locator 'Fechar' produced matcher: MatchObject(locators=[('Name', 'Fechar', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-25T11:54:18.262180" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.ButtonControl object at 0x0000021157B829A0&gt;, locator='Fechar', name='Fechar', automation_id='', control_type='ButtonControl', class_name='', left=1347, right=1366, top=23, bottom=42, width=19, height=19, xcenter=1356, ycenter=32)</msg>
+<arg>Fechar</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<status status="PASS" start="2025-03-25T11:54:17.523459" elapsed="1.350086"/>
+</kw>
+<kw name="Clear Anchor" owner="RPA.Windows">
+<doc>Clears control anchor set by ``Set Anchor``</doc>
+<status status="PASS" start="2025-03-25T11:54:18.898478" elapsed="0.055854"/>
+</kw>
+<status status="PASS" start="2025-03-25T11:54:15.911390" elapsed="3.043936"/>
+</kw>
+<kw name="Run Keyword If Test Failed" owner="BuiltIn" type="TEARDOWN">
+<arg>Take Screenshot</arg>
+<arg>${Caminho_Screenshots_erros}Tipos de Documentos</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" start="2025-03-25T11:54:18.977270" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-03-25T11:54:10.043945" elapsed="8.991168"/>
+</test>
+<doc>Smoke Test: Cadastros</doc>
+<status status="PASS" start="2025-03-25T11:52:30.980940" elapsed="108.197895"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="9" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Abrir Executaveis" id="s1" pass="1" fail="0" skip="0">Abrir Executaveis</stat>
+<stat name="Cadastros" id="s1" pass="9" fail="0" skip="0">Cadastros</stat>
 </suite>
 </statistics>
 <errors>
