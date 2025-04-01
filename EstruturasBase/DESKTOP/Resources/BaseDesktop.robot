@@ -23,16 +23,36 @@ Carregar os elementos do app
     #dessa biblioteca no link: https://rainmanwy.github.io/robotframework-SikuliLibrary/doc/SikuliLibrary.html
     Add Image Path      ${EXECDIR}\\EstruturasBase\\DESKTOP\\Elements
 
+Cadastros
+    SikuliLibrary.Click    Cadastros.png
+
+Fechar janela
+    Set Anchor           Aplicativo
+    RPA.Windows.Click    Fechar
+    Clear Anchor
+
 Iniciar sessao front
     Carregar os elementos do app
     ${front}=   RPA.Desktop.Open Application      C:\\Limber\\Turismo-PARQUES-NATURAIS\\cde_win_bca_frontR10-25.exe
-    Sleep           5s
+    Sleep           3s
     Press keys      enter
-    Sleep           7s      Carregando a base...
+    Sleep           4s      Carregando a base...
     #Press keys      enter 
     Type text       1
     Press keys      enter
     Press keys      enter
+
+Iniciar sessao financeiro
+    Carregar os elementos do app
+    ${front}=   RPA.Desktop.Open Application      C:\\Limber\\ERP Desenvolvimento\\cde_win_fin.exe
+    Sleep           3s
+    Press keys      enter
+    Sleep           4s      Carregando a base...
+    #Press keys      enter 
+    Type text       1
+    Press keys      enter
+    Press keys      enter
+
 
 Screenshot
     [Arguments]               ${janela}    ${Caminho}
@@ -56,5 +76,6 @@ repetidor de teclas
         RPA.Desktop.Press Keys          ${tecla}
         END
     
-Print 
-    Screenshot  [Limber Bilheteria Front - Standard Version] - Versão 2.25 (Release 10 Build 2506)      ${EXECDIR}/EstruturasBase/DESKTOP/Tests/SmokeTest/Parques_Naturais/Front/Erro
+Caso aconteça erro 
+    [Arguments]     ${Caminho_Screenshots}        ${nome_print}
+    Run Keywords      Run Keyword If Test Failed        Take Screenshot     ${Caminho_Screenshots}${nome_print}.png    AND    Run Keyword If Test Failed   RPA.Desktop.Press Keys      Enter
