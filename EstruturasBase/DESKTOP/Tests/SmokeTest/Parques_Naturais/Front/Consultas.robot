@@ -72,7 +72,6 @@ Consulta Passaporte
     Sleep                   1s
     RPA.Windows.Click       Fechar
 
-
 Consultas Personalizadas
     [Teardown]              Caso aconteça erro              ${Caminho_Screenshots}                            ERRO Consultas Personalizadas
     Manutenções

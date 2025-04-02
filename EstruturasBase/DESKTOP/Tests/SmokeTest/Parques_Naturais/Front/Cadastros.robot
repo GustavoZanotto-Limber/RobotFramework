@@ -2,7 +2,7 @@
 Documentation    Smoke Test: Cadastros
 Resource         ${EXECDIR}/EstruturasBase/DESKTOP/Resources/BaseDesktop.robot
 Suite Setup      Iniciar sessao front
-
+Library  SikuliLibrary  RUN_ON_FAILURE=Nothing
 
 *** Variables ***
 
@@ -30,12 +30,12 @@ Isentos
     Fechar janela
 
 Agências -> Agências
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}/Agências    ERRO Agências
+    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Agências/    ERRO Agências
     Cadastros
     RPA.Windows.Click         Agências
     RPA.Desktop.Press Keys    A
     RPA.Windows.Get Text      Cadastro de Terceiros (1)
-    Screenshot                Cadastro de Terceiros (1)    ${Caminho_Screenshots}Agências
+    Screenshot                Cadastro de Terceiros (1)    ${Caminho_Screenshots}Agências/Agências
     Fechar janela
 
 Agências -> Grupo de Agências
@@ -156,7 +156,7 @@ Parâmetros -> Estabelecimentos
     Fechar janela
 
 Parâmetros -> Usuários
-    [Teardown]                Caso aconteça erro          ${Caminho_Screenshots}                       ERRO UsuáriosParâmetros/
+    [Teardown]                Caso aconteça erro          ${Caminho_Screenshots}Parâmetros/                       ERRO Usuários
     Cadastros
     RPA.Windows.Click         Parâmetros
     RPA.Desktop.Press Keys    u

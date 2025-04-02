@@ -31,7 +31,7 @@ Fechar caixa caso esteja aberto
 
 Abertura / Fechamento
 
-    [Teardown]                          Caso aconteça erro       ${Caminho_Screenshots}                         ERRO Abertura_Fechamento
+    [Teardown]                          Caso aconteça erro       ${Caminho_Screenshots}                       ERRO Abertura_Fechamento
     Caixa Operador
     RPA.Windows.Click                   Abertura / Fechamento
     Fechar caixa caso esteja aberto 

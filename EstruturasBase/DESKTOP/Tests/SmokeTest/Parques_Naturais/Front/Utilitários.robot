@@ -16,7 +16,6 @@ Utilitários
 *** Test Cases    ***
 
 Favoritos
-
     [Teardown]              Caso aconteça erro                ${Caminho_Screenshots}             ERRO Utilitários
     Utilitários
     RPA.Windows.Click       Favoritos
@@ -49,21 +48,21 @@ Controle de Acessos
     Fechar janela
 
 Relatórios Personalizados > Cadastro de Categorias
-    [Teardown]              Caso aconteça erro                         ${Caminho_Screenshots}                            ERRO Cadastro de Categorias
+    [Teardown]              Caso aconteça erro                         ${Caminho_Screenshots}Relatórios Personalizados/                            ERRO Cadastro de Categorias
     Utilitários
     RPA.Windows.Click       Relatórios Personalizados
     RPA.Desktop.Press Keys  c
     RPA.Windows.Get Text    Cadastro de Categoria (1)
-    Screenshot              Cadastro de Categoria (1)    ${Caminho_Screenshots}Cadastro de Categorias
+    Screenshot              Cadastro de Categoria (1)    ${Caminho_Screenshots}Relatórios Personalizados/Cadastro de Categorias
     Fechar janela
     
 Relatórios Personalizados > Cadastro de Relatórios
-    [Teardown]              Caso aconteça erro                         ${Caminho_Screenshots}                            ERRO Cadastro de Relatórios
+    [Teardown]              Caso aconteça erro                         ${Caminho_Screenshots}Relatórios Personalizados/                              ERRO Cadastro de Relatórios
     Utilitários
     RPA.Windows.Click       Relatórios Personalizados
     RPA.Desktop.Press Keys  a
     RPA.Windows.Get Text    Cadastro de Relatórios Personalizados (1)
-    Screenshot              Cadastro de Relatórios Personalizados (1)    ${Caminho_Screenshots}Cadastro de Relatórios
+    Screenshot              Cadastro de Relatórios Personalizados (1)    ${Caminho_Screenshots}Relatórios Personalizados/Cadastro de Relatórios
     Fechar janela
 
 
