@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation    Smoke Test: Contas a Pagar
-Resource         ${EXECDIR}/EstruturasBase/DESKTOP/Resources/BaseDesktop.robot
+Resource         C:/Users/Gustavo Zanotto/AppData/Local/Programs/Python/Python39/Scripts/RobotFramework/EstruturasBase/DESKTOP/Resources/BaseDesktop.robot
 Suite Setup      Iniciar sessao financeiro
 
 
@@ -24,7 +24,7 @@ Lançamentos > Lançamento - Simplificado
     RPA.Windows.Click         Lançamentos
     RPA.Desktop.Press Keys    l
     RPA.Windows.Get Text      Provisões do Contas a Pagar (1)
-    Screenshot                Provisões do Contas a Pagar (1)    ${Caminho_Screenshots}Lançamentos/Lançamento - Simplificado
+    BaseDesktop.Screenshot                  Provisões do Contas a Pagar (1)    ${Caminho_Screenshots}Lançamentos/Lançamento - Simplificado
     Fechar janela
 
 Lançamentos > Lançamento - Múltiplas Parcelas
@@ -33,7 +33,7 @@ Lançamentos > Lançamento - Múltiplas Parcelas
     RPA.Windows.Click         Lançamentos
     RPA.Desktop.Press Keys    a
     RPA.Windows.Get Text      Lançamento do Contas a Pagar - Múltiplas Parcelas (1)
-    Screenshot                Lançamento do Contas a Pagar - Múltiplas Parcelas (1)    ${Caminho_Screenshots}Lançamentos/Lançamento - Múltiplas Parcelas
+    BaseDesktop.Screenshot                Lançamento do Contas a Pagar - Múltiplas Parcelas (1)    ${Caminho_Screenshots}Lançamentos/Lançamento - Múltiplas Parcelas
     Fechar janela
 
 Lançamentos > Lançamento - Com Baixa Automática
@@ -42,7 +42,7 @@ Lançamentos > Lançamento - Com Baixa Automática
     RPA.Windows.Click         Lançamentos
     RPA.Desktop.Press Keys    n
     RPA.Windows.Get Text      Provisões do Contas a Pagar - Com Baixa Automática
-    Screenshot                Provisões do Contas a Pagar - Com Baixa Automática  ${Caminho_Screenshots}Lançamentos/Lançamento - Com Baixa Automática
+    BaseDesktop.Screenshot                Provisões do Contas a Pagar - Com Baixa Automática  ${Caminho_Screenshots}Lançamentos/Lançamento - Com Baixa Automática
     Fechar janela
 
 Financiamento
@@ -50,7 +50,7 @@ Financiamento
     Contas a Pagar
     RPA.Windows.Click       Financiamento
     RPA.Windows.Get Text    Cronograma de Liberação e Amortização (1)
-    Screenshot              Cronograma de Liberação e Amortização (1)    ${Caminho_Screenshots}Financiamento
+    BaseDesktop.Screenshot              Cronograma de Liberação e Amortização (1)    ${Caminho_Screenshots}Financiamento
     Fechar janela
 
 Baixas
@@ -58,7 +58,7 @@ Baixas
     Contas a Pagar
     RPA.Windows.Click       Baixas
     RPA.Windows.Get Text    Baixas do Contas a Pagar (1)
-    Screenshot              Baixas do Contas a Pagar (1)    ${Caminho_Screenshots}Baixas
+    BaseDesktop.Screenshot              Baixas do Contas a Pagar (1)    ${Caminho_Screenshots}Baixas
     Fechar janela
 
 Estornar Baixas
@@ -67,7 +67,7 @@ Estornar Baixas
     Contas a Pagar
     RPA.Windows.Click       Estornar Baixas
     RPA.Windows.Get Text    Estorno de Baixas do Contas a Pagar (1)
-    Screenshot              Estorno de Baixas do Contas a Pagar (1)    ${Caminho_Screenshots}Extornar Baixas
+    BaseDesktop.Screenshot              Estorno de Baixas do Contas a Pagar (1)    ${Caminho_Screenshots}Extornar Baixas
     Fechar janela
 
 Renegociações
@@ -75,7 +75,7 @@ Renegociações
     Contas a Pagar
     RPA.Windows.Click       Renegociações
     RPA.Windows.Get Text    Renegociação do Contas a Pagar (1)
-    Screenshot              Renegociação do Contas a Pagar (1)    ${Caminho_Screenshots}Renegociações
+    BaseDesktop.Screenshot              Renegociação do Contas a Pagar (1)    ${Caminho_Screenshots}Renegociações
     Fechar janela
 
 Estornar Renegociações
@@ -83,7 +83,7 @@ Estornar Renegociações
     Contas a Pagar
     RPA.Windows.Click       Estornar Renegociações
     RPA.Windows.Get Text    Estorno de Renegociações do Contas a Pagar (1)
-    Screenshot              Estorno de Renegociações do Contas a Pagar (1)    ${Caminho_Screenshots}Extornar Renegociações
+    BaseDesktop.Screenshot              Estorno de Renegociações do Contas a Pagar (1)    ${Caminho_Screenshots}Extornar Renegociações
     Fechar janela
 
 Alterar Vencimento/Portador
@@ -91,7 +91,7 @@ Alterar Vencimento/Portador
     Contas a Pagar
     RPA.Windows.Click       Alterar Vencimento/Portador
     RPA.Windows.Get Text    Alteração de Vencimento/Portador do Contas a Pagar (1)
-    Screenshot              Alteração de Vencimento/Portador do Contas a Pagar (1)    ${Caminho_Screenshots}Alterar Vencimento_Portador
+    BaseDesktop.Screenshot              Alteração de Vencimento/Portador do Contas a Pagar (1)    ${Caminho_Screenshots}Alterar Vencimento_Portador
     Fechar janela
 
 Adiantamentos > Adiantamento a Fornecedores
@@ -100,7 +100,7 @@ Adiantamentos > Adiantamento a Fornecedores
     RPA.Windows.Click         Adiantamentos
     RPA.Desktop.Press Keys    a
     RPA.Windows.Get Text      Adiantamentos a Fornecedores (1)
-    Screenshot                Adiantamentos a Fornecedores (1)    ${Caminho_Screenshots}Adiantamentos/Adiantamento a Fornecedores
+    BaseDesktop.Screenshot                Adiantamentos a Fornecedores (1)    ${Caminho_Screenshots}Adiantamentos/Adiantamento a Fornecedores
     Fechar janela
 
 Adiantamentos > Extrato dos Adiantamentos/Fornecedor
@@ -109,7 +109,7 @@ Adiantamentos > Extrato dos Adiantamentos/Fornecedor
     RPA.Windows.Click         Adiantamentos
     RPA.Desktop.Press Keys    e
     RPA.Windows.Get Text      Extrato de Adiantamentos/Credor/Fornecedor (1)
-    Screenshot                Extrato de Adiantamentos/Credor/Fornecedor (1)    ${Caminho_Screenshots}Adiantamentos/Extrato dos Adiantamentos_Fornecedor
+    BaseDesktop.Screenshot                Extrato de Adiantamentos/Credor/Fornecedor (1)    ${Caminho_Screenshots}Adiantamentos/Extrato dos Adiantamentos_Fornecedor
     Fechar janela
 
 Adiantamentos > Saldo de Adiantamentos Fornecedores
@@ -118,7 +118,7 @@ Adiantamentos > Saldo de Adiantamentos Fornecedores
     RPA.Windows.Click         Adiantamentos
     RPA.Desktop.Press Keys    s
     RPA.Windows.Get Text      Saldo de Adiantamentos Fornecedor
-    Screenshot                Saldo de Adiantamentos Fornecedor    ${Caminho_Screenshots}Adiantamentos/Saldo de Adiantamentos Fornecedores
+    BaseDesktop.Screenshot                Saldo de Adiantamentos Fornecedor    ${Caminho_Screenshots}Adiantamentos/Saldo de Adiantamentos Fornecedores
     Fechar janela
 
 Adiantamentos > Adiantamento a Funcionários
@@ -127,7 +127,7 @@ Adiantamentos > Adiantamento a Funcionários
     RPA.Windows.Click         Adiantamentos
     RPA.Desktop.Press Keys    d
     RPA.Windows.Get Text      Adiantamentos a Funcionários (1)
-    Screenshot                Adiantamentos a Funcionários (1)    ${Caminho_Screenshots}Adiantamentos/Adiantamento a Funcionários
+    BaseDesktop.Screenshot                Adiantamentos a Funcionários (1)    ${Caminho_Screenshots}Adiantamentos/Adiantamento a Funcionários
     Fechar janela
 
 Adiantamentos > Extrato dos Adiantamentos/Funcionário
@@ -136,7 +136,7 @@ Adiantamentos > Extrato dos Adiantamentos/Funcionário
     RPA.Windows.Click         Adiantamentos
     RPA.Desktop.Press Keys    x
     RPA.Windows.Get Text      Extrato de Adiantamentos/Funcionários (1)
-    Screenshot                Extrato de Adiantamentos/Funcionários (1)    ${Caminho_Screenshots}Adiantamentos/Extrato dos Adiantamentos_Funcionário
+    BaseDesktop.Screenshot                Extrato de Adiantamentos/Funcionários (1)    ${Caminho_Screenshots}Adiantamentos/Extrato dos Adiantamentos_Funcionário
     Fechar janela
 
 Adiantamentos > Saldo de Adiantamentos Funcionários
@@ -145,7 +145,7 @@ Adiantamentos > Saldo de Adiantamentos Funcionários
     RPA.Windows.Click         Adiantamentos
     RPA.Desktop.Press Keys    l
     RPA.Windows.Get Text      Saldo de Adiantamentos Funcionário
-    Screenshot                Saldo de Adiantamentos Funcionário    ${Caminho_Screenshots}Adiantamentos/Saldo de Adiantamentos Funcionários
+    BaseDesktop.Screenshot                Saldo de Adiantamentos Funcionário    ${Caminho_Screenshots}Adiantamentos/Saldo de Adiantamentos Funcionários
     Fechar janela
 
 Adiantamentos > Relatório de Lançamento
@@ -154,7 +154,7 @@ Adiantamentos > Relatório de Lançamento
     RPA.Windows.Click         Adiantamentos
     RPA.Desktop.Press Keys    r
     RPA.Windows.Get Text      Relatório de Lançamentos de Adiantamentos a Fornecedores (1)
-    Screenshot                Relatório de Lançamentos de Adiantamentos a Fornecedores (1)    ${Caminho_Screenshots}Adiantamentos/Relatório de Lançamento
+    BaseDesktop.Screenshot                Relatório de Lançamentos de Adiantamentos a Fornecedores (1)    ${Caminho_Screenshots}Adiantamentos/Relatório de Lançamento
     Fechar janela
 
 Adiantamentos > Antecipação de Pedido de Compras
@@ -163,7 +163,7 @@ Adiantamentos > Antecipação de Pedido de Compras
     RPA.Windows.Click         Adiantamentos
     RPA.Desktop.Press Keys    n
     RPA.Windows.Get Text      Adiantamento de Pedido de Compra (1)
-    Screenshot                Adiantamento de Pedido de Compra (1)    ${Caminho_Screenshots}Adiantamentos/Antecipação de Pedido de Compras
+    BaseDesktop.Screenshot                Adiantamento de Pedido de Compra (1)    ${Caminho_Screenshots}Adiantamentos/Antecipação de Pedido de Compras
     Fechar janela
 
 Empenhos
@@ -171,7 +171,7 @@ Empenhos
     Contas a Pagar
     RPA.Windows.Click       Empenhos
     RPA.Windows.Get Text    Cadastro de Empenhos (1)
-    Screenshot              Cadastro de Empenhos (1)    ${Caminho_Screenshots}Empenhos
+    BaseDesktop.Screenshot              Cadastro de Empenhos (1)    ${Caminho_Screenshots}Empenhos
     Fechar janela
 
 Recibos Avulsos
@@ -179,7 +179,7 @@ Recibos Avulsos
     Contas a Pagar
     RPA.Windows.Click       Recibos Avulsos
     RPA.Windows.Get Text    Emissão de Recibo - Contas a Pagar (1)
-    Screenshot              Emissão de Recibo - Contas a Pagar (1)    ${Caminho_Screenshots}Recibos Avulsos
+    BaseDesktop.Screenshot              Emissão de Recibo - Contas a Pagar (1)    ${Caminho_Screenshots}Recibos Avulsos
     Fechar janela
 
 Consultas
@@ -187,7 +187,7 @@ Consultas
     Contas a Pagar
     RPA.Windows.Click       Consultas
     RPA.Windows.Get Text    Consulta do Contas a Pagar (1)
-    Screenshot              Consulta do Contas a Pagar (1)    ${Caminho_Screenshots}Consultas
+    BaseDesktop.Screenshot              Consulta do Contas a Pagar (1)    ${Caminho_Screenshots}Consultas
     Fechar janela
 
 Relatórios > Contas a Pagar
@@ -196,7 +196,7 @@ Relatórios > Contas a Pagar
     RPA.Windows.Click         Relatórios
     RPA.Desktop.Press Keys    c
     RPA.Windows.Get Text      Relatório de Contas a Pagar (1)
-    Screenshot                Relatório de Contas a Pagar (1)    ${Caminho_Screenshots}Relatórios/Contas a Pagar
+    BaseDesktop.Screenshot                Relatório de Contas a Pagar (1)    ${Caminho_Screenshots}Relatórios/Contas a Pagar
     Fechar janela
 
 Relatórios > Contas a Pagar a Prazo Resumido
@@ -205,7 +205,7 @@ Relatórios > Contas a Pagar a Prazo Resumido
     RPA.Windows.Click         Relatórios 
     RPA.Desktop.Press Keys    o
     RPA.Windows.Get Text      Relatório de Contas a Pagar a Prazo (1)
-    Screenshot                Relatório de Contas a Pagar a Prazo (1)    ${Caminho_Screenshots}Relatórios/Contas a Pagar a Prazo Resumido
+    BaseDesktop.Screenshot                Relatório de Contas a Pagar a Prazo (1)    ${Caminho_Screenshots}Relatórios/Contas a Pagar a Prazo Resumido
     Fechar janela
 
 Relatórios > Pagamentos
@@ -214,7 +214,7 @@ Relatórios > Pagamentos
     RPA.Windows.Click         Relatórios 
     RPA.Desktop.Press Keys    p
     RPA.Windows.Get Text      Relatório de Baixas do Contas a Pagar (1)
-    Screenshot                Relatório de Baixas do Contas a Pagar (1)    ${Caminho_Screenshots}Relatórios/Pagamentos
+    BaseDesktop.Screenshot                Relatório de Baixas do Contas a Pagar (1)    ${Caminho_Screenshots}Relatórios/Pagamentos
     Fechar janela
 
 Relatórios > Empenhos/Credor
@@ -223,7 +223,7 @@ Relatórios > Empenhos/Credor
     RPA.Windows.Click         Relatórios 
     RPA.Desktop.Press Keys    e
     RPA.Windows.Get Text      Relatório de Empenhos/Credor (1)
-    Screenshot                Relatório de Empenhos/Credor (1)    ${Caminho_Screenshots}Relatórios/Empenhos_Credor
+    BaseDesktop.Screenshot                Relatório de Empenhos/Credor (1)    ${Caminho_Screenshots}Relatórios/Empenhos_Credor
     Fechar janela
 
 Comissões de Venda > Manutenção de Pagamento de Comissões
@@ -232,7 +232,7 @@ Comissões de Venda > Manutenção de Pagamento de Comissões
     RPA.Windows.Click         Comissões de Venda
     RPA.Desktop.Press Keys    m
     RPA.Windows.Get Text      Manutenção de Pagamento de Comissões (1)
-    Screenshot                Manutenção de Pagamento de Comissões (1)    ${Caminho_Screenshots}Comissões de Venda/Manutenção de Pagamento de Comissões
+    BaseDesktop.Screenshot                Manutenção de Pagamento de Comissões (1)    ${Caminho_Screenshots}Comissões de Venda/Manutenção de Pagamento de Comissões
     Fechar janela
 
 Comissões de Venda > Provisionamento de Pagamento
@@ -241,7 +241,7 @@ Comissões de Venda > Provisionamento de Pagamento
     RPA.Windows.Click         Comissões de Venda
     RPA.Desktop.Press Keys    p
     RPA.Windows.Get Text      Provisionamento de Pagamento (1)
-    Screenshot                Provisionamento de Pagamento (1)    ${Caminho_Screenshots}Comissões de Venda/Provisionamento de Pagamento
+    BaseDesktop.Screenshot                Provisionamento de Pagamento (1)    ${Caminho_Screenshots}Comissões de Venda/Provisionamento de Pagamento
     Fechar janela
 
 Comissões de Venda > Relatório de Comissões
@@ -250,7 +250,7 @@ Comissões de Venda > Relatório de Comissões
     RPA.Windows.Click         Comissões de Venda
     RPA.Desktop.Press Keys    r
     RPA.Windows.Get Text      Relatório de Comissões de Vendas (1)
-    Screenshot                Relatório de Comissões de Vendas (1)   ${Caminho_Screenshots}Comissões de Venda/Relatório de Comissões
+    BaseDesktop.Screenshot                Relatório de Comissões de Vendas (1)   ${Caminho_Screenshots}Comissões de Venda/Relatório de Comissões
     Fechar janela
 
 Comissões de Venda > Relatório de Comissões por Vendedor
@@ -259,7 +259,7 @@ Comissões de Venda > Relatório de Comissões por Vendedor
     RPA.Windows.Click         Comissões de Venda
     RPA.Desktop.Press Keys    e
     RPA.Windows.Get Text      Relatório de Comissões por Vendedor (1)
-    Screenshot                Relatório de Comissões por Vendedor (1)    ${Caminho_Screenshots}Comissões de Venda/Relatório de Comissões por Vendedor
+    BaseDesktop.Screenshot                Relatório de Comissões por Vendedor (1)    ${Caminho_Screenshots}Comissões de Venda/Relatório de Comissões por Vendedor
     Fechar janela
 
 Comissões de Venda > Reprocessar Valores da Comissão
@@ -268,7 +268,7 @@ Comissões de Venda > Reprocessar Valores da Comissão
     RPA.Windows.Click         Comissões de Venda
     RPA.Desktop.Press Keys    o
     RPA.Windows.Get Text      Reprocessar Comissões (1)
-    Screenshot                Reprocessar Comissões (1)    ${Caminho_Screenshots}Comissões de Venda/Reprocessar Valores da Comissão
+    BaseDesktop.Screenshot                Reprocessar Comissões (1)    ${Caminho_Screenshots}Comissões de Venda/Reprocessar Valores da Comissão
     Fechar janela
 
 Comissões de Venda > Cadastro De Comissão por Faixa de Descontos
@@ -277,7 +277,7 @@ Comissões de Venda > Cadastro De Comissão por Faixa de Descontos
     RPA.Windows.Click         Comissões de Venda
     RPA.Desktop.Press Keys    c
     RPA.Windows.Get Text      Cadastro de Comissão por Faixa de Descontos (1)
-    Screenshot                Cadastro de Comissão por Faixa de Descontos (1)    ${Caminho_Screenshots}Comissões de Venda/Cadastro De Comissão por Faixa de Descontos
+    BaseDesktop.Screenshot                Cadastro de Comissão por Faixa de Descontos (1)    ${Caminho_Screenshots}Comissões de Venda/Cadastro De Comissão por Faixa de Descontos
     Fechar janela
 
 Pagamentos Eletrônicos > Pagamentos a Fornecedores > Remessa
@@ -287,7 +287,7 @@ Pagamentos Eletrônicos > Pagamentos a Fornecedores > Remessa
     RPA.Windows.Click         Pagamentos a Fornecedores
     RPA.Desktop.Press Keys    r
     RPA.Windows.Get Text      Remessa de Pagamento Eletrônico PagFor (1)
-    Screenshot                Remessa de Pagamento Eletrônico PagFor (1)    ${Caminho_Screenshots}Pagamentos Eletrônicos/Pagamentos a Fornecedores/Remessa
+    BaseDesktop.Screenshot                Remessa de Pagamento Eletrônico PagFor (1)    ${Caminho_Screenshots}Pagamentos Eletrônicos/Pagamentos a Fornecedores/Remessa
     Fechar janela
 
 Pagamentos Eletrônicos > Pagamentos a Fornecedores > Retorno
@@ -297,7 +297,7 @@ Pagamentos Eletrônicos > Pagamentos a Fornecedores > Retorno
     RPA.Windows.Click         Pagamentos a Fornecedores
     RPA.Desktop.Press Keys    e
     RPA.Windows.Get Text      Retorno de Pagamento Eletrônico (PagFor) (1)
-    Screenshot                Retorno de Pagamento Eletrônico (PagFor) (1)    ${Caminho_Screenshots}Pagamentos Eletrônicos/Pagamentos a Fornecedores/Retorno
+    BaseDesktop.Screenshot                Retorno de Pagamento Eletrônico (PagFor) (1)    ${Caminho_Screenshots}Pagamentos Eletrônicos/Pagamentos a Fornecedores/Retorno
     Fechar janela
 
 Pagamentos Eletrônicos > Pagamentos a Funcionarios
@@ -306,7 +306,7 @@ Pagamentos Eletrônicos > Pagamentos a Funcionarios
     RPA.Windows.Click         Pagamentos Eletrônicos
     RPA.Desktop.Press Keys    a
     RPA.Windows.Get Text      Pagamento a Funcionários (1)
-    Screenshot                Pagamento a Funcionários (1)    ${Caminho_Screenshots}Pagamentos Eletrônicos/Pagamentos a Funcionarios
+    BaseDesktop.Screenshot                Pagamento a Funcionários (1)    ${Caminho_Screenshots}Pagamentos Eletrônicos/Pagamentos a Funcionarios
     Fechar janela
 
 Encerrar

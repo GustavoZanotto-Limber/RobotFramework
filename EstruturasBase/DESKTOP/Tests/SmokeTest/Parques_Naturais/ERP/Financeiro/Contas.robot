@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation    Smoke Test: Contas
-Resource         ${EXECDIR}/EstruturasBase/DESKTOP/Resources/BaseDesktop.robot
+Resource         C:/Users/Gustavo Zanotto/AppData/Local/Programs/Python/Python39/Scripts/RobotFramework/EstruturasBase/DESKTOP/Resources/BaseDesktop.robot
 Suite Setup      Iniciar sessao financeiro
 
 
@@ -13,325 +13,325 @@ ${Caminho_Screenshots}=    ${EXECDIR}/EstruturasBase/DESKTOP/ScreenShots/SmokeTe
 Contas
     Cadastros
     repetidor de teclas    right    5
-    Sleep                  1s
+    Sleep      1s
 
 *** Test Cases ***
 
 Movimentação de Contas
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}                        ERRO Movimentação de Contas
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}            ERRO Movimentação de Contas
     Contas
     RPA.Windows.Click         Movimentação de Contas
     RPA.Windows.Get Text      Movimento de Contas (1)
-    Screenshot                Movimento de Contas (1)    ${Caminho_Screenshots}Movimentação de Contas
+    BaseDesktop.Screenshot    Movimento de Contas (1)    ${Caminho_Screenshots}Movimentação de Contas
     Fechar janela
 
 Transferências entre Contas
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}                        ERRO Transferências entre Contas
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}            ERRO Transferências entre Contas
     Contas
     RPA.Windows.Click         Transferências entre Contas
     RPA.Windows.Get Text      Transferências (1)
-    Screenshot                Transferências (1)    ${Caminho_Screenshots}Transferências entre Contas
+    BaseDesktop.Screenshot    Transferências (1)    ${Caminho_Screenshots}Transferências entre Contas
     RPA.Windows.Click         Fechar
 
 Transferências entre Estabelecimentos
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}                        ERRO Transferências entre Estabelecimentos
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}            ERRO Transferências entre Estabelecimentos
     Contas
     RPA.Windows.Click         Transferências entre Estabelecimentos
     RPA.Windows.Get Text      Transferência Entre Estabelecimentos (1)
-    Screenshot                Transferência Entre Estabelecimentos (1)    ${Caminho_Screenshots}Transferências entre Contas
+    BaseDesktop.Screenshot    Transferência Entre Estabelecimentos (1)    ${Caminho_Screenshots}Transferências entre Contas
     Fechar janela
 
 Conciliação de Cheques Emitidos
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}                        ERRO Conciliação de Cheques Emitidos
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}            ERRO Conciliação de Cheques Emitidos
     Contas
     RPA.Windows.Click         Conciliação de Cheques Emitidos
     RPA.Windows.Get Text      Conciliação de Cheques Emitidos
-    Screenshot                Conciliação de Cheques Emitidos    ${Caminho_Screenshots}Conciliação de Cheques Emitidos
+    BaseDesktop.Screenshot    Conciliação de Cheques Emitidos    ${Caminho_Screenshots}Conciliação de Cheques Emitidos
     Fechar janela
 
 Conciliação de Cheques de Terceiros
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}                        ERRO Conciliação de Cheques de Terceiros
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}            ERRO Conciliação de Cheques de Terceiros
     Contas
     RPA.Windows.Click         Conciliação de Cheques de Terceiros
     RPA.Windows.Get Text      Conciliação de Cheques de Terceiros (1)
-    Screenshot                Conciliação de Cheques de Terceiros (1)    ${Caminho_Screenshots}Conciliação de Cheques de Terceiros
+    BaseDesktop.Screenshot    Conciliação de Cheques de Terceiros (1)    ${Caminho_Screenshots}Conciliação de Cheques de Terceiros
     Fechar janela
 
 Conciliação de Contas
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}                        ERRO Conciliação de Contas
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}            ERRO Conciliação de Contas
     Contas
     RPA.Windows.Click         Conciliação de Contas
     RPA.Windows.Get Text      Conciliação de Contas
-    Screenshot                Conciliação de Contas    ${Caminho_Screenshots}Conciliação de Contas
+    BaseDesktop.Screenshot    Conciliação de Contas    ${Caminho_Screenshots}Conciliação de Contas
     Fechar janela
 
 Estorna Conciliação
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}                        ERRO Estorna Conciliação
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}            ERRO Estorna Conciliação
     Contas
     RPA.Windows.Click         Estorna Conciliação
     RPA.Windows.Get Text      Estorna Conciliação de Lançamentos Bancários (1)
-    Screenshot                Estorna Conciliação de Lançamentos Bancários (1)    ${Caminho_Screenshots}Estorna Conciliação
+    BaseDesktop.Screenshot    Estorna Conciliação de Lançamentos Bancários (1)    ${Caminho_Screenshots}Estorna Conciliação
     Fechar janela
 
 Estorno de Conciliação Cheques Terceiros
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}                        ERRO Estorno de Conciliação Cheques Terceiros
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}            ERRO Estorno de Conciliação Cheques Terceiros
     Contas
     RPA.Windows.Click         Estorno de Conciliação Cheques Terceiros
     RPA.Windows.Get Text      Estorno de Conciliação de Cheques de Terceiros (1)
-    Screenshot                Estorno de Conciliação de Cheques de Terceiros (1)    ${Caminho_Screenshots}Estorno de Conciliação Cheques Terceiros
+    BaseDesktop.Screenshot    Estorno de Conciliação de Cheques de Terceiros (1)    ${Caminho_Screenshots}Estorno de Conciliação Cheques Terceiros
     Fechar janela
 
 Conciliação de Transações Eletrônicas > Conciliação de Transações Eletrônicas Simplificadas
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Conciliação de Transações Eletrônicas/                        ERRO Conciliação de Transações Eletrônicas Simplificadas
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}Conciliação de Transações Eletrônicas/            ERRO Conciliação de Transações Eletrônicas Simplificadas
     Contas
     RPA.Windows.Click         Conciliação de Transações Eletrônicas
     RPA.Desktop.Press Keys    C
     RPA.Windows.Get Text      Conciliação de Transações de Cartões Simplificado (1)
-    Screenshot                Conciliação de Transações de Cartões Simplificado (1)    ${Caminho_Screenshots}Conciliação de Transações Eletrônicas/Conciliação de Transações Eletrônicas Simplificadas
+    BaseDesktop.Screenshot    Conciliação de Transações de Cartões Simplificado (1)    ${Caminho_Screenshots}Conciliação de Transações Eletrônicas/Conciliação de Transações Eletrônicas Simplificadas
     Fechar janela
 
 Conciliação de Transações Eletrônicas > Conciliação Arquivo PIX CNAB 750
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Conciliação de Transações Eletrônicas/                        ERRO Conciliação Arquivo PIX CNAB 750
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}Conciliação de Transações Eletrônicas/            ERRO Conciliação Arquivo PIX CNAB 750
     Contas
     RPA.Windows.Click         Conciliação de Transações Eletrônicas
     RPA.Desktop.Press Keys    o
     RPA.Windows.Get Text      Conciliação Arquivo PIX CNAB 750 (1)
-    Screenshot                Conciliação Arquivo PIX CNAB 750 (1)    ${Caminho_Screenshots}Conciliação de Transações Eletrônicas/Conciliação Arquivo PIX CNAB 750
+    BaseDesktop.Screenshot    Conciliação Arquivo PIX CNAB 750 (1)    ${Caminho_Screenshots}Conciliação de Transações Eletrônicas/Conciliação Arquivo PIX CNAB 750
     Fechar janela
 
 Conciliação de Transações Eletrônicas > Conciliação de Transações PIX > API
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Conciliação de Transações Eletrônicas/Conciliação de Transações PIX/                        ERRO API
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}Conciliação de Transações Eletrônicas/Conciliação de Transações PIX/            ERRO API
     Contas
     RPA.Windows.Click         Conciliação de Transações Eletrônicas
     RPA.Desktop.Press Keys    n
     RPA.Desktop.Press Keys    a
-    RPA.Windows.Get Text      Conciliação de Transações Pix  (1)
-    Screenshot                Conciliação de Transações Pix  (1)    ${Caminho_Screenshots}Conciliação de Transações Eletrônicas/Conciliação de Transações PIX/API
+    RPA.Windows.Get Text      Conciliação de Transações Pix (1)
+    BaseDesktop.Screenshot    Conciliação de Transações Pix (1)    ${Caminho_Screenshots}Conciliação de Transações Eletrônicas/Conciliação de Transações PIX/API
     Fechar janela
 
 Conciliação de Transações Eletrônicas > Configuração de Arquivo de Importação
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Conciliação de Transações Eletrônicas/                   ERRO Configuração de Arquivo de Importação
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}Conciliação de Transações Eletrônicas/       ERRO Configuração de Arquivo de Importação
     Contas
     RPA.Windows.Click         Conciliação de Transações Eletrônicas
     RPA.Desktop.Press Keys    f
     RPA.Windows.Get Text      Configuração de Arquivo de Importação (1)
-    Screenshot                Configuração de Arquivo de Importação (1)    ${Caminho_Screenshots}Conciliação de Transações Eletrônicas/Configuração de Arquivo de Importação
+    BaseDesktop.Screenshot    Configuração de Arquivo de Importação (1)    ${Caminho_Screenshots}Conciliação de Transações Eletrônicas/Configuração de Arquivo de Importação
     Fechar janela
 
 Apropriação de Custos (Centro de Custos)
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}                        ERRO Apropriação de Custos (Centro de Custos)
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}            ERRO Apropriação de Custos (Centro de Custos)
     Contas
     RPA.Windows.Click         Apropriação de Custos (Centro de Custos)
     RPA.Windows.Get Text      Apropriação de Custos (1)
-    Screenshot                Apropriação de Custos (1)    ${Caminho_Screenshots}Apropriação de Custos (Centro de Custos)
+    BaseDesktop.Screenshot    Apropriação de Custos (1)    ${Caminho_Screenshots}Apropriação de Custos (Centro de Custos)
     Fechar janela
 
 Apropriação de Consumo de Adiantamentos
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}                        ERRO Apropriação de Consumo de Adiantamentos
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}            ERRO Apropriação de Consumo de Adiantamentos
     Contas
     RPA.Windows.Click         Apropriação de Consumo de Adiantamentos
     RPA.Windows.Get Text      Apropriação de consumo de adiantamento (1)
-    Screenshot                Apropriação de consumo de adiantamento (1)    ${Caminho_Screenshots}Apropriação de Consumo de Adiantamentos
+    BaseDesktop.Screenshot    Apropriação de consumo de adiantamento (1)    ${Caminho_Screenshots}Apropriação de Consumo de Adiantamentos
     Fechar janela
 
 Encontro de Contas > Encontro de Contas
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Encontro de Contas/                        ERRO Encontro de Contas
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}Encontro de Contas/            ERRO Encontro de Contas
     Contas
     RPA.Windows.Click         Encontro de Contas
     RPA.Desktop.Press Keys    E
     RPA.Windows.Get Text      Encontro de Contas (1)
-    Screenshot                Encontro de Contas (1)    ${Caminho_Screenshots}Encontro de Contas/Encontro de Contas
+    BaseDesktop.Screenshot    Encontro de Contas (1)    ${Caminho_Screenshots}Encontro de Contas/Encontro de Contas
     Fechar janela
 
 Encontro de Contas > Estorno de Encontro de Contas
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Encontro de Contas/                        ERRO Estorno de Encontro de Contas
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}Encontro de Contas/            ERRO Estorno de Encontro de Contas
     Contas
     RPA.Windows.Click         Encontro de Contas
     RPA.Desktop.Press Keys    s
     RPA.Windows.Get Text      Estorno de Encontro de Contas (1)
-    Screenshot                Estorno de Encontro de Contas (1)    ${Caminho_Screenshots}Encontro de Contas/Estorno de Encontro de Contas
+    BaseDesktop.Screenshot    Estorno de Encontro de Contas (1)    ${Caminho_Screenshots}Encontro de Contas/Estorno de Encontro de Contas
     Fechar janela
 
 Geração de Receitas Mapa Resumo > Geração de Receitas Mapa Resumo
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/                        ERRO Geração de Receitas Mapa Resumo
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/            ERRO Geração de Receitas Mapa Resumo
     Contas
     RPA.Windows.Click         Geração de Receitas Mapa Resumo
     RPA.Desktop.Press Keys    g
     RPA.Windows.Get Text      Geração de receitas pela redução Z (1)
-    Screenshot                Geração de receitas pela redução Z (1)    ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/Geração de Receitas Mapa Resumo
+    BaseDesktop.Screenshot    Geração de receitas pela redução Z (1)    ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/Geração de Receitas Mapa Resumo
     Fechar janela
 
 Geração de Receitas Mapa Resumo > Configuração para geração de receitas
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/                        ERRO Configuração para geração de receitas
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/            ERRO Configuração para geração de receitas
     Contas
     RPA.Windows.Click         Geração de Receitas Mapa Resumo
     RPA.Desktop.Press Keys    c
     RPA.Windows.Get Text      Configuração para geração de receitas (1)
-    Screenshot                Configuração para geração de receitas (1)    ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/Configuração para geração de receitas
+    BaseDesktop.Screenshot    Configuração para geração de receitas (1)    ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/Configuração para geração de receitas
     Fechar janela
 
 Geração de Receitas Mapa Resumo > Deduções Adicionais de ISS > Tipos de Deduções
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/Deduções Adicionais de ISS/                       ERRO Tipos de Deduções
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/Deduções Adicionais de ISS/           ERRO Tipos de Deduções
     Contas
     RPA.Windows.Click         Geração de Receitas Mapa Resumo
     RPA.Desktop.Press Keys    d
     RPA.Desktop.Press Keys    t
     RPA.Windows.Get Text      Cadastro de Tipos de Deduções (1)
-    Screenshot                Cadastro de Tipos de Deduções (1)    ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/Deduções Adicionais de ISS/Tipos de Deduções
+    BaseDesktop.Screenshot    Cadastro de Tipos de Deduções (1)    ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/Deduções Adicionais de ISS/Tipos de Deduções
     Fechar janela
 
 Geração de Receitas Mapa Resumo > Deduções Adicionais de ISS > Lançamento de Deduções
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/Deduções Adicionais de ISS/                        ERRO Lançamento de Deduções
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/Deduções Adicionais de ISS/            ERRO Lançamento de Deduções
     Contas
     RPA.Windows.Click         Geração de Receitas Mapa Resumo
     RPA.Desktop.Press Keys    d
     RPA.Desktop.Press Keys    l
     RPA.Windows.Get Text      Lançamento de Dedução de ISS (1)
-    Screenshot                Lançamento de Dedução de ISS (1)    ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/Deduções Adicionais de ISS/Lançamento de Deduções
+    BaseDesktop.Screenshot    Lançamento de Dedução de ISS (1)    ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/Deduções Adicionais de ISS/Lançamento de Deduções
     Fechar janela
 
 Geração de Receitas Mapa Resumo > Deduções Adicionais de ISS > Consulta de Lançamentos
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/Deduções Adicionais de ISS/                        ERRO Consulta de Lançamentos
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/Deduções Adicionais de ISS/            ERRO Consulta de Lançamentos
     Contas
     RPA.Windows.Click         Geração de Receitas Mapa Resumo
     RPA.Desktop.Press Keys    d
     RPA.Desktop.Press Keys    c
     RPA.Windows.Get Text      Consulta de Lançamentos de Deduções (1)
-    Screenshot                Consulta de Lançamentos de Deduções (1)    ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/Deduções Adicionais de ISS/Consulta de Lançamentos
+    BaseDesktop.Screenshot    Consulta de Lançamentos de Deduções (1)    ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/Deduções Adicionais de ISS/Consulta de Lançamentos
     Fechar janela
 
 Geração de Receitas Mapa Resumo > Vinculo Cliente em Venda
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/                     ERRO Vinculo Cliente em Venda
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/         ERRO Vinculo Cliente em Venda
     Contas
     RPA.Windows.Click         Geração de Receitas Mapa Resumo
     RPA.Desktop.Press Keys    v
     RPA.Windows.Get Text      Vínculo de Cliente em Venda (1)
-    Screenshot                Vínculo de Cliente em Venda (1)    ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/Vinculo Cliente em Venda
+    BaseDesktop.Screenshot    Vínculo de Cliente em Venda (1)    ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/Vinculo Cliente em Venda
     Fechar janela
 
 Geração de Receitas Mapa Resumo > Emissão de NFS-e/CT-e sobre Reduções
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/                     ERRO Emissão de NFS-e_CT-e sobre Reduções
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/         ERRO Emissão de NFS-e_CT-e sobre Reduções
     Contas
     RPA.Windows.Click         Geração de Receitas Mapa Resumo
     RPA.Desktop.Press Keys    e
     RPA.Windows.Get Text      Gerar NFS-e/CT-e sobre Serviços (1)
-    Screenshot                Gerar NFS-e/CT-e sobre Serviços (1)    ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/Emissão de NFS-e_CT-e sobre Reduções
+    BaseDesktop.Screenshot    Gerar NFS-e/CT-e sobre Serviços (1)    ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/Emissão de NFS-e_CT-e sobre Reduções
     Fechar janela
 
 Geração de Receitas Mapa Resumo > Mapa Resumo da ECF
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/                     ERRO Mapa Resumo da ECF
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/         ERRO Mapa Resumo da ECF
     Contas
     RPA.Windows.Click         Geração de Receitas Mapa Resumo
     RPA.Desktop.Press Keys    m
     RPA.Windows.Get Text      Mapa Resumo da ECF (1)
-    Screenshot                Mapa Resumo da ECF (1)    ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/Mapa Resumo da ECF
+    BaseDesktop.Screenshot    Mapa Resumo da ECF (1)    ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/Mapa Resumo da ECF
     Fechar janela
 
 Geração de Receitas Mapa Resumo > Fechamento de Caixas
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/                     ERRO Fechamento de Caixas
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/         ERRO Fechamento de Caixas
     Contas
     RPA.Windows.Click         Geração de Receitas Mapa Resumo
     RPA.Desktop.Press Keys    f
     RPA.Windows.Get Text      Fechamento de Caixas (1)
-    Screenshot                Fechamento de Caixas (1)    ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/Fechamento de Caixas
+    BaseDesktop.Screenshot    Fechamento de Caixas (1)    ${Caminho_Screenshots}Geração de Receitas Mapa Resumo/Fechamento de Caixas
     Fechar janela
 
 
 Zeramento de Cartões Crédito Interno
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}                        ERRO Zeramento de Cartões Crédito Interno
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}            ERRO Zeramento de Cartões Crédito Interno
     Contas
     RPA.Windows.Click         Zeramento de Cartões Crédito Interno
     RPA.Windows.Get Text      Zeramento de Saldo de Cartões Crédito Interno Pré Pago (1)
-    Screenshot                Zeramento de Saldo de Cartões Crédito Interno Pré Pago (1)    ${Caminho_Screenshots}Zeramento de Cartões Crédito Interno
+    BaseDesktop.Screenshot    Zeramento de Saldo de Cartões Crédito Interno Pré Pago (1)    ${Caminho_Screenshots}Zeramento de Cartões Crédito Interno
     Fechar janela
 
 Bloqueia Lançamentos
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}                        ERRO Bloqueia Lançamentos
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}            ERRO Bloqueia Lançamentos
     Contas
     RPA.Windows.Click         Bloqueia Lançamentos
     RPA.Windows.Get Text      Bloqueia Lançamentos (1)
-    Screenshot                Bloqueia Lançamentos (1)    ${Caminho_Screenshots}Bloqueia Lançamentos
+    BaseDesktop.Screenshot    Bloqueia Lançamentos (1)    ${Caminho_Screenshots}Bloqueia Lançamentos
     Fechar janela
 
 Consultas > Razão de Contas
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Consultas/                     ERRO Razão de Contas
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}Consultas/         ERRO Razão de Contas
     Contas
     RPA.Windows.Click         Consultas
     RPA.Desktop.Press Keys    r
     RPA.Windows.Get Text      Razão de Contas (1)
-    Screenshot                Razão de Contas (1)    ${Caminho_Screenshots}Consultas/Razão de Contas
+    BaseDesktop.Screenshot    Razão de Contas (1)    ${Caminho_Screenshots}Consultas/Razão de Contas
     Fechar janela
 
 Consultas > Balancete
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Consultas/                     ERRO Balancete
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}Consultas/         ERRO Balancete
     Contas
     RPA.Windows.Click         Consultas
     RPA.Desktop.Press Keys    b
     RPA.Windows.Get Text      Balancete (1)
-    Screenshot                Balancete (1)    ${Caminho_Screenshots}Consultas/Balancete
+    BaseDesktop.Screenshot    Balancete (1)    ${Caminho_Screenshots}Consultas/Balancete
     Fechar janela
 
 Consultas > Diário
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Consultas/                     ERRO Diário
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}Consultas/         ERRO Diário
     Contas
     RPA.Windows.Click         Consultas
     RPA.Desktop.Press Keys    d
     RPA.Windows.Get Text      Lançamentos Diários (1)
-    Screenshot                Lançamentos Diários (1)    ${Caminho_Screenshots}Consultas/Diário
+    BaseDesktop.Screenshot    Lançamentos Diários (1)    ${Caminho_Screenshots}Consultas/Diário
     Fechar janela
 
 Consultas > Pesquisa de Lançamentos
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Consultas/                     ERRO Pesquisa de Lançamentos
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}Consultas/         ERRO Pesquisa de Lançamentos
     Contas
     RPA.Windows.Click         Consultas
     RPA.Desktop.Press Keys    p
     RPA.Windows.Get Text      Manutenção de Lançamentos contábeis (1)
-    Screenshot                Manutenção de Lançamentos contábeis (1)    ${Caminho_Screenshots}Consultas/Pesquisa de Lançamentos
+    BaseDesktop.Screenshot    Manutenção de Lançamentos contábeis (1)    ${Caminho_Screenshots}Consultas/Pesquisa de Lançamentos
     Fechar janela
 
 Consultas > Livro Caixa
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Consultas/                     ERRO Livro Caixa
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}Consultas/         ERRO Livro Caixa
     Contas
     RPA.Windows.Click         Consultas
     RPA.Desktop.Press Keys    l
     RPA.Windows.Get Text      Consulta Livro Caixa (1)
-    Screenshot                Consulta Livro Caixa (1)    ${Caminho_Screenshots}Consultas/Livro Caixa
+    BaseDesktop.Screenshot    Consulta Livro Caixa (1)    ${Caminho_Screenshots}Consultas/Livro Caixa
     Fechar janela
 
 Relatórios > Razão Gerencial
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Relatórios/                     ERRO Razão Gerencial
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}Relatórios/         ERRO Razão Gerencial
     Contas
     RPA.Windows.Click         Relatórios
     RPA.Desktop.Press Keys    r
     RPA.Windows.Get Text      Razão Gerencial (1)
-    Screenshot                Razão Gerencial (1)    ${Caminho_Screenshots}Relatórios/Razão Gerencial
+    BaseDesktop.Screenshot    Razão Gerencial (1)    ${Caminho_Screenshots}Relatórios/Razão Gerencial
     Fechar janela
 
 Relatórios > Balancete
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Relatórios/                     ERRO Balancete
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}Relatórios/         ERRO Balancete
     Contas
     RPA.Windows.Click         Relatórios
     RPA.Desktop.Press Keys    b
     RPA.Windows.Get Text      Balancete (1)
-    Screenshot                Balancete (1)    ${Caminho_Screenshots}Relatórios/Balancete
+    BaseDesktop.Screenshot    Balancete (1)    ${Caminho_Screenshots}Relatórios/Balancete
     Fechar janela
 
 Relatórios > Livro caixa
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Relatórios/                     ERRO Livro caixa
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}Relatórios/         ERRO Livro caixa
     Contas
     RPA.Windows.Click         Relatórios
     RPA.Desktop.Press Keys    l
     RPA.Windows.Get Text      Extrato de Conta (1)
-    Screenshot                Extrato de Conta (1)    ${Caminho_Screenshots}Relatórios/Livro caixa
+    BaseDesktop.Screenshot    Extrato de Conta (1)    ${Caminho_Screenshots}Relatórios/Livro caixa
     Fechar janela
 
 Relatórios > Movimentação de Caixa
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Relatórios/                     ERRO Movimentação de Caixa
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}Relatórios/         ERRO Movimentação de Caixa
     Contas
     RPA.Windows.Click         Relatórios
     RPA.Desktop.Press Keys    m
     RPA.Windows.Get Text      Relatório de Movimentação de Caixa (1)
-    Screenshot                Relatório de Movimentação de Caixa (1)    ${Caminho_Screenshots}Relatórios/Movimentação de Caixa
+    BaseDesktop.Screenshot    Relatório de Movimentação de Caixa (1)    ${Caminho_Screenshots}Relatórios/Movimentação de Caixa
     Fechar janela
 
 Encerrar

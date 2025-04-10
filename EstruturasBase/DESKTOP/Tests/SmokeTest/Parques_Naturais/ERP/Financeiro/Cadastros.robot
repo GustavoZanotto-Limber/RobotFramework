@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation    Smoke Test: Cadastros
-Resource         ${EXECDIR}/EstruturasBase/DESKTOP/Resources/BaseDesktop.robot
+Resource         C:/Users/Gustavo Zanotto/AppData/Local/Programs/Python/Python39/Scripts/RobotFramework/EstruturasBase/DESKTOP/Resources/BaseDesktop.robot
 Suite Setup      Iniciar sessao financeiro
 
 
@@ -19,7 +19,7 @@ Terceiros > Cadastro de Terceiros
     RPA.Windows.Click         Terceiros
     RPA.Desktop.Press Keys    C
     RPA.Windows.Get Text      Cadastro de Terceiros (1)
-    Screenshot                Cadastro de Terceiros (1)    ${Caminho_Screenshots}Terceiros/Cadastro de Terceiros
+    BaseDesktop.Screenshot                Cadastro de Terceiros (1)    ${Caminho_Screenshots}Terceiros/Cadastro de Terceiros
     Fechar janela
 
 Terceiros > Contatos > Registros de Contatos
@@ -29,7 +29,7 @@ Terceiros > Contatos > Registros de Contatos
     RPA.Windows.Click       Contatos
     RPA.Windows.Click       Registros de Contatos
     RPA.Windows.Get Text    Registro de Contato (1)
-    Screenshot              Registro de Contato (1)    ${Caminho_Screenshots}Terceiros/Contatos/Registros de Contatos
+    BaseDesktop.Screenshot  Registro de Contato (1)    ${Caminho_Screenshots}Terceiros/Contatos/Registros de Contatos
     RPA.Windows.Click       Fechar
 
 Terceiros > Contatos > Tipo de Histórico de Contatos
@@ -39,7 +39,7 @@ Terceiros > Contatos > Tipo de Histórico de Contatos
     RPA.Windows.Click       Contatos
     RPA.Windows.Click       Tipo de Histórico de Contatos
     RPA.Windows.Get Text    Cadastro de tipo de Histórico de Contatos (1)
-    Screenshot              Cadastro de tipo de Histórico de Contatos (1)    ${Caminho_Screenshots}Terceiros/Contatos/Tipo de Histórico de Contatos
+    BaseDesktop.Screenshot                Cadastro de tipo de Histórico de Contatos (1)    ${Caminho_Screenshots}Terceiros/Contatos/Tipo de Histórico de Contatos
     Fechar janela
 
 Terceiros > Contatos > Atividades de Contatos
@@ -49,7 +49,7 @@ Terceiros > Contatos > Atividades de Contatos
     RPA.Windows.Click       Contatos
     RPA.Windows.Click       Atividades de Contatos
     RPA.Windows.Get Text    Cadastro de Atividades de Contatos (1)
-    Screenshot              Cadastro de Atividades de Contatos (1)    ${Caminho_Screenshots}Terceiros/Contatos/Atividades de Contatos
+    BaseDesktop.Screenshot                Cadastro de Atividades de Contatos (1)    ${Caminho_Screenshots}Terceiros/Contatos/Atividades de Contatos
     Fechar janela
 
 Terceiros > Contatos > Consulta de contatos realizados
@@ -59,7 +59,7 @@ Terceiros > Contatos > Consulta de contatos realizados
     RPA.Windows.Click       Contatos
     RPA.Windows.Click       Consulta de contatos realizados
     RPA.Windows.Get Text    Consulta de Contatos Realizados (1)
-    Screenshot              Consulta de Contatos Realizados (1)    ${Caminho_Screenshots}Terceiros/Contatos/Consulta de contatos realizados
+    BaseDesktop.Screenshot                Consulta de Contatos Realizados (1)    ${Caminho_Screenshots}Terceiros/Contatos/Consulta de contatos realizados
     Fechar janela
 
 Categorias de Terceiros
@@ -67,7 +67,7 @@ Categorias de Terceiros
     Cadastros
     RPA.Windows.Click       Categorias de Terceiros
     RPA.Windows.Get Text    Cadastro de Categorias de Terceiros (1)
-    Screenshot              Cadastro de Categorias de Terceiros (1)    ${Caminho_Screenshots}Categorias de Terceiros
+    BaseDesktop.Screenshot                Cadastro de Categorias de Terceiros (1)    ${Caminho_Screenshots}Categorias de Terceiros
     Fechar janela
 
 Grupos de Terceiros
@@ -75,7 +75,7 @@ Grupos de Terceiros
     Cadastros
     RPA.Windows.Click       Grupos de Terceiros
     RPA.Windows.Get Text    Cadastro de Grupo de Terceiros (1)
-    Screenshot              Cadastro de Grupo de Terceiros (1)    ${Caminho_Screenshots}Grupos de Terceiros
+    BaseDesktop.Screenshot                Cadastro de Grupo de Terceiros (1)    ${Caminho_Screenshots}Grupos de Terceiros
     Fechar janela
 
 Limite de Crédito
@@ -83,7 +83,7 @@ Limite de Crédito
     Cadastros
     RPA.Windows.Click       Limite de Crédito
     RPA.Windows.Get Text    Cadastro de Limite de Crédito (1)
-    Screenshot              Cadastro de Limite de Crédito (1)    ${Caminho_Screenshots}Limite de Crédito
+    BaseDesktop.Screenshot                Cadastro de Limite de Crédito (1)    ${Caminho_Screenshots}Limite de Crédito
     Fechar janela
 
 Planos de Contas
@@ -91,7 +91,7 @@ Planos de Contas
     Cadastros
     RPA.Windows.Click       Plano de Contas
     RPA.Windows.Get Text    Cadastro do Plano de Contas (1)
-    Screenshot              Cadastro do Plano de Contas (1)    ${Caminho_Screenshots}Planos de Contas
+    BaseDesktop.Screenshot                Cadastro do Plano de Contas (1)    ${Caminho_Screenshots}Planos de Contas
     Fechar janela
 
 Tipos de Documento
@@ -99,7 +99,7 @@ Tipos de Documento
     Cadastros
     RPA.Windows.Click       Tipos de Documento
     RPA.Windows.Get Text    Cadastro de Tipos de Documentos (1)
-    Screenshot              Cadastro de Tipos de Documentos (1)    ${Caminho_Screenshots}Tipos de Documentos
+    BaseDesktop.Screenshot                Cadastro de Tipos de Documentos (1)    ${Caminho_Screenshots}Tipos de Documentos
     Fechar janela
 
 Tipo de Financiamento
@@ -107,7 +107,7 @@ Tipo de Financiamento
     Cadastros
     RPA.Windows.Click       Tipo de Financiamento
     RPA.Windows.Get Text    Cadastro de Tipo de Financiamento (1)
-    Screenshot              Cadastro de Tipo de Financiamento (1)    ${Caminho_Screenshots}Tipo de Financiamento
+    BaseDesktop.Screenshot                Cadastro de Tipo de Financiamento (1)    ${Caminho_Screenshots}Tipo de Financiamento
     Fechar janela
 
 Portadores
@@ -115,7 +115,7 @@ Portadores
     Cadastros
     RPA.Windows.Click       Portadores
     RPA.Windows.Get Text    Cadastro de Portadores (1)
-    Screenshot              Cadastro de Portadores (1)    ${Caminho_Screenshots}Portadores
+    BaseDesktop.Screenshot                Cadastro de Portadores (1)    ${Caminho_Screenshots}Portadores
     Fechar janela
 
 Carteiras de Cobranças
@@ -123,7 +123,7 @@ Carteiras de Cobranças
     Cadastros
     RPA.Windows.Click       Carteiras de Cobrança
     RPA.Windows.Get Text    Cadastro de Carteiras de Cobranças (1)
-    Screenshot              Cadastro de Carteiras de Cobranças (1)    ${Caminho_Screenshots}Carteiras de Cobranças
+    BaseDesktop.Screenshot                Cadastro de Carteiras de Cobranças (1)    ${Caminho_Screenshots}Carteiras de Cobranças
     Fechar janela
 
 Tipos de Cobrança
@@ -131,7 +131,7 @@ Tipos de Cobrança
     Cadastros
     RPA.Windows.Click       Tipos de Cobrança
     RPA.Windows.Get Text    Cadastro de Tipos de Cobrança (1)
-    Screenshot              Cadastro de Tipos de Cobrança (1)    ${Caminho_Screenshots}Tipos de Cobrança
+    BaseDesktop.Screenshot                Cadastro de Tipos de Cobrança (1)    ${Caminho_Screenshots}Tipos de Cobrança
     Fechar janela
 
 Bancos
@@ -139,7 +139,7 @@ Bancos
     Cadastros
     RPA.Windows.Click       Bancos
     RPA.Windows.Get Text    Cadastro de Bancos (1)
-    Screenshot              Cadastro de Bancos (1)    ${Caminho_Screenshots}Bancos
+    BaseDesktop.Screenshot                Cadastro de Bancos (1)    ${Caminho_Screenshots}Bancos
     Fechar janela
 
 Formas de Pagamento
@@ -147,7 +147,7 @@ Formas de Pagamento
     Cadastros
     RPA.Windows.Click       Formas de Pagamento
     RPA.Windows.Get Text    Formas de Pagamento (1)
-    Screenshot              Formas de Pagamento (1)    ${Caminho_Screenshots}Formas de Pagamento
+    BaseDesktop.Screenshot                Formas de Pagamento (1)    ${Caminho_Screenshots}Formas de Pagamento
     Fechar janela
 
 Formas de Pagamento (SISPAG)
@@ -155,7 +155,7 @@ Formas de Pagamento (SISPAG)
     Cadastros
     RPA.Windows.Click       Formas de Pagamento (SISPAG)
     RPA.Windows.Get Text    Cadastro de Formas de Pagamento (SISPAG) (1)
-    Screenshot              Cadastro de Formas de Pagamento (SISPAG) (1)    ${Caminho_Screenshots}Formas de Pagamento (SISPAG)
+    BaseDesktop.Screenshot                Cadastro de Formas de Pagamento (SISPAG) (1)    ${Caminho_Screenshots}Formas de Pagamento (SISPAG)
     Fechar janela
 
 Bandeiras de Cartões
@@ -163,7 +163,7 @@ Bandeiras de Cartões
     Cadastros
     RPA.Windows.Click       Bandeiras de Cartões
     RPA.Windows.Get Text    Cadastro de Bandeiras Cartão (1)
-    Screenshot              Cadastro de Bandeiras Cartão (1)    ${Caminho_Screenshots}Bandeiras de Cartões
+    BaseDesktop.Screenshot                Cadastro de Bandeiras Cartão (1)    ${Caminho_Screenshots}Bandeiras de Cartões
     Fechar janela
 
 Autorizadoras de Cartões
@@ -171,7 +171,7 @@ Autorizadoras de Cartões
     Cadastros
     RPA.Windows.Click       Autorizadoras de Cartões
     RPA.Windows.Get Text    Cadastro de Autorizadoras de Cartão (1)
-    Screenshot              Cadastro de Autorizadoras de Cartão (1)    ${Caminho_Screenshots}Autorizadoras de Cartões
+    BaseDesktop.Screenshot                Cadastro de Autorizadoras de Cartão (1)    ${Caminho_Screenshots}Autorizadoras de Cartões
     Fechar janela
 
 Centros de Custos
@@ -179,7 +179,7 @@ Centros de Custos
     Cadastros
     RPA.Windows.Click       Centros de Custos
     RPA.Windows.Get Text    Cadastro de Centros de Custos (1)
-    Screenshot              Cadastro de Centros de Custos (1)    ${Caminho_Screenshots}Centros de Custos
+    BaseDesktop.Screenshot                Cadastro de Centros de Custos (1)    ${Caminho_Screenshots}Centros de Custos
     Fechar janela
 
 Históricos Contábeis
@@ -187,7 +187,7 @@ Históricos Contábeis
     Cadastros
     RPA.Windows.Click       Históricos Contábeis
     RPA.Windows.Get Text    Cadastro de Históricos Contábeis (1)
-    Screenshot              Cadastro de Históricos Contábeis (1)    ${Caminho_Screenshots}Históricos Contábeis
+    BaseDesktop.Screenshot                Cadastro de Históricos Contábeis (1)    ${Caminho_Screenshots}Históricos Contábeis
     Fechar janela
 
 Indexadores
@@ -195,7 +195,7 @@ Indexadores
     Cadastros
     RPA.Windows.Click       Indexadores
     RPA.Windows.Get Text    Cadastro de Indexadores (1)
-    Screenshot              Cadastro de Indexadores (1)    ${Caminho_Screenshots}Indexadores
+    BaseDesktop.Screenshot                Cadastro de Indexadores (1)    ${Caminho_Screenshots}Indexadores
     Fechar janela
 
 Índices Financeiros
@@ -203,7 +203,7 @@ Indexadores
     Cadastros
     RPA.Windows.Click       Índices Financeiros
     RPA.Windows.Get Text    Cadastro de Índices Financeiros (1)
-    Screenshot              Cadastro de Índices Financeiros (1)    ${Caminho_Screenshots}Índices Financeiros
+    BaseDesktop.Screenshot                Cadastro de Índices Financeiros (1)    ${Caminho_Screenshots}Índices Financeiros
     Fechar janela
 
 Limite de Crédito > Documentos
@@ -212,7 +212,7 @@ Limite de Crédito > Documentos
     RPA.Desktop.Press Keys    l
     RPA.Windows.Click         Documentos
     RPA.Windows.Get Text      Documentos para Limite de Crédito (1)
-    Screenshot                Documentos para Limite de Crédito (1)    ${Caminho_Screenshots}Limite de Crédito/Documentos
+    BaseDesktop.Screenshot                  Documentos para Limite de Crédito (1)    ${Caminho_Screenshots}Limite de Crédito/Documentos
     Fechar janela
 
 Limite de Crédito > Tipos Aprovação
@@ -221,7 +221,7 @@ Limite de Crédito > Tipos Aprovação
     RPA.Desktop.Press Keys    l
     RPA.Desktop.Press Keys    t
     RPA.Windows.Get Text      Cadastro de Tipos de Aprovação (1)
-    Screenshot                Cadastro de Tipos de Aprovação (1)    ${Caminho_Screenshots}Limite de Crédito/Tipos Aprovação
+    BaseDesktop.Screenshot                  Cadastro de Tipos de Aprovação (1)    ${Caminho_Screenshots}Limite de Crédito/Tipos Aprovação
     Fechar janela
 
 
@@ -231,7 +231,7 @@ Limite de Crédito > Níveis de Aprovação
     RPA.Desktop.Press Keys    l
     RPA.Desktop.Press Keys    n
     RPA.Windows.Get Text      Cadastro Estágios de aprovação para o Limite de Crédito (1)
-    Screenshot                Cadastro Estágios de aprovação para o Limite de Crédito (1)    ${Caminho_Screenshots}Limite de Crédito/Níveis de Aprovação
+    BaseDesktop.Screenshot                  Cadastro Estágios de aprovação para o Limite de Crédito (1)    ${Caminho_Screenshots}Limite de Crédito/Níveis de Aprovação
     Fechar janela
 
 Limite de Crédito > Dados para Análise
@@ -240,7 +240,7 @@ Limite de Crédito > Dados para Análise
     RPA.Desktop.Press Keys    l
     RPA.Desktop.Press Keys    a
     RPA.Windows.Get Text      Cadastro de Dados para Limite de Crédito (1)
-    Screenshot                Cadastro de Dados para Limite de Crédito (1)    ${Caminho_Screenshots}Limite de Crédito/Dados para Análise
+    BaseDesktop.Screenshot                  Cadastro de Dados para Limite de Crédito (1)    ${Caminho_Screenshots}Limite de Crédito/Dados para Análise
     Fechar janela
 
 Limite de Crédito > Tipos de Cálculos/Fórmulas
@@ -249,7 +249,7 @@ Limite de Crédito > Tipos de Cálculos/Fórmulas
     RPA.Desktop.Press Keys    l
     RPA.Desktop.Press Keys    i
     RPA.Windows.Get Text      Cadastro de Tipos de Cálculos para Limite de Crédito (1)
-    Screenshot                Cadastro de Tipos de Cálculos para Limite de Crédito (1)    ${Caminho_Screenshots}Limite de Crédito/Tipos de Cálculos_Fórmulas
+    BaseDesktop.Screenshot                  Cadastro de Tipos de Cálculos para Limite de Crédito (1)    ${Caminho_Screenshots}Limite de Crédito/Tipos de Cálculos_Fórmulas
     Fechar janela
 
 Limite de Crédito > Estrutura Análise
@@ -258,7 +258,7 @@ Limite de Crédito > Estrutura Análise
     RPA.Desktop.Press Keys    l
     RPA.Desktop.Press Keys    e
     RPA.Windows.Get Text      Cadastro de Estrutura de Cálculos para o Limite de Crédito (1)
-    Screenshot                Cadastro de Estrutura de Cálculos para o Limite de Crédito (1)    ${Caminho_Screenshots}Limite de Crédito/Estrutura Análise
+    BaseDesktop.Screenshot                  Cadastro de Estrutura de Cálculos para o Limite de Crédito (1)    ${Caminho_Screenshots}Limite de Crédito/Estrutura Análise
     Fechar janela
 
 Limite de Crédito > Fórmulas/Cálculo Limite de crédito
@@ -267,7 +267,7 @@ Limite de Crédito > Fórmulas/Cálculo Limite de crédito
     RPA.Desktop.Press Keys    l
     RPA.Desktop.Press Keys    f
     RPA.Windows.Get Text      Cadastro de Cálculos para o Limite de Crédito (1)
-    Screenshot                Cadastro de Cálculos para o Limite de Crédito (1)    ${Caminho_Screenshots}Limite de Crédito/Fórmulas_Cálculo Limite de crédito
+    BaseDesktop.Screenshot                  Cadastro de Cálculos para o Limite de Crédito (1)    ${Caminho_Screenshots}Limite de Crédito/Fórmulas_Cálculo Limite de crédito
     Fechar janela
 
 Países
@@ -275,7 +275,7 @@ Países
     Cadastros
     RPA.Windows.Click         Países
     RPA.Windows.Get Text      Cadastro de Países (1)
-    Screenshot                Cadastro de Países (1)    ${Caminho_Screenshots}Países
+    BaseDesktop.Screenshot                  Cadastro de Países (1)    ${Caminho_Screenshots}Países
     Fechar janela
 
 Estados
@@ -283,7 +283,7 @@ Estados
     Cadastros
     RPA.Windows.Click         Estados
     RPA.Windows.Get Text      Cadastro de Estados (1)
-    Screenshot                Cadastro de Estados (1)    ${Caminho_Screenshots}Estados
+    BaseDesktop.Screenshot                  Cadastro de Estados (1)    ${Caminho_Screenshots}Estados
     Fechar janela
 
 Regiões
@@ -291,7 +291,7 @@ Regiões
     Cadastros
     RPA.Windows.Click         Regiões
     RPA.Windows.Get Text      Cadastro de Regiões (1)
-    Screenshot                Cadastro de Regiões (1)    ${Caminho_Screenshots}Regiões
+    BaseDesktop.Screenshot                  Cadastro de Regiões (1)    ${Caminho_Screenshots}Regiões
     Fechar janela
 
 Municípios
@@ -299,7 +299,7 @@ Municípios
     Cadastros
     RPA.Windows.Click         Municípios
     RPA.Windows.Get Text      Cadastro de Municípios (1)
-    Screenshot                Cadastro de Municípios (1)    ${Caminho_Screenshots}Municípios
+    BaseDesktop.Screenshot                  Cadastro de Municípios (1)    ${Caminho_Screenshots}Municípios
     Fechar janela
 
 Localidades
@@ -307,7 +307,7 @@ Localidades
     Cadastros
     RPA.Windows.Click         Localidades
     RPA.Windows.Get Text      Cadastro de Localidades (1)
-    Screenshot                Cadastro de Localidades (1)    ${Caminho_Screenshots}Localidades
+    BaseDesktop.Screenshot                  Cadastro de Localidades (1)    ${Caminho_Screenshots}Localidades
     Fechar janela
 
 Relatórios > Terceiros
@@ -316,7 +316,7 @@ Relatórios > Terceiros
     RPA.Windows.Click         Relatórios
     RPA.Desktop.Press Keys    t
     RPA.Windows.Get Text      Relatório de Clientes/Fornecedores (1)
-    Screenshot                Relatório de Clientes/Fornecedores (1)    ${Caminho_Screenshots}Relatórios/Terceiros
+    BaseDesktop.Screenshot                  Relatório de Clientes/Fornecedores (1)    ${Caminho_Screenshots}Relatórios/Terceiros
     Fechar janela
 
 Relatórios > Tipos de Documentos
@@ -325,7 +325,7 @@ Relatórios > Tipos de Documentos
     RPA.Windows.Click         Relatórios
     RPA.Desktop.Press Keys    i
     RPA.Windows.Get Text      Relatório de Tipos de Documentos (1)
-    Screenshot                Relatório de Tipos de Documentos (1)    ${Caminho_Screenshots}Relatórios/Tipos de Documentos
+    BaseDesktop.Screenshot                  Relatório de Tipos de Documentos (1)    ${Caminho_Screenshots}Relatórios/Tipos de Documentos
     Fechar janela
 
 Relatórios > Portadores
@@ -334,7 +334,7 @@ Relatórios > Portadores
     RPA.Windows.Click         Relatórios
     RPA.Desktop.Press Keys    p
     RPA.Windows.Get Text      Relatório de Portadores (1)
-    Screenshot                Relatório de Portadores (1)    ${Caminho_Screenshots}Relatórios/Portadores
+    BaseDesktop.Screenshot                  Relatório de Portadores (1)    ${Caminho_Screenshots}Relatórios/Portadores
     Fechar janela
 
 Relatórios > Plano de Contas
@@ -343,7 +343,7 @@ Relatórios > Plano de Contas
     RPA.Windows.Click         Relatórios
     RPA.Desktop.Press Keys    l
     RPA.Windows.Get Text      Relatório de Plano de Contas (1)
-    Screenshot                Relatório de Plano de Contas (1)    ${Caminho_Screenshots}Relatórios/Plano de Contas
+    BaseDesktop.Screenshot                  Relatório de Plano de Contas (1)    ${Caminho_Screenshots}Relatórios/Plano de Contas
     Fechar janela
 
 Relatórios > Históricos Contábeis
@@ -352,7 +352,7 @@ Relatórios > Históricos Contábeis
     RPA.Windows.Click         Relatórios
     RPA.Desktop.Press Keys    h
     RPA.Windows.Get Text      Relatório de Históricos Contábeis (1)
-    Screenshot                Relatório de Históricos Contábeis (1)    ${Caminho_Screenshots}Relatórios/Históricos Contábeis
+    BaseDesktop.Screenshot                  Relatório de Históricos Contábeis (1)    ${Caminho_Screenshots}Relatórios/Históricos Contábeis
     Fechar janela
 
 Relatórios > Centros de Custos
@@ -361,7 +361,7 @@ Relatórios > Centros de Custos
     RPA.Windows.Click         Relatórios
     RPA.Desktop.Press Keys    c
     RPA.Windows.Get Text      Relatório de Centros de Custos (1)
-    Screenshot                Relatório de Centros de Custos (1)    ${Caminho_Screenshots}Relatórios/Centros de Custos
+    BaseDesktop.Screenshot                  Relatório de Centros de Custos (1)    ${Caminho_Screenshots}Relatórios/Centros de Custos
     Fechar janela
 
 Relatórios > Países
@@ -370,7 +370,7 @@ Relatórios > Países
     RPA.Windows.Click         Relatórios
     RPA.Desktop.Press Keys    a
     RPA.Windows.Get Text      Relatório de Países (1)
-    Screenshot                Relatório de Países (1)    ${Caminho_Screenshots}Relatórios/Países
+    BaseDesktop.Screenshot                  Relatório de Países (1)    ${Caminho_Screenshots}Relatórios/Países
     Fechar janela
 
 Relatórios > Estados
@@ -379,7 +379,7 @@ Relatórios > Estados
     RPA.Windows.Click         Relatórios
     RPA.Desktop.Press Keys    e
     RPA.Windows.Get Text      Relatório de Estados (1)
-    Screenshot                Relatório de Estados (1)    ${Caminho_Screenshots}Relatórios/Estados
+    BaseDesktop.Screenshot                  Relatório de Estados (1)    ${Caminho_Screenshots}Relatórios/Estados
     Fechar janela
 
 Relatórios > Municípios
@@ -388,7 +388,7 @@ Relatórios > Municípios
     RPA.Windows.Click         Relatórios
     RPA.Desktop.Press Keys    m
     RPA.Windows.Get Text      Relatório de Municípios (1)
-    Screenshot                Relatório de Municípios (1)    ${Caminho_Screenshots}Relatórios/Municípios
+    BaseDesktop.Screenshot                  Relatório de Municípios (1)    ${Caminho_Screenshots}Relatórios/Municípios
     Fechar janela
 
 Relatórios > Regiões
@@ -397,7 +397,7 @@ Relatórios > Regiões
     RPA.Windows.Click         Relatórios
     RPA.Desktop.Press Keys    r
     RPA.Windows.Get Text      Relatório de Regiões (1)
-    Screenshot                Relatório de Regiões (1)    ${Caminho_Screenshots}Relatórios/Regiões
+    BaseDesktop.Screenshot                  Relatório de Regiões (1)    ${Caminho_Screenshots}Relatórios/Regiões
     Fechar janela
 
 Relatórios > Localidades
@@ -406,7 +406,7 @@ Relatórios > Localidades
     RPA.Windows.Click         Relatórios
     RPA.Desktop.Press Keys    o
     RPA.Windows.Get Text      Relatório de Localidades (1)
-    Screenshot                Relatório de Localidades (1)    ${Caminho_Screenshots}Relatórios/Localidades
+    BaseDesktop.Screenshot                  Relatório de Localidades (1)    ${Caminho_Screenshots}Relatórios/Localidades
     Fechar janela
 
 Relatórios > Estabelecimentos
@@ -415,7 +415,7 @@ Relatórios > Estabelecimentos
     RPA.Windows.Click         Relatórios
     RPA.Desktop.Press Keys    s
     RPA.Windows.Get Text      Relatório de Estabelecimentos (1)
-    Screenshot                Relatório de Estabelecimentos (1)    ${Caminho_Screenshots}Relatórios/Estabelecimentos
+    BaseDesktop.Screenshot                  Relatório de Estabelecimentos (1)    ${Caminho_Screenshots}Relatórios/Estabelecimentos
     Fechar janela
 
 Parâmetros > Empresas
@@ -424,7 +424,7 @@ Parâmetros > Empresas
     RPA.Windows.Click         Parâmetros
     RPA.Desktop.Press Keys    e
     RPA.Windows.Get Text      Cadastro de Empresas (1)
-    Screenshot                Cadastro de Empresas (1)    ${Caminho_Screenshots}Parâmetros/Empresas
+    BaseDesktop.Screenshot                  Cadastro de Empresas (1)    ${Caminho_Screenshots}Parâmetros/Empresas
     Fechar janela
 
 Parâmetros > Estabelecimentos
@@ -433,7 +433,7 @@ Parâmetros > Estabelecimentos
     RPA.Windows.Click         Parâmetros
     RPA.Desktop.Press Keys    s
     RPA.Windows.Get Text      Cadastro de Estabelecimentos (1)
-    Screenshot                Cadastro de Estabelecimentos (1)    ${Caminho_Screenshots}Parâmetros/Estabelecimentos
+    BaseDesktop.Screenshot                  Cadastro de Estabelecimentos (1)    ${Caminho_Screenshots}Parâmetros/Estabelecimentos
     Fechar janela
 
 Parâmetros > Usuários
@@ -442,7 +442,7 @@ Parâmetros > Usuários
     RPA.Windows.Click         Parâmetros
     RPA.Desktop.Press Keys    u
     RPA.Windows.Get Text      Cadastro de Usuários (1)
-    Screenshot                Cadastro de Usuários (1)    ${Caminho_Screenshots}Parâmetros/Usuários
+    BaseDesktop.Screenshot                  Cadastro de Usuários (1)    ${Caminho_Screenshots}Parâmetros/Usuários
     Fechar janela
 
 Parâmetros > Grupos Usuários
@@ -451,7 +451,7 @@ Parâmetros > Grupos Usuários
     RPA.Windows.Click         Parâmetros
     RPA.Desktop.Press Keys    g
     RPA.Windows.Get Text      Cadastro de Grupos de Usuários (1)
-    Screenshot                Cadastro de Grupos de Usuários (1)    ${Caminho_Screenshots}Parâmetros/Grupos Usuários
+    BaseDesktop.Screenshot                  Cadastro de Grupos de Usuários (1)    ${Caminho_Screenshots}Parâmetros/Grupos Usuários
     Fechar janela
 
 Parâmetros > Configurações de Estação
@@ -460,7 +460,7 @@ Parâmetros > Configurações de Estação
     RPA.Windows.Click         Parâmetros
     RPA.Desktop.Press Keys    c
     RPA.Windows.Get Text      Configurações da Estação (1)
-    Screenshot                Configurações da Estação (1)    ${Caminho_Screenshots}Parâmetros/Configurações de Estação
+    BaseDesktop.Screenshot    Configurações da Estação (1)    ${Caminho_Screenshots}Parâmetros/Configurações de Estação
     Fechar janela
 
 Encerrar

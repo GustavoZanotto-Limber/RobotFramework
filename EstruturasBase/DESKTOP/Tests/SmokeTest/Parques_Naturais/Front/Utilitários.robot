@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation    Smoke Test: Utilitários
-Resource         ${EXECDIR}/EstruturasBase/DESKTOP/Resources/BaseDesktop.robot
+Resource         C:/Users/Gustavo Zanotto/AppData/Local/Programs/Python/Python39/Scripts/RobotFramework/EstruturasBase/DESKTOP/Resources/BaseDesktop.robot
 Suite Setup      Iniciar sessao front
 
 *** Variables ***
@@ -20,7 +20,7 @@ Favoritos
     Utilitários
     RPA.Windows.Click       Favoritos
     RPA.Windows.Get Text    Configuração dos Favoritos (1)
-    Screenshot              Configuração dos Favoritos (1)    ${Caminho_Screenshots}Favoritos
+    BaseDesktop.Screenshot              Configuração dos Favoritos (1)    ${Caminho_Screenshots}Favoritos
     RPA.Windows.Click       Fechar
     
 Papel de Parede
@@ -28,7 +28,7 @@ Papel de Parede
     Utilitários
     RPA.Windows.Click       Papel de Parede
     RPA.Windows.Get Text    Seleção de Papel de Parede
-    Screenshot              Seleção de Papel de Parede    ${Caminho_Screenshots}Papel de Parede
+    BaseDesktop.Screenshot              Seleção de Papel de Parede    ${Caminho_Screenshots}Papel de Parede
     RPA.Windows.Click       Fechar
 
 Estilo do Menu Principal
@@ -36,7 +36,7 @@ Estilo do Menu Principal
     Utilitários
     RPA.Windows.Click       Estilo do Menu Principal
     RPA.Windows.Get Text    Seleção do Estilo do Menu Principal (1)
-    Screenshot              Seleção do Estilo do Menu Principal (1)    ${Caminho_Screenshots}Estilo do Menu Principal
+    BaseDesktop.Screenshot              Seleção do Estilo do Menu Principal (1)    ${Caminho_Screenshots}Estilo do Menu Principal
     RPA.Windows.Click       Fechar
 
 Controle de Acessos
@@ -44,7 +44,7 @@ Controle de Acessos
     Utilitários
     RPA.Windows.Click       Controle de Acessos
     RPA.Windows.Get Text    Controle de Acessos : Formulários (1)
-    Screenshot              Controle de Acessos : Formulários (1)    ${Caminho_Screenshots}Controle de Acessos
+    BaseDesktop.Screenshot              Controle de Acessos : Formulários (1)    ${Caminho_Screenshots}Controle de Acessos
     Fechar janela
 
 Relatórios Personalizados > Cadastro de Categorias
@@ -53,7 +53,7 @@ Relatórios Personalizados > Cadastro de Categorias
     RPA.Windows.Click       Relatórios Personalizados
     RPA.Desktop.Press Keys  c
     RPA.Windows.Get Text    Cadastro de Categoria (1)
-    Screenshot              Cadastro de Categoria (1)    ${Caminho_Screenshots}Relatórios Personalizados/Cadastro de Categorias
+    BaseDesktop.Screenshot              Cadastro de Categoria (1)    ${Caminho_Screenshots}Relatórios Personalizados/Cadastro de Categorias
     Fechar janela
     
 Relatórios Personalizados > Cadastro de Relatórios
@@ -62,7 +62,7 @@ Relatórios Personalizados > Cadastro de Relatórios
     RPA.Windows.Click       Relatórios Personalizados
     RPA.Desktop.Press Keys  a
     RPA.Windows.Get Text    Cadastro de Relatórios Personalizados (1)
-    Screenshot              Cadastro de Relatórios Personalizados (1)    ${Caminho_Screenshots}Relatórios Personalizados/Cadastro de Relatórios
+    BaseDesktop.Screenshot              Cadastro de Relatórios Personalizados (1)    ${Caminho_Screenshots}Relatórios Personalizados/Cadastro de Relatórios
     Fechar janela
 
 
@@ -71,7 +71,7 @@ Layout de Bilhetes
     Utilitários
     RPA.Windows.Click       Layout de Bilhetes
     RPA.Windows.Get Text    Layout de Bilhetes (1)
-    Screenshot              Layout de Bilhetes (1)    ${Caminho_Screenshots}Layout de Bilhetes
+    BaseDesktop.Screenshot              Layout de Bilhetes (1)    ${Caminho_Screenshots}Layout de Bilhetes
     Fechar janela
 
 Configuração de Impressoras
@@ -79,7 +79,7 @@ Configuração de Impressoras
     Utilitários
     RPA.Windows.Click       Configuração de Impressoras
     RPA.Windows.Get Text    Configuração Impressoras (1)
-    Screenshot              Configuração Impressoras (1)    ${Caminho_Screenshots}Configuração de Impressoras
+    BaseDesktop.Screenshot              Configuração Impressoras (1)    ${Caminho_Screenshots}Configuração de Impressoras
     Fechar janela
     RPA.Desktop.Press Keys  Left
     RPA.Desktop.Press Keys  Enter
@@ -89,7 +89,7 @@ Observações Padrão
     Utilitários
     RPA.Windows.Click       Observações Padrão
     RPA.Windows.Get Text    Cadastro de Observações Padrão (1)
-    Screenshot              Cadastro de Observações Padrão (1)    ${Caminho_Screenshots}Observações Padrão
+    BaseDesktop.Screenshot              Cadastro de Observações Padrão (1)    ${Caminho_Screenshots}Observações Padrão
     Fechar janela
 
 Criar Usuario de Log
@@ -97,7 +97,7 @@ Criar Usuario de Log
     Utilitários
     RPA.Windows.Click       Criar Usuário de Log
     RPA.Windows.Get Text    Cadastro Usuario de Log (1)
-    Screenshot              Cadastro Usuario de Log (1)    ${Caminho_Screenshots}Criar Usuario de Log
+    BaseDesktop.Screenshot              Cadastro Usuario de Log (1)    ${Caminho_Screenshots}Criar Usuario de Log
     Fechar janela
 
 Verifica transações abertas
@@ -105,7 +105,7 @@ Verifica transações abertas
     Utilitários
     RPA.Windows.Click       Verifica transações abertas
     RPA.Windows.Get Text    Verifica transações abertas (1)
-    Screenshot              Verifica transações abertas (1)    ${Caminho_Screenshots}Verifica transações abertas
+    BaseDesktop.Screenshot              Verifica transações abertas (1)    ${Caminho_Screenshots}Verifica transações abertas
     Fechar janela
 
 Abrir Gaveta
@@ -113,7 +113,7 @@ Abrir Gaveta
     Utilitários
     RPA.Windows.Click       Abrir Gaveta
     RPA.Windows.Get Text    Salvar Saída de Impressão como
-    Screenshot              Salvar Saída de Impressão como    ${Caminho_Screenshots}Abrir Gaveta
+    BaseDesktop.Screenshot              Salvar Saída de Impressão como    ${Caminho_Screenshots}Abrir Gaveta
     RPA.Windows.Click       Fechar
 
 Metas Orçamento/Previsão
@@ -121,7 +121,7 @@ Metas Orçamento/Previsão
     Utilitários
     RPA.Windows.Click       Metas Orçamento/Previsão
     RPA.Windows.Get Text    Cadastro de Metas para BI (1)
-    Screenshot              Cadastro de Metas para BI (1)    ${Caminho_Screenshots}Metas Orçamento_Previsão
+    BaseDesktop.Screenshot              Cadastro de Metas para BI (1)    ${Caminho_Screenshots}Metas Orçamento_Previsão
     Fechar janela
 
 Metas Realizadas Adicionais
@@ -129,7 +129,7 @@ Metas Realizadas Adicionais
     Utilitários
     RPA.Windows.Click       Metas Realizadas Adicionais
     RPA.Windows.Get Text    Lançamentos de Metas Realizadas (1)
-    Screenshot              Lançamentos de Metas Realizadas (1)    ${Caminho_Screenshots}Metas Realizadas Adicionais
+    BaseDesktop.Screenshot              Lançamentos de Metas Realizadas (1)    ${Caminho_Screenshots}Metas Realizadas Adicionais
     Fechar janela
 
 

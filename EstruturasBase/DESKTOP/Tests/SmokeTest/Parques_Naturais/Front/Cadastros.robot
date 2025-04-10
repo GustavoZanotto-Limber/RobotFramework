@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation    Smoke Test: Cadastros
-Resource         ${EXECDIR}/EstruturasBase/DESKTOP/Resources/BaseDesktop.robot
+Resource         C:/Users/Gustavo Zanotto/AppData/Local/Programs/Python/Python39/Scripts/RobotFramework/EstruturasBase/DESKTOP/Resources/BaseDesktop.robot
 Suite Setup      Iniciar sessao front
 Library  SikuliLibrary  RUN_ON_FAILURE=Nothing
 
@@ -18,7 +18,7 @@ Guias
     Cadastros
     RPA.Windows.Click       Guias
     RPA.Windows.Get Text    Cadastro de Guias (1)
-    Screenshot              Cadastro de Guias (1)    ${Caminho_Screenshots}Guias
+    BaseDesktop.Screenshot              Cadastro de Guias (1)    ${Caminho_Screenshots}Guias
     Fechar janela
 
 Isentos
@@ -26,169 +26,169 @@ Isentos
     Cadastros
     RPA.Windows.Click       Isentos
     RPA.Windows.Get Text    Cadastro de Isento (1)
-    Screenshot              Cadastro de Isento (1)    ${Caminho_Screenshots}Isentos
+    BaseDesktop.Screenshot              Cadastro de Isento (1)    ${Caminho_Screenshots}Isentos
     Fechar janela
 
 Agências -> Agências
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Agências/    ERRO Agências
+    [Teardown]    Caso aconteça erro           ${Caminho_Screenshots}Agências/    ERRO Agências
     Cadastros
     RPA.Windows.Click         Agências
     RPA.Desktop.Press Keys    A
     RPA.Windows.Get Text      Cadastro de Terceiros (1)
-    Screenshot                Cadastro de Terceiros (1)    ${Caminho_Screenshots}Agências/Agências
+    BaseDesktop.Screenshot    Cadastro de Terceiros (1)    ${Caminho_Screenshots}Agências/Agências
     Fechar janela
 
 Agências -> Grupo de Agências
-    [Teardown]                Caso aconteça erro                    ${Caminho_Screenshots}/Agências                      ERRO Grupo de Agências
+    [Teardown]    Caso aconteça erro        ${Caminho_Screenshots}/Agências          ERRO Grupo de Agências
     Cadastros
     RPA.Windows.Click         Agências
     RPA.Desktop.Press Keys    G
     RPA.Windows.Get Text      Cadastro de Grupos de Agências (1)
-    Screenshot                Cadastro de Grupos de Agências (1)    ${Caminho_Screenshots}/Agências/Grupo de Agências
+    BaseDesktop.Screenshot    Cadastro de Grupos de Agências (1)    ${Caminho_Screenshots}/Agências/Grupo de Agências
     Fechar janela
 
 Locais Estacionamento
-    [Teardown]              Caso aconteça erro                       ${Caminho_Screenshots}                         ERRO Locais Estacionamento
+    [Teardown]              Caso aconteça erro           ${Caminho_Screenshots}             ERRO Locais Estacionamento
     Cadastros
     RPA.Windows.Click       Locais Estacionamento
     RPA.Windows.Get Text    Cadastro Locais de Estacionamento (1)
-    Screenshot              Cadastro Locais de Estacionamento (1)    ${Caminho_Screenshots}Locais Estacionamento
+    BaseDesktop.Screenshot              Cadastro Locais de Estacionamento (1)    ${Caminho_Screenshots}Locais Estacionamento
     Fechar janela
 
 Grupos de Bilhetes Totem
-    [Teardown]              Caso aconteça erro                          ${Caminho_Screenshots}                            ERRO Grupo Bilhetes Totem
+    [Teardown]              Caso aconteça erro              ${Caminho_Screenshots}                ERRO Grupo Bilhetes Totem
     Cadastros
     RPA.Windows.Click       Grupo Bilhetes Totem
     RPA.Windows.Get Text    Cadastro de Grupos de Bilhetes Totem (1)
-    Screenshot              Cadastro de Grupos de Bilhetes Totem (1)    ${Caminho_Screenshots}Grupos de Bilhetes Totem
+    BaseDesktop.Screenshot              Cadastro de Grupos de Bilhetes Totem (1)    ${Caminho_Screenshots}Grupos de Bilhetes Totem
     Fechar janela
 
 Grupos de Isenção
-    [Teardown]              Caso aconteça erro                   ${Caminho_Screenshots}                     ERRO Grupos de Isenção
+    [Teardown]              Caso aconteça erro       ${Caminho_Screenshots}         ERRO Grupos de Isenção
     Cadastros
     RPA.Windows.Click       Grupos de Isenção
     RPA.Windows.Get Text    Cadastro de Grupos de Isenção (1)
-    Screenshot              Cadastro de Grupos de Isenção (1)    ${Caminho_Screenshots}Grupos de Isenção
+    BaseDesktop.Screenshot              Cadastro de Grupos de Isenção (1)    ${Caminho_Screenshots}Grupos de Isenção
     Fechar janela
 
 Tipos de Autorização
-    [Teardown]              Caso aconteça erro                      ${Caminho_Screenshots}                        ERRO Tipos de Autorização
+    [Teardown]              Caso aconteça erro          ${Caminho_Screenshots}            ERRO Tipos de Autorização
     Cadastros
     RPA.Windows.Click       Tipos de Autorização
     RPA.Windows.Get Text    Cadastro de Tipos de Autorização (1)
-    Screenshot              Cadastro de Tipos de Autorização (1)    ${Caminho_Screenshots}Tipos de Autorização
+    BaseDesktop.Screenshot              Cadastro de Tipos de Autorização (1)    ${Caminho_Screenshots}Tipos de Autorização
     Fechar janela
 
 Tipos de Documentos
-    [Teardown]              Caso aconteça erro                     ${Caminho_Screenshots}                       ERRO Tipos de Documentos
+    [Teardown]              Caso aconteça erro         ${Caminho_Screenshots}           ERRO Tipos de Documentos
     Cadastros
     RPA.Windows.Click       Tipos de Documentos
     RPA.Windows.Get Text    Cadastro de Tipos de Documentos (1)
-    Screenshot              Cadastro de Tipos de Documentos (1)    ${Caminho_Screenshots}Tipos de Documentos
+    BaseDesktop.Screenshot              Cadastro de Tipos de Documentos (1)    ${Caminho_Screenshots}Tipos de Documentos
     Fechar janela
 
 Pessoas Autorizadas
-    [Teardown]              Run Keyword If Test Failed             Caso aconteça erro                           ${Caminho_Screenshots}    ERRO Pessoas Autorizadas    
+    [Teardown]              Run Keyword If Test Failed             Caso aconteça erro               ${Caminho_Screenshots}    ERRO Pessoas Autorizadas    
     Cadastros
     RPA.Windows.Click       Pessoas Autorizadas
     RPA.Windows.Get Text    Cadastro de Pessoas Autorizadas (1)
-    Screenshot              Cadastro de Pessoas Autorizadas (1)    ${Caminho_Screenshots}Pessoas Autorizadas
+    BaseDesktop.Screenshot              Cadastro de Pessoas Autorizadas (1)    ${Caminho_Screenshots}Pessoas Autorizadas
     Fechar janela
 
 Acesso por aproximação
-    [Teardown]              Caso aconteça erro                        ${Caminho_Screenshots}                          ERRO Acesso por Aproximação
+    [Teardown]              Caso aconteça erro            ${Caminho_Screenshots}              ERRO Acesso por Aproximação
     Cadastros
     RPA.Windows.Click       Acesso por Aproximação
     RPA.Windows.Get Text    Cadastro de Acesso por Aproximação (1)
-    Screenshot              Cadastro de Acesso por Aproximação (1)    ${Caminho_Screenshots}Acesso por aproximação
+    BaseDesktop.Screenshot              Cadastro de Acesso por Aproximação (1)    ${Caminho_Screenshots}Acesso por aproximação
     Fechar janela
 
 Catracas / Terminais de Acesso
-    [Teardown]              Caso aconteça erro                                ${Caminho_Screenshots}                                ERRO Catracas_Terminais de Acesso
+    [Teardown]              Caso aconteça erro        ${Caminho_Screenshots}        ERRO Catracas_Terminais de Acesso
     Cadastros
     RPA.Windows.Click       Catracas / Terminais de Acesso
     RPA.Windows.Get Text    Cadastro de Catracas / Terminais de Acesso (1)
-    Screenshot              Cadastro de Catracas / Terminais de Acesso (1)    ${Caminho_Screenshots}Catracas_Terminais de Acesso
+    BaseDesktop.Screenshot              Cadastro de Catracas / Terminais de Acesso (1)    ${Caminho_Screenshots}Catracas_Terminais de Acesso
     Fechar janela
 
 PDV -> Locais de Venda
-    [Teardown]                Caso aconteça erro                 ${Caminho_Screenshots}PDV/                   ERRO Locais de Venda
+    [Teardown]    Caso aconteça erro     ${Caminho_Screenshots}PDV/       ERRO Locais de Venda
     Cadastros
     RPA.Windows.Click         PDV
     RPA.Desktop.Press Keys    l
     RPA.Windows.Get Text      Cadastro de Locais de Venda (1)
-    Screenshot                Cadastro de Locais de Venda (1)    ${Caminho_Screenshots}PDV/Locais de Venda
+    BaseDesktop.Screenshot    Cadastro de Locais de Venda (1)    ${Caminho_Screenshots}PDV/Locais de Venda
     Fechar janela
 
 PDV -> PDV
-    [Teardown]                Caso aconteça erro     ${Caminho_Screenshots}PDV/       ERRO PDV
+    [Teardown]    Caso aconteça erro     ${Caminho_Screenshots}PDV/       ERRO PDV
     Cadastros
     RPA.Windows.Click         PDV
     RPA.Desktop.Press Keys    p
     RPA.Windows.Get Text      Cadastro de PDV (1)
-    Screenshot                Cadastro de PDV (1)    ${Caminho_Screenshots}PDV/PDV
+    BaseDesktop.Screenshot    Cadastro de PDV (1)    ${Caminho_Screenshots}PDV/PDV
     Fechar janela
 
 Câmeras de Contagem
-    [Teardown]              Caso aconteça erro                     ${Caminho_Screenshots}                       ERRO Câmeras de Contagem
+    [Teardown]              Caso aconteça erro         ${Caminho_Screenshots}           ERRO Câmeras de Contagem
     Cadastros
     RPA.Windows.Click       Câmeras de Contagem
     RPA.Windows.Get Text    Cadastro de Câmeras de Contagem (1)
-    Screenshot              Cadastro de Câmeras de Contagem (1)    ${Caminho_Screenshots}Câmeras de Contagem
+    BaseDesktop.Screenshot              Cadastro de Câmeras de Contagem (1)    ${Caminho_Screenshots}Câmeras de Contagem
     Fechar janela
 
 Parâmetros -> Empresas
-    [Teardown]                Caso aconteça erro          ${Caminho_Screenshots}Parâmetros/            ERRO Empresas
+    [Teardown]    Caso aconteça erro          ${Caminho_Screenshots}Parâmetros/            ERRO Empresas
     Cadastros
     RPA.Windows.Click         Parâmetros
     RPA.Desktop.Press Keys    e
     RPA.Windows.Get Text      Cadastro de Empresas (1)
-    Screenshot                Cadastro de Empresas (1)    ${Caminho_Screenshots}Parâmetros/Empresas
+    BaseDesktop.Screenshot    Cadastro de Empresas (1)    ${Caminho_Screenshots}Parâmetros/Empresas
     Fechar janela
 
 Parâmetros -> Estabelecimentos
-    [Teardown]                Caso aconteça erro                  ${Caminho_Screenshots}Parâmetros/                    ERRO Estabelecimentos
+    [Teardown]    Caso aconteça erro      ${Caminho_Screenshots}Parâmetros/        ERRO Estabelecimentos
     Cadastros
     RPA.Windows.Click         Parâmetros
     RPA.Desktop.Press Keys    s
     RPA.Windows.Get Text      Cadastro de Estabelecimentos (1)
-    Screenshot                Cadastro de Estabelecimentos (1)    ${Caminho_Screenshots}Parâmetros/Estabelecimentos
+    BaseDesktop.Screenshot    Cadastro de Estabelecimentos (1)    ${Caminho_Screenshots}Parâmetros/Estabelecimentos
     Fechar janela
 
 Parâmetros -> Usuários
-    [Teardown]                Caso aconteça erro          ${Caminho_Screenshots}Parâmetros/                       ERRO Usuários
+    [Teardown]    Caso aconteça erro          ${Caminho_Screenshots}Parâmetros/           ERRO Usuários
     Cadastros
     RPA.Windows.Click         Parâmetros
     RPA.Desktop.Press Keys    u
     RPA.Windows.Get Text      Cadastro de Usuários (1)
-    Screenshot                Cadastro de Usuários (1)    ${Caminho_Screenshots}Parâmetros/Usuários
+    BaseDesktop.Screenshot    Cadastro de Usuários (1)    ${Caminho_Screenshots}Parâmetros/Usuários
     Fechar janela
 
 Parâmetros -> Grupos de Usuários
-    [Teardown]                Caso aconteça erro                    ${Caminho_Screenshots}Parâmetros/                      ERRO Grupos de Usuários
+    [Teardown]    Caso aconteça erro        ${Caminho_Screenshots}Parâmetros/          ERRO Grupos de Usuários
     Cadastros
     RPA.Windows.Click         Parâmetros
     RPA.Desktop.Press Keys    g
     RPA.Windows.Get Text      Cadastro de Grupos de Usuários (1)
-    Screenshot                Cadastro de Grupos de Usuários (1)    ${Caminho_Screenshots}Parâmetros/Grupos de Usuários
+    BaseDesktop.Screenshot    Cadastro de Grupos de Usuários (1)    ${Caminho_Screenshots}Parâmetros/Grupos de Usuários
     Fechar janela
 
 Parâmetros -> Configurações de Estação
-    [Teardown]                Caso aconteça erro              ${Caminho_Screenshots}Parâmetros/                            ERRO Configurações de Estação
+    [Teardown]    Caso aconteça erro              ${Caminho_Screenshots}Parâmetros/                ERRO Configurações de Estação
     Cadastros
     RPA.Windows.Click         Parâmetros
     RPA.Desktop.Press Keys    c
     RPA.Windows.Get Text      Configurações da Estação (1)
-    Screenshot                Configurações da Estação (1)    ${Caminho_Screenshots}Parâmetros/Configurações de Estação
+    BaseDesktop.Screenshot    Configurações da Estação (1)    ${Caminho_Screenshots}Parâmetros/Configurações de Estação
     Fechar janela
 
 Parâmetros -> Configurações de Bilheteria
-    [Teardown]                Caso aconteça erro              ${Caminho_Screenshots}Parâmetros/                            ERRO Configurações de Bilheteria
+    [Teardown]    Caso aconteça erro              ${Caminho_Screenshots}Parâmetros/                ERRO Configurações de Bilheteria
     Cadastros
     RPA.Windows.Click         Parâmetros
     RPA.Desktop.Press Keys    o
     RPA.Windows.Get Text      Configurações Bilheteria (1)
-    Screenshot                Configurações Bilheteria (1)    ${Caminho_Screenshots}Parâmetros/Configurações Bilheteria
+    BaseDesktop.Screenshot    Configurações Bilheteria (1)    ${Caminho_Screenshots}Parâmetros/Configurações Bilheteria
     Fechar janela
     RPA.Desktop.Press Keys    right
     RPA.Desktop.Press Keys    enter
