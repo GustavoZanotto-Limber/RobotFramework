@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation    Smoke Test: Caixa Operador
-Resource         ${EXECDIR}/EstruturasBase/DESKTOP/Resources/BaseDesktop.robot
+Resource         C:/Users/Gustavo Zanotto/AppData/Local/Programs/Python/Python39/Scripts/RobotFramework/EstruturasBase/DESKTOP/Resources/BaseDesktop.robot
 Suite Setup      Iniciar sessao front
 
 *** Variables ***
@@ -38,7 +38,7 @@ Abertura / Fechamento
     RPA.Desktop.Press Keys              Enter
     RPA.Windows.Click                   Abrir Caixa
     RPA.Desktop.Press Keys              Enter
-    Screenshot                          Controle de Caixa (1)    ${Caminho_Screenshots}Abertura_Fechamento
+    BaseDesktop.Screenshot                          Controle de Caixa (1)    ${Caminho_Screenshots}Abertura_Fechamento
     RPA.Windows.Click                   OK
 
 
@@ -47,7 +47,7 @@ Suprimento / Sangria
     Caixa Operador
     RPA.Windows.Click       Suprimento / Sangria
     RPA.Windows.Get Text    Movimento de Caixa (1)
-    Screenshot              Movimento de Caixa (1)    ${Caminho_Screenshots}Consultas Personalizadas
+    BaseDesktop.Screenshot              Movimento de Caixa (1)    ${Caminho_Screenshots}Consultas Personalizadas
     Fechar janela
 
 Encerrar

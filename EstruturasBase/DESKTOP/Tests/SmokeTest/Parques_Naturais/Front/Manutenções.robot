@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation    Smoke Test: Manutenções
-Resource         ${EXECDIR}/EstruturasBase/DESKTOP/Resources/BaseDesktop.robot
+Resource         C:/Users/Gustavo Zanotto/AppData/Local/Programs/Python/Python39/Scripts/RobotFramework/EstruturasBase/DESKTOP/Resources/BaseDesktop.robot
 Suite Setup      Iniciar sessao front
 
 *** Variables ***
@@ -20,7 +20,7 @@ Emissão de Bilhetes
     Manutenções
     RPA.Windows.Click         Emissão de Bilhetes
     RPA.Windows.Get Text      Emissão de Bilhetes (1)
-    Screenshot                Emissão de Bilhetes (1)    ${Caminho_Screenshots}Emissão de Bilhetes
+    BaseDesktop.Screenshot                Emissão de Bilhetes (1)    ${Caminho_Screenshots}Emissão de Bilhetes
     Fechar janela
     RPA.Desktop.Press Keys    Left
     RPA.Desktop.Press Keys    Enter
@@ -30,7 +30,7 @@ Reimpressão de Bilhetes
     Manutenções
     RPA.Windows.Click       Reimpressão de Bilhetes
     RPA.Windows.Get Text    Reimpressão de Bilhetes (1)
-    Screenshot              Reimpressão de Bilhetes (1)    ${Caminho_Screenshots}Reimpressão de Bilhetes
+    BaseDesktop.Screenshot              Reimpressão de Bilhetes (1)    ${Caminho_Screenshots}Reimpressão de Bilhetes
     Fechar janela
 
 Cancelamentos de Bilhetes
@@ -38,7 +38,7 @@ Cancelamentos de Bilhetes
     Manutenções
     RPA.Windows.Click       Cancelamento de Bilhetes
     RPA.Windows.Get Text    Cancelamento de Bilhetes (1)
-    Screenshot              Cancelamento de Bilhetes (1)    ${Caminho_Screenshots}Cancelamento de Bilhetes
+    BaseDesktop.Screenshot              Cancelamento de Bilhetes (1)    ${Caminho_Screenshots}Cancelamento de Bilhetes
     RPA.Windows.Click       Fechar
 
 Remarcações de Visitas
@@ -46,7 +46,7 @@ Remarcações de Visitas
     Manutenções
     RPA.Windows.Click       Remarcação de Visitas
     RPA.Windows.Get Text    Remarcação de Vendas
-    Screenshot              Remarcação de Vendas     ${Caminho_Screenshots}Remarcações de Visitas
+    BaseDesktop.Screenshot              Remarcação de Vendas     ${Caminho_Screenshots}Remarcações de Visitas
     RPA.Windows.Click       Fechar
 
 Reservas -> Lançamentos
@@ -55,7 +55,7 @@ Reservas -> Lançamentos
     RPA.Windows.Click         Reservas
     RPA.Desktop.Press Keys    l
     RPA.Windows.Get Text      Lançamento de Reservas (1)
-    Screenshot                Lançamento de Reservas (1)    ${Caminho_Screenshots}Reservas/Lançamento de Reservas
+    BaseDesktop.Screenshot                Lançamento de Reservas (1)    ${Caminho_Screenshots}Reservas/Lançamento de Reservas
     Fechar janela
 
 Reservas -> Cancelamento
@@ -64,7 +64,7 @@ Reservas -> Cancelamento
     RPA.Windows.Click         Reservas
     RPA.Desktop.Press Keys    c
     RPA.Windows.Get Text      Cancelamento de Reservas (1)
-    Screenshot                Cancelamento de Reservas (1)    ${Caminho_Screenshots}Reservas/Cancelamento de Reservas
+    BaseDesktop.Screenshot                Cancelamento de Reservas (1)    ${Caminho_Screenshots}Reservas/Cancelamento de Reservas
     Fechar janela
 
 Reservas -> Alteração
@@ -73,7 +73,7 @@ Reservas -> Alteração
     RPA.Windows.Click         Reservas
     RPA.Desktop.Press Keys    a
     RPA.Windows.Get Text      Alteração de Reservas/Isenções/Web (1)
-    Screenshot                Alteração de Reservas/Isenções/Web (1)    ${Caminho_Screenshots}Reservas/Alteração de Reservas
+    BaseDesktop.Screenshot                Alteração de Reservas/Isenções/Web (1)    ${Caminho_Screenshots}Reservas/Alteração de Reservas
     Fechar janela
 
 Reservas -> Remarcação de Visitas
@@ -83,7 +83,7 @@ Reservas -> Remarcação de Visitas
     RPA.Desktop.Press Keys    r
     Sleep                     1s
     RPA.Windows.Get Text      Consulta de Reservas (1)
-    Screenshot                Consulta de Reservas (1)    ${Caminho_Screenshots}Reservas/Remarcação de Visitas
+    BaseDesktop.Screenshot                Consulta de Reservas (1)    ${Caminho_Screenshots}Reservas/Remarcação de Visitas
     RPA.Windows.Click         Fechar
 
 Lançamento de Isenções
@@ -91,7 +91,7 @@ Lançamento de Isenções
     Manutenções
     RPA.Windows.Click       Lançamento de Isenções
     RPA.Windows.Get Text    Lançamento de Isenção (1)
-    Screenshot              Lançamento de Isenção (1)    ${Caminho_Screenshots}Lançamento de Isenções
+    BaseDesktop.Screenshot              Lançamento de Isenção (1)    ${Caminho_Screenshots}Lançamento de Isenções
     Fechar janela
 
 Lançamento de Veículos
@@ -99,7 +99,7 @@ Lançamento de Veículos
     Manutenções
     RPA.Windows.Click       Lançamento de Veículos
     RPA.Windows.Get Text    Lançamento de Veiculos (1)
-    Screenshot              Lançamento de Veiculos (1)    ${Caminho_Screenshots}Lançamento de Veículos
+    BaseDesktop.Screenshot              Lançamento de Veiculos (1)    ${Caminho_Screenshots}Lançamento de Veículos
     Fechar janela
 
 Lançamento de Vouchers Pendentes
@@ -107,7 +107,7 @@ Lançamento de Vouchers Pendentes
     Manutenções
     RPA.Windows.Click       Lançamento de Vouchers Pendentes
     RPA.Windows.Get Text    Alteração de Vouchers Bilhete
-    Screenshot              Alteração de Vouchers Bilhete       ${Caminho_Screenshots}Lançamento de Vouchers Pendentes
+    BaseDesktop.Screenshot              Alteração de Vouchers Bilhete       ${Caminho_Screenshots}Lançamento de Vouchers Pendentes
     RPA.Windows.Click       Fechar
 
 Comissões de Guias -> Pagamento
@@ -116,7 +116,7 @@ Comissões de Guias -> Pagamento
     RPA.Windows.Click         Comissões de Guias
     RPA.Desktop.Press Keys    p
     RPA.Windows.Get Text      Comissões de Guias (1)
-    Screenshot                Comissões de Guias (1)    ${Caminho_Screenshots}Comissões de Guias/Pagamento
+    BaseDesktop.Screenshot                Comissões de Guias (1)    ${Caminho_Screenshots}Comissões de Guias/Pagamento
     Fechar janela
 
 Comissões de Guias -> Estorno
@@ -125,7 +125,7 @@ Comissões de Guias -> Estorno
     RPA.Windows.Click         Comissões de Guias
     RPA.Desktop.Press Keys    e
     RPA.Windows.Get Text      Estorno de Comissões (1)
-    Screenshot                Estorno de Comissões (1)    ${Caminho_Screenshots}Comissões de Guias/Estorno
+    BaseDesktop.Screenshot                Estorno de Comissões (1)    ${Caminho_Screenshots}Comissões de Guias/Estorno
     Fechar janela
 
 Comissões de Guias -> Vincular Guia em Venda
@@ -134,7 +134,7 @@ Comissões de Guias -> Vincular Guia em Venda
     RPA.Windows.Click         Comissões de Guias
     RPA.Desktop.Press Keys    v
     RPA.Windows.Get Text      Vincular Guia em Venda (1)
-    Screenshot                Vincular Guia em Venda (1)    ${Caminho_Screenshots}Comissões de Guias/Vincular Guia em Venda
+    BaseDesktop.Screenshot                Vincular Guia em Venda (1)    ${Caminho_Screenshots}Comissões de Guias/Vincular Guia em Venda
     Fechar janela
 
 Comissões de Guias -> Relatório
@@ -143,7 +143,7 @@ Comissões de Guias -> Relatório
     RPA.Windows.Click         Comissões de Guias
     RPA.Desktop.Press Keys    r
     RPA.Windows.Get Text      Relatório de Comissões (1)
-    Screenshot                Relatório de Comissões (1)    ${Caminho_Screenshots}Comissões de Guias/Relatório
+    BaseDesktop.Screenshot                Relatório de Comissões (1)    ${Caminho_Screenshots}Comissões de Guias/Relatório
     Fechar janela
 
 Devoluções de Vendas
@@ -151,7 +151,7 @@ Devoluções de Vendas
     Manutenções
     RPA.Windows.Click       Devoluções de Vendas
     RPA.Windows.Get Text    Devolução de Vendas (1)
-    Screenshot              Devolução de Vendas (1)    ${Caminho_Screenshots}Devoluções de Vendas
+    BaseDesktop.Screenshot              Devolução de Vendas (1)    ${Caminho_Screenshots}Devoluções de Vendas
     Fechar janela
 
 Configurações Totem
@@ -159,7 +159,7 @@ Configurações Totem
     Manutenções
     RPA.Windows.Click       Configurações Totem
     RPA.Windows.Get Text    Configurações Totem (1)
-    Screenshot              Configurações Totem (1)    ${Caminho_Screenshots}Configurações Totem
+    BaseDesktop.Screenshot              Configurações Totem (1)    ${Caminho_Screenshots}Configurações Totem
     Fechar janela
 
 Encerrar

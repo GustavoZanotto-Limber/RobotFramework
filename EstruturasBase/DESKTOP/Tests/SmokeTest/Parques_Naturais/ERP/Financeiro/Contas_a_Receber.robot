@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation    Smoke Test: Contas a Receber
-Resource         ${EXECDIR}/EstruturasBase/DESKTOP/Resources/BaseDesktop.robot
+Resource         C:/Users/Gustavo Zanotto/AppData/Local/Programs/Python/Python39/Scripts/RobotFramework/EstruturasBase/DESKTOP/Resources/BaseDesktop.robot
 Suite Setup      Iniciar sessao financeiro
 
 
@@ -24,7 +24,7 @@ Lançamentos > Lançamento - Simplificado
     RPA.Windows.Click         Lançamentos
     RPA.Desktop.Press Keys    l
     RPA.Windows.Get Text      Provisões do Contas a Receber (1)
-    Screenshot                Provisões do Contas a Receber (1)    ${Caminho_Screenshots}Lançamentos/Lançamento - Simplificado
+    BaseDesktop.Screenshot                Provisões do Contas a Receber (1)    ${Caminho_Screenshots}Lançamentos/Lançamento - Simplificado
     Fechar janela
 
 Lançamentos > Lançamento - Múltiplas Parcelas
@@ -33,7 +33,7 @@ Lançamentos > Lançamento - Múltiplas Parcelas
     RPA.Windows.Click         Lançamentos
     RPA.Desktop.Press Keys    a
     RPA.Windows.Get Text      Lançamento do Contas a Receber - Múltiplas Parcelas (1)
-    Screenshot                Lançamento do Contas a Receber - Múltiplas Parcelas (1)    ${Caminho_Screenshots}Lançamentos/Lançamento - Múltiplas Parcelas
+    BaseDesktop.Screenshot                Lançamento do Contas a Receber - Múltiplas Parcelas (1)    ${Caminho_Screenshots}Lançamentos/Lançamento - Múltiplas Parcelas
     Fechar janela
 
 Lançamentos > Lançamento - Com Baixa Automática
@@ -42,7 +42,7 @@ Lançamentos > Lançamento - Com Baixa Automática
     RPA.Windows.Click         Lançamentos
     RPA.Desktop.Press Keys    n
     RPA.Windows.Get Text      Provisões do Contas a Receber - Com Baixa Automática
-    Screenshot                Provisões do Contas a Receber - Com Baixa Automática    ${Caminho_Screenshots}Lançamentos/Lançamento - Com Baixa Automática
+    BaseDesktop.Screenshot                Provisões do Contas a Receber - Com Baixa Automática    ${Caminho_Screenshots}Lançamentos/Lançamento - Com Baixa Automática
     Fechar janela
 
 Baixas
@@ -50,7 +50,7 @@ Baixas
     Contas a Receber
     RPA.Windows.Click       Baixas
     RPA.Windows.Get Text    Baixas do Contas a Receber (1)
-    Screenshot              Baixas do Contas a Receber (1)    ${Caminho_Screenshots}Baixas
+    BaseDesktop.Screenshot              Baixas do Contas a Receber (1)    ${Caminho_Screenshots}Baixas
     Fechar janela
 
 Estornar Baixas
@@ -58,7 +58,7 @@ Estornar Baixas
     Contas a Receber
     RPA.Windows.Click       Estornar Baixas
     RPA.Windows.Get Text    Estorno de Baixas do Contas a Receber (1)
-    Screenshot              Estorno de Baixas do Contas a Receber (1)    ${Caminho_Screenshots}Extornar Baixas
+    BaseDesktop.Screenshot              Estorno de Baixas do Contas a Receber (1)    ${Caminho_Screenshots}Extornar Baixas
     Fechar janela
 
 Cobrança de Dívida
@@ -66,7 +66,7 @@ Cobrança de Dívida
     Contas a Receber
     RPA.Windows.Click       Cobrança de Dívida
     RPA.Windows.Get Text    Cobrança de Dívidas (1)
-    Screenshot              Cobrança de Dívidas (1)    ${Caminho_Screenshots}Cobrança de Dívida
+    BaseDesktop.Screenshot              Cobrança de Dívidas (1)    ${Caminho_Screenshots}Cobrança de Dívida
     Fechar janela           
 
 Renegociações
@@ -74,7 +74,7 @@ Renegociações
     Contas a Receber
     RPA.Windows.Click       Renegociações
     RPA.Windows.Get Text    Renegociação do Contas a Receber (1)
-    Screenshot              Renegociação do Contas a Receber (1)    ${Caminho_Screenshots}Renegociações
+    BaseDesktop.Screenshot              Renegociação do Contas a Receber (1)    ${Caminho_Screenshots}Renegociações
     Fechar janela
 
 Renegociações de Multiplos Clientes
@@ -82,7 +82,7 @@ Renegociações de Multiplos Clientes
     Contas a Receber
     RPA.Windows.Click       Renegociações de Multiplos Clientes
     RPA.Windows.Get Text    Renegociação do Contas a Receber Multiplos Clientes (1)
-    Screenshot              Renegociação do Contas a Receber Multiplos Clientes (1)    ${Caminho_Screenshots}Renegociações de Multiplos Clientes
+    BaseDesktop.Screenshot              Renegociação do Contas a Receber Multiplos Clientes (1)    ${Caminho_Screenshots}Renegociações de Multiplos Clientes
     Fechar janela
 
 Estornar Renegociações
@@ -90,7 +90,7 @@ Estornar Renegociações
     Contas a Receber
     RPA.Windows.Click       Estornar Renegociações
     RPA.Windows.Get Text    Estorno de Renegociações do Contas a Receber (1)
-    Screenshot              Estorno de Renegociações do Contas a Receber (1)    ${Caminho_Screenshots}Extornar Renegociações
+    BaseDesktop.Screenshot              Estorno de Renegociações do Contas a Receber (1)    ${Caminho_Screenshots}Extornar Renegociações
     Fechar janela
 
 Alterar Vencimento/Portador
@@ -98,7 +98,7 @@ Alterar Vencimento/Portador
     Contas a Receber
     RPA.Windows.Click       Alterar Vencimento/Portador
     RPA.Windows.Get Text    Alteração de Vencimento/Portador do Contas a Receber (1)
-    Screenshot              Alteração de Vencimento/Portador do Contas a Receber (1)    ${Caminho_Screenshots}Alterar Vencimento_Portador
+    BaseDesktop.Screenshot              Alteração de Vencimento/Portador do Contas a Receber (1)    ${Caminho_Screenshots}Alterar Vencimento_Portador
     Fechar janela
 
 Transferência entre Clientes
@@ -106,7 +106,7 @@ Transferência entre Clientes
     Contas a Receber
     RPA.Windows.Click       Transferência entre Clientes
     RPA.Windows.Get Text    Transferência de Contas entre Clientes (1)
-    Screenshot              Transferência de Contas entre Clientes (1)    ${Caminho_Screenshots}Transferência entre Clientes
+    BaseDesktop.Screenshot              Transferência de Contas entre Clientes (1)    ${Caminho_Screenshots}Transferência entre Clientes
     Fechar janela
 
 Alterar Contas a Receber
@@ -114,7 +114,7 @@ Alterar Contas a Receber
     Contas a Receber
     RPA.Windows.Click       Alterar Contas a Receber
     RPA.Windows.Get Text    Alterar Contas a Receber (1)
-    Screenshot              Alterar Contas a Receber (1)    ${Caminho_Screenshots}Alterar Contas a Receber
+    BaseDesktop.Screenshot              Alterar Contas a Receber (1)    ${Caminho_Screenshots}Alterar Contas a Receber
     Fechar janela
 
 Estorno Alteração de Contas a Receber
@@ -122,7 +122,7 @@ Estorno Alteração de Contas a Receber
     Contas a Receber
     RPA.Windows.Click       Estorno Alteração de Contas a Receber
     RPA.Windows.Get Text    Estorno de alterações de contas a receber
-    Screenshot              Estorno de alterações de contas a receber    ${Caminho_Screenshots}Estorno Alterar Contas a Receber
+    BaseDesktop.Screenshot              Estorno de alterações de contas a receber    ${Caminho_Screenshots}Estorno Alterar Contas a Receber
     Fechar janela
 
 Adiantamentos > Adiantamento de Clientes
@@ -131,7 +131,7 @@ Adiantamentos > Adiantamento de Clientes
     RPA.Windows.Click         Adiantamentos
     RPA.Desktop.Press Keys    a
     RPA.Windows.Get Text      Adiantamentos de Clientes (1)
-    Screenshot                Adiantamentos de Clientes (1)    ${Caminho_Screenshots}Adiantamentos/Adiantamento de Clientes
+    BaseDesktop.Screenshot                Adiantamentos de Clientes (1)    ${Caminho_Screenshots}Adiantamentos/Adiantamento de Clientes
     Fechar janela
 
 Adiantamentos > Extrato dos Adiantamentos/Cliente
@@ -140,7 +140,7 @@ Adiantamentos > Extrato dos Adiantamentos/Cliente
     RPA.Windows.Click         Adiantamentos
     RPA.Desktop.Press Keys    e
     RPA.Windows.Get Text      Extrato de Adiantamentos/Cliente (1)
-    Screenshot                Extrato de Adiantamentos/Cliente (1)    ${Caminho_Screenshots}Adiantamentos/Extrato dos Adiantamentos_Clientes
+    BaseDesktop.Screenshot                Extrato de Adiantamentos/Cliente (1)    ${Caminho_Screenshots}Adiantamentos/Extrato dos Adiantamentos_Clientes
     Fechar janela
 
 Adiantamentos > Saldo de Adiantamentos Clientes
@@ -149,7 +149,7 @@ Adiantamentos > Saldo de Adiantamentos Clientes
     RPA.Windows.Click         Adiantamentos
     RPA.Desktop.Press Keys    s
     RPA.Windows.Get Text      Saldo de Adiantamentos Cliente
-    Screenshot                Saldo de Adiantamentos Cliente    ${Caminho_Screenshots}Adiantamentos/Saldo de Adiantamentos Clientes
+    BaseDesktop.Screenshot                Saldo de Adiantamentos Cliente    ${Caminho_Screenshots}Adiantamentos/Saldo de Adiantamentos Clientes
     Fechar janela
 
 Adiantamentos > Relatório de Lançamento
@@ -158,7 +158,7 @@ Adiantamentos > Relatório de Lançamento
     RPA.Windows.Click         Adiantamentos
     RPA.Desktop.Press Keys    r
     RPA.Windows.Get Text      Relatório de Lançamentos de Adiantamentos de Clientes (1)
-    Screenshot                Relatório de Lançamentos de Adiantamentos de Clientes (1)    ${Caminho_Screenshots}Adiantamentos/Relatório de Lançamento
+    BaseDesktop.Screenshot                Relatório de Lançamentos de Adiantamentos de Clientes (1)    ${Caminho_Screenshots}Adiantamentos/Relatório de Lançamento
     Fechar janela
 
 Adiantamentos > Adiantamento de Pedidos de Venda
@@ -167,7 +167,7 @@ Adiantamentos > Adiantamento de Pedidos de Venda
     RPA.Windows.Click         Adiantamentos
     RPA.Desktop.Press Keys    d
     RPA.Windows.Get Text      Adiantamento de Pedidos de Venda (1)
-    Screenshot                Adiantamento de Pedidos de Venda (1)    ${Caminho_Screenshots}Adiantamentos/Adiantamento de Pedidos de Venda
+    BaseDesktop.Screenshot                Adiantamento de Pedidos de Venda (1)    ${Caminho_Screenshots}Adiantamentos/Adiantamento de Pedidos de Venda
     Fechar janela
 
 Adiantamentos > Antecipação de Pedido de Venda Parcial
@@ -176,7 +176,7 @@ Adiantamentos > Antecipação de Pedido de Venda Parcial
     RPA.Windows.Click         Adiantamentos
     RPA.Desktop.Press Keys    n
     RPA.Windows.Get Text      Adiantamento de Pedido de Venda (1)
-    Screenshot                Adiantamento de Pedido de Venda (1)    ${Caminho_Screenshots}Adiantamentos/Antecipação de Pedido de Vendas Parcial
+    BaseDesktop.Screenshot                Adiantamento de Pedido de Venda (1)    ${Caminho_Screenshots}Adiantamentos/Antecipação de Pedido de Vendas Parcial
     Fechar janela
 
 
@@ -185,7 +185,7 @@ Recibos Avulsos
     Contas a Receber
     RPA.Windows.Click       Recibos Avulsos
     RPA.Windows.Get Text    Emissão de Recibos (1)
-    Screenshot              Emissão de Recibos (1)    ${Caminho_Screenshots}Recibos Avulsos
+    BaseDesktop.Screenshot              Emissão de Recibos (1)    ${Caminho_Screenshots}Recibos Avulsos
     Fechar janela
 
 Recibos Avulsos - Múltiplas Contas
@@ -193,7 +193,7 @@ Recibos Avulsos - Múltiplas Contas
     Contas a Receber
     RPA.Windows.Click       Recibos Avulsos - Múltiplas Contas
     RPA.Windows.Get Text    Emissão de Recibos - Múltiplas Contas (1)
-    Screenshot              Emissão de Recibos - Múltiplas Contas (1)    ${Caminho_Screenshots}Recibos Avulsos - Múltiplas Contas
+    BaseDesktop.Screenshot              Emissão de Recibos - Múltiplas Contas (1)    ${Caminho_Screenshots}Recibos Avulsos - Múltiplas Contas
     Fechar janela
 
 Consultas
@@ -201,7 +201,7 @@ Consultas
     Contas a Receber
     RPA.Windows.Click       Consultas
     RPA.Windows.Get Text    Consulta do Contas a Receber (1)
-    Screenshot              Consulta do Contas a Receber (1)    ${Caminho_Screenshots}Consultas
+    BaseDesktop.Screenshot              Consulta do Contas a Receber (1)    ${Caminho_Screenshots}Consultas
     Fechar janela
 
 Emissão de Documentos
@@ -209,7 +209,7 @@ Emissão de Documentos
     Contas a Receber
     RPA.Windows.Click       Emissão de Documentos
     RPA.Windows.Get Text    Emissão de Duplicatas/Boletos/Carnês (1)
-    Screenshot              Emissão de Duplicatas/Boletos/Carnês (1)    ${Caminho_Screenshots}Emissão de Documentos
+    BaseDesktop.Screenshot              Emissão de Duplicatas/Boletos/Carnês (1)    ${Caminho_Screenshots}Emissão de Documentos
     Fechar janela
 
 Relatórios > Contas a Receber
@@ -218,7 +218,7 @@ Relatórios > Contas a Receber
     RPA.Windows.Click         Relatórios
     RPA.Desktop.Press Keys    c
     RPA.Windows.Get Text      Relatório de Contas a Receber (1)
-    Screenshot                Relatório de Contas a Receber (1)    ${Caminho_Screenshots}Relatórios/Contas a Receber
+    BaseDesktop.Screenshot                Relatório de Contas a Receber (1)    ${Caminho_Screenshots}Relatórios/Contas a Receber
     Fechar janela
 
 Relatórios > Contas a Receber Prazo
@@ -227,7 +227,7 @@ Relatórios > Contas a Receber Prazo
     RPA.Windows.Click         Relatórios 
     RPA.Desktop.Press Keys    o
     RPA.Windows.Get Text      Relatório de Contas a Receber a Prazo (1)
-    Screenshot                Relatório de Contas a Receber a Prazo (1)    ${Caminho_Screenshots}Relatórios/Contas a Receber Prazo
+    BaseDesktop.Screenshot                Relatório de Contas a Receber a Prazo (1)    ${Caminho_Screenshots}Relatórios/Contas a Receber Prazo
     Fechar janela
 
 Relatórios > Recebimento do contas a receber
@@ -236,7 +236,7 @@ Relatórios > Recebimento do contas a receber
     RPA.Windows.Click         Relatórios 
     RPA.Desktop.Press Keys    r
     RPA.Windows.Get Text      Relatório de recebimentos do contas a receber (1)
-    Screenshot                Relatório de recebimentos do contas a receber (1)    ${Caminho_Screenshots}Relatórios/Recebimento do contas a receber
+    BaseDesktop.Screenshot                Relatório de recebimentos do contas a receber (1)    ${Caminho_Screenshots}Relatórios/Recebimento do contas a receber
     Fechar janela
 
 Relatórios > Posição Financeira/Vendedor/Terceiro > Consulta
@@ -246,7 +246,7 @@ Relatórios > Posição Financeira/Vendedor/Terceiro > Consulta
     RPA.Windows.Click         Posição Financeira/Vendedor/Terceiro 
     RPA.Desktop.Press Keys    c
     RPA.Windows.Get Text      Posição Financeira (1)
-    Screenshot                Posição Financeira (1)                   ${Caminho_Screenshots}Relatórios/Posição Financeira_Vendedor_Terceiro/Consulta
+    BaseDesktop.Screenshot                Posição Financeira (1)                   ${Caminho_Screenshots}Relatórios/Posição Financeira_Vendedor_Terceiro/Consulta
     Fechar janela
 
 Relatórios > Posição Financeira/Vendedor/Terceiro > Relatório
@@ -256,7 +256,7 @@ Relatórios > Posição Financeira/Vendedor/Terceiro > Relatório
     RPA.Windows.Click         Posição Financeira/Vendedor/Terceiro 
     RPA.Desktop.Press Keys    r
     RPA.Windows.Get Text      Posição Financeira por Representante/Terceiro (1)
-    Screenshot                Posição Financeira por Representante/Terceiro (1)    ${Caminho_Screenshots}Relatórios/Posição Financeira_Vendedor_Terceiro/Relatório
+    BaseDesktop.Screenshot                Posição Financeira por Representante/Terceiro (1)    ${Caminho_Screenshots}Relatórios/Posição Financeira_Vendedor_Terceiro/Relatório
     Fechar janela
 
 Relatórios > Relatório de Cobrança
@@ -265,7 +265,7 @@ Relatórios > Relatório de Cobrança
     RPA.Windows.Click         Relatórios 
     RPA.Desktop.Press Keys    e
     RPA.Windows.Get Text      Relatório de Cobrança (1)
-    Screenshot                Relatório de Cobrança (1)    ${Caminho_Screenshots}Relatórios/Relatório de Cobrança
+    BaseDesktop.Screenshot                Relatório de Cobrança (1)    ${Caminho_Screenshots}Relatórios/Relatório de Cobrança
     Fechar janela
 
 Contratos de Terceiros > Emissão/Manutenção
@@ -274,7 +274,7 @@ Contratos de Terceiros > Emissão/Manutenção
     RPA.Windows.Click         Contratos de Terceiros       
     RPA.Desktop.Press Keys    e
     RPA.Windows.Get Text      Contrato de Terceiros (1)
-    Screenshot                Contrato de Terceiros (1)    ${Caminho_Screenshots}Contratos de Terceiros/Emissão_Manutenção
+    BaseDesktop.Screenshot                Contrato de Terceiros (1)    ${Caminho_Screenshots}Contratos de Terceiros/Emissão_Manutenção
     Fechar janela
 
 Contratos de Terceiros > Assinatura
@@ -283,7 +283,7 @@ Contratos de Terceiros > Assinatura
     RPA.Windows.Click         Contratos de Terceiros                      
     RPA.Desktop.Press Keys    a
     RPA.Windows.Get Text      Assinatura de Contratos de Terceiros (1)
-    Screenshot                Assinatura de Contratos de Terceiros (1)    ${Caminho_Screenshots}Contratos de Terceiros/Assinatura
+    BaseDesktop.Screenshot                Assinatura de Contratos de Terceiros (1)    ${Caminho_Screenshots}Contratos de Terceiros/Assinatura
     Fechar janela
 
 Contratos de Terceiros > Cancelamento/Baixa
@@ -292,7 +292,7 @@ Contratos de Terceiros > Cancelamento/Baixa
     RPA.Windows.Click         Contratos de Terceiros                         
     RPA.Desktop.Press Keys    c
     RPA.Windows.Get Text      Cancelamento/Baixa de Contrato de Terceiros
-    Screenshot                Cancelamento/Baixa de Contrato de Terceiros    ${Caminho_Screenshots}Contratos de Terceiros/Cancelamento_Baixa
+    BaseDesktop.Screenshot                Cancelamento/Baixa de Contrato de Terceiros    ${Caminho_Screenshots}Contratos de Terceiros/Cancelamento_Baixa
     Fechar janela
 
 Contratos de Terceiros > Estorno de Cancelamento
@@ -301,7 +301,7 @@ Contratos de Terceiros > Estorno de Cancelamento
     RPA.Windows.Click         Contratos de Terceiros                     
     RPA.Desktop.Press Keys    s
     RPA.Windows.Get Text      Estorno de Cancelamento de Contrato (1)
-    Screenshot                Estorno de Cancelamento de Contrato (1)    ${Caminho_Screenshots}Contratos de Terceiros/Estorno de Cancelamento
+    BaseDesktop.Screenshot                Estorno de Cancelamento de Contrato (1)    ${Caminho_Screenshots}Contratos de Terceiros/Estorno de Cancelamento
     Fechar janela
 
 Contratos de Terceiros > Consulta
@@ -310,7 +310,7 @@ Contratos de Terceiros > Consulta
     RPA.Windows.Click         Contratos de Terceiros       
     RPA.Desktop.Press Keys    o
     RPA.Windows.Get Text      Consulta de Contratos (1)
-    Screenshot                Consulta de Contratos (1)    ${Caminho_Screenshots}Contratos de Terceiros/Estorno de Cancelmento
+    BaseDesktop.Screenshot                Consulta de Contratos (1)    ${Caminho_Screenshots}Contratos de Terceiros/Estorno de Cancelmento
     Fechar janela
 
 Contratos de Terceiros > Relatório
@@ -319,7 +319,7 @@ Contratos de Terceiros > Relatório
     RPA.Windows.Click         Contratos de Terceiros        
     RPA.Desktop.Press Keys    R
     RPA.Windows.Get Text      Relatório de Contratos (1)
-    Screenshot                Relatório de Contratos (1)    ${Caminho_Screenshots}Contratos de Terceiros/Relatório
+    BaseDesktop.Screenshot                Relatório de Contratos (1)    ${Caminho_Screenshots}Contratos de Terceiros/Relatório
     Fechar janela
 
 Contratos de Pestação de Serviços > Manutenção de Contratos
@@ -328,7 +328,7 @@ Contratos de Pestação de Serviços > Manutenção de Contratos
     RPA.Windows.Click         Contratos de Prestação de Serviços
     RPA.Desktop.Press Keys    m
     RPA.Windows.Get Text      Manutenção de Contrato de Prestação de Serviços (1)
-    Screenshot                Manutenção de Contrato de Prestação de Serviços (1)    ${Caminho_Screenshots}Contratos de Pestação de Serviços /Manutenção de Contratos
+    BaseDesktop.Screenshot                Manutenção de Contrato de Prestação de Serviços (1)    ${Caminho_Screenshots}Contratos de Pestação de Serviços /Manutenção de Contratos
     Fechar janela
 
 Contratos de Pestação de Serviços > Consulta / Emissão de NF
@@ -337,7 +337,7 @@ Contratos de Pestação de Serviços > Consulta / Emissão de NF
     RPA.Windows.Click         Contratos de Prestação de Serviços    
     RPA.Desktop.Press Keys    c
     RPA.Windows.Get Text      Consultar/Faturar (1)
-    Screenshot                Consultar/Faturar (1)                ${Caminho_Screenshots}Contratos de Pestação de Serviços /Consulta_Emissão de NF
+    BaseDesktop.Screenshot                Consultar/Faturar (1)                ${Caminho_Screenshots}Contratos de Pestação de Serviços /Consulta_Emissão de NF
     Fechar janela
 
 Reajuste de Valores
@@ -345,7 +345,7 @@ Reajuste de Valores
     Contas a Receber
     RPA.Windows.Click         Reajuste de Valores   
     RPA.Windows.Get Text      Reajuste de Valores (1)
-    Screenshot                Reajuste de Valores (1)                ${Caminho_Screenshots}Reajuste de Valores
+    BaseDesktop.Screenshot                Reajuste de Valores (1)                ${Caminho_Screenshots}Reajuste de Valores
     Fechar janela
 
 Faturamento de Agências > Geração de Faturas
@@ -354,7 +354,7 @@ Faturamento de Agências > Geração de Faturas
     RPA.Windows.Click         Faturamento de Agências    
     RPA.Desktop.Press Keys    g
     RPA.Windows.Get Text      Faturamento de Agências (1)
-    Screenshot                Faturamento de Agências (1)                ${Caminho_Screenshots}Faturamento de Agências/Geração de Faturas
+    BaseDesktop.Screenshot                Faturamento de Agências (1)                ${Caminho_Screenshots}Faturamento de Agências/Geração de Faturas
     Fechar janela
 
 Faturamento de Agências > Estorno de Faturas
@@ -363,7 +363,7 @@ Faturamento de Agências > Estorno de Faturas
     RPA.Windows.Click         Faturamento de Agências    
     RPA.Desktop.Press Keys    e
     RPA.Windows.Get Text      Estorno de Faturas (1)
-    Screenshot                Estorno de Faturas (1)                ${Caminho_Screenshots}Faturamento de Agências/Estorno de Faturas
+    BaseDesktop.Screenshot                Estorno de Faturas (1)                ${Caminho_Screenshots}Faturamento de Agências/Estorno de Faturas
     Fechar janela
 
 Faturamento de Agências > Troca de Agências
@@ -372,7 +372,7 @@ Faturamento de Agências > Troca de Agências
     RPA.Windows.Click         Faturamento de Agências    
     RPA.Desktop.Press Keys    t
     RPA.Windows.Get Text      Troca de Agências (1)
-    Screenshot                Troca de Agências (1)                ${Caminho_Screenshots}Faturamento de Agências/Troca de Agências
+    BaseDesktop.Screenshot                Troca de Agências (1)                ${Caminho_Screenshots}Faturamento de Agências/Troca de Agências
     Fechar janela
 
 Faturamento de Agências > Lançamento de Vouchers Venda
@@ -381,7 +381,7 @@ Faturamento de Agências > Lançamento de Vouchers Venda
     RPA.Windows.Click         Faturamento de Agências    
     RPA.Desktop.Press Keys    l
     RPA.Windows.Get Text      Alteração de Vouchers Bilhete (1)
-    Screenshot                Alteração de Vouchers Bilhete (1)                ${Caminho_Screenshots}Faturamento de Agências/Lançamento de Vouchers Venda
+    BaseDesktop.Screenshot                Alteração de Vouchers Bilhete (1)                ${Caminho_Screenshots}Faturamento de Agências/Lançamento de Vouchers Venda
     Fechar janela
 
 
