@@ -2,7 +2,7 @@
 Documentation       Suite de teste do front
 #Uma suite de teste é basicamente onde ira rodar os tester, que ira puxar as funções e executar em tela
 
-Resource        ${EXECDIR}/EstruturasBase/DESKTOP/Resources/BaseDesktop.robot
+Resource        C:/Users/Gustavo Zanotto/AppData/Local/Programs/Python/Python39/Scripts/RobotFramework/EstruturasBase/DESKTOP/Resources/BaseDesktop.robot
 #Resource é basicamente onde fazemos o carregamento das imagens o inicio e o termino da sessao de testes.
 #
 
@@ -39,7 +39,7 @@ selecionando dentro de manutenções
         # SikuliLibrary.Click                 ${aba_a_ser_testada}.png
 
 abrindo caixa operador
-        Sleep 2s
+        Sleep                                     2s
         SikuliLibrary.Click               Cadastros.png
         repetidor de teclas                     right      4
         Sleep                                   2s
@@ -75,7 +75,7 @@ abrindo caixa operador
 
 
 Vendendo Bilhete
-        Selecionando a bilheteria front
+        Iniciar sessao front
         Set Anchor                              Aplicativo
         #Uma anchor é basicamente um limitador do que o programa irar ver na tela desse momento em diante caso 
         #tenha uma anchor para a barra de navegação o programa não consiguira clickar nas opções fora dessa barra

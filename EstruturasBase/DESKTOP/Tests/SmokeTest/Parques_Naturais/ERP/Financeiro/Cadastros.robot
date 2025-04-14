@@ -19,7 +19,7 @@ Terceiros > Cadastro de Terceiros
     RPA.Windows.Click         Terceiros
     RPA.Desktop.Press Keys    C
     RPA.Windows.Get Text      Cadastro de Terceiros (1)
-    BaseDesktop.Screenshot                Cadastro de Terceiros (1)    ${Caminho_Screenshots}Terceiros/Cadastro de Terceiros
+    BaseDesktop.Screenshot    Cadastro de Terceiros (1)    ${Caminho_Screenshots}Terceiros/Cadastro de Terceiros
     Fechar janela
 
 Terceiros > Contatos > Registros de Contatos

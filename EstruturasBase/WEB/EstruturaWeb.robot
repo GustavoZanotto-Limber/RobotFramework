@@ -91,7 +91,7 @@ Cenario 3: Teste de logar no card
 
 
 
-Cenario 4: erro
+
 #Esse teste deverá aparecer como erro no relatório com a mensagem: Test cannot be empty.
 
 # ***EXECUTAR UM TESTE***

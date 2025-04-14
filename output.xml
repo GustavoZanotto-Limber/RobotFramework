@@ -1,248 +1,271 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.9.13 on win32)" generated="2025-04-10T16:53:20.203003" rpa="false" schemaversion="5">
-<suite id="s1" name="Relatórios Consultas" source="c:\Users\Gustavo Zanotto\AppData\Local\Programs\Python\Python39\Scripts\RobotFramework\EstruturasBase\DESKTOP\Tests\SmokeTest\Parques_Naturais\ERP\Financeiro\Relatórios_Consultas.robot">
+<robot generator="Robot 7.2.2 (Python 3.9.13 on win32)" generated="2025-04-14T10:46:08.999529" rpa="false" schemaversion="5">
+<suite id="s1" name="Utilitários" source="c:\Users\Gustavo Zanotto\AppData\Local\Programs\Python\Python39\Scripts\RobotFramework\EstruturasBase\DESKTOP\Tests\SmokeTest\Parques_Naturais\ERP\Financeiro\Utilitários.robot">
 <kw name="Iniciar sessao financeiro" owner="BaseDesktop" type="SETUP">
 <kw name="Carregar os elementos do app" owner="BaseDesktop">
 <kw name="Add Image Path" owner="SikuliLibrary">
 <arg>${EXECDIR}\\EstruturasBase\\DESKTOP\\Elements</arg>
 <doc>Add image path</doc>
-<status status="PASS" start="2025-04-10T16:53:30.867857" elapsed="0.122639"/>
+<status status="PASS" start="2025-04-14T10:46:18.109947" elapsed="0.065681"/>
 </kw>
-<status status="PASS" start="2025-04-10T16:53:30.865825" elapsed="0.124671"/>
+<status status="PASS" start="2025-04-14T10:46:18.107952" elapsed="0.067676"/>
 </kw>
 <kw name="Open Application" owner="RPA.Desktop">
-<msg time="2025-04-10T16:53:30.992492" level="INFO">Starting application: C:\Limber\ERP 8.009R2\cde_win_fin.exe</msg>
-<msg time="2025-04-10T16:53:31.073791" level="INFO">${front} = Application("cde_win_fin.exe", pid:15720)</msg>
+<msg time="2025-04-14T10:46:18.176625" level="INFO">Starting application: C:\Limber\ERP 8.009R2\cde_win_fin.exe</msg>
+<msg time="2025-04-14T10:46:18.202405" level="INFO">${front} = Application("cde_win_fin.exe", pid:20228)</msg>
 <var>${front}</var>
 <arg>C:\\Limber\\ERP 8.009R2\\cde_win_fin.exe</arg>
 <doc>Start a given application by name (if in PATH),
 or by path to executable.</doc>
-<status status="PASS" start="2025-04-10T16:53:30.991495" elapsed="0.083295"/>
+<status status="PASS" start="2025-04-14T10:46:18.176625" elapsed="0.026778"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-10T16:53:34.082026" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-04-14T10:46:21.222978" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-10T16:53:31.074790" elapsed="3.009237"/>
+<status status="PASS" start="2025-04-14T10:46:18.203403" elapsed="3.019575"/>
 </kw>
 <kw name="Press Keys" owner="RPA.Desktop">
-<msg time="2025-04-10T16:53:34.087013" level="INFO">Pressing keys: Key.enter</msg>
+<msg time="2025-04-14T10:46:21.222978" level="INFO">Pressing keys: Key.enter</msg>
 <arg>enter</arg>
 <doc>Press multiple keys down simultaneously.</doc>
-<status status="PASS" start="2025-04-10T16:53:34.086015" elapsed="0.003991"/>
+<status status="PASS" start="2025-04-14T10:46:21.222978" elapsed="0.009620"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-10T16:53:38.102548" level="INFO">Slept 4 seconds.</msg>
-<msg time="2025-04-10T16:53:38.102548" level="INFO">Carregando a base...</msg>
+<msg time="2025-04-14T10:46:25.252815" level="INFO">Slept 4 seconds.</msg>
+<msg time="2025-04-14T10:46:25.252815" level="INFO">Carregando a base...</msg>
 <arg>4s</arg>
 <arg>Carregando a base...</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-10T16:53:34.091005" elapsed="4.012540"/>
+<status status="PASS" start="2025-04-14T10:46:21.232598" elapsed="4.020217"/>
 </kw>
 <kw name="Type Text" owner="RPA.Desktop">
 <arg>1</arg>
 <doc>Type text one letter at a time.</doc>
-<status status="PASS" start="2025-04-10T16:53:38.104543" elapsed="0.001995"/>
+<status status="PASS" start="2025-04-14T10:46:25.252815" elapsed="0.005021"/>
 </kw>
 <kw name="Press Keys" owner="RPA.Desktop">
-<msg time="2025-04-10T16:53:38.108533" level="INFO">Pressing keys: Key.enter</msg>
+<msg time="2025-04-14T10:46:25.262939" level="INFO">Pressing keys: Key.enter</msg>
 <arg>enter</arg>
 <doc>Press multiple keys down simultaneously.</doc>
-<status status="PASS" start="2025-04-10T16:53:38.107534" elapsed="0.106715"/>
+<status status="PASS" start="2025-04-14T10:46:25.262939" elapsed="0.109872"/>
 </kw>
 <kw name="Press Keys" owner="RPA.Desktop">
-<msg time="2025-04-10T16:53:38.216243" level="INFO">Pressing keys: Key.enter</msg>
+<msg time="2025-04-14T10:46:25.379387" level="INFO">Pressing keys: Key.enter</msg>
 <arg>enter</arg>
 <doc>Press multiple keys down simultaneously.</doc>
-<status status="PASS" start="2025-04-10T16:53:38.215247" elapsed="0.111700"/>
+<status status="PASS" start="2025-04-14T10:46:25.377827" elapsed="0.114957"/>
 </kw>
-<status status="PASS" start="2025-04-10T16:53:30.865196" elapsed="7.462753"/>
+<status status="PASS" start="2025-04-14T10:46:18.107952" elapsed="7.384832"/>
 </kw>
-<test id="s1-t1" name="Análise de Terceiro" line="109">
-<kw name="Relatórios/Consultas">
+<test id="s1-t1" name="Configurar de Dup/Boletos/Carnês" line="149">
+<kw name="Utilitários">
 <kw name="Cadastros" owner="BaseDesktop">
 <kw name="Click" owner="SikuliLibrary">
-<msg time="2025-04-10T16:53:41.017756" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1744314820075.png'/&gt;
-[log] CLICK on L[34,32]@S(0) (576 msec)</msg>
+<msg time="2025-04-14T10:46:27.600760" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1744638386752.png'/&gt;
+[log] CLICK on L[34,32]@S(0) (592 msec)</msg>
 <arg>Cadastros.png</arg>
 <doc>Click</doc>
-<status status="PASS" start="2025-04-10T16:53:38.340909" elapsed="2.677843"/>
+<status status="PASS" start="2025-04-14T10:46:25.492784" elapsed="2.108974"/>
 </kw>
-<status status="PASS" start="2025-04-10T16:53:38.338916" elapsed="2.680834"/>
+<status status="PASS" start="2025-04-14T10:46:25.492784" elapsed="2.108974"/>
 </kw>
 <kw name="repetidor de teclas" owner="BaseDesktop">
 <for flavor="IN RANGE">
 <iter>
 <kw name="Press Keys" owner="RPA.Desktop">
-<msg time="2025-04-10T16:53:41.024737" level="INFO">Pressing keys: Key.right</msg>
+<msg time="2025-04-14T10:46:27.608738" level="INFO">Pressing keys: Key.right</msg>
 <arg>${tecla}</arg>
 <doc>Press multiple keys down simultaneously.</doc>
-<status status="PASS" start="2025-04-10T16:53:41.023740" elapsed="0.007981"/>
+<status status="PASS" start="2025-04-14T10:46:27.607741" elapsed="0.009239"/>
 </kw>
 <var name="${quantidade_de_clicks}">1</var>
-<status status="PASS" start="2025-04-10T16:53:41.022743" elapsed="0.009972"/>
+<status status="PASS" start="2025-04-14T10:46:27.606744" elapsed="0.010236"/>
 </iter>
 <iter>
 <kw name="Press Keys" owner="RPA.Desktop">
-<msg time="2025-04-10T16:53:41.034709" level="INFO">Pressing keys: Key.right</msg>
+<msg time="2025-04-14T10:46:27.622502" level="INFO">Pressing keys: Key.right</msg>
 <arg>${tecla}</arg>
 <doc>Press multiple keys down simultaneously.</doc>
-<status status="PASS" start="2025-04-10T16:53:41.033712" elapsed="0.107712"/>
+<status status="PASS" start="2025-04-14T10:46:27.620967" elapsed="0.111322"/>
 </kw>
 <var name="${quantidade_de_clicks}">2</var>
-<status status="PASS" start="2025-04-10T16:53:41.033712" elapsed="0.108709"/>
+<status status="PASS" start="2025-04-14T10:46:27.618348" elapsed="0.113941"/>
 </iter>
 <iter>
 <kw name="Press Keys" owner="RPA.Desktop">
-<msg time="2025-04-10T16:53:41.146414" level="INFO">Pressing keys: Key.right</msg>
+<msg time="2025-04-14T10:46:27.737297" level="INFO">Pressing keys: Key.right</msg>
 <arg>${tecla}</arg>
 <doc>Press multiple keys down simultaneously.</doc>
-<status status="PASS" start="2025-04-10T16:53:41.145413" elapsed="0.107712"/>
+<status status="PASS" start="2025-04-14T10:46:27.732289" elapsed="0.110224"/>
 </kw>
 <var name="${quantidade_de_clicks}">3</var>
-<status status="PASS" start="2025-04-10T16:53:41.142421" elapsed="0.110704"/>
+<status status="PASS" start="2025-04-14T10:46:27.732289" elapsed="0.110224"/>
 </iter>
 <iter>
 <kw name="Press Keys" owner="RPA.Desktop">
-<msg time="2025-04-10T16:53:41.257114" level="INFO">Pressing keys: Key.right</msg>
+<msg time="2025-04-14T10:46:27.842513" level="INFO">Pressing keys: Key.right</msg>
 <arg>${tecla}</arg>
 <doc>Press multiple keys down simultaneously.</doc>
-<status status="PASS" start="2025-04-10T16:53:41.255119" elapsed="0.104720"/>
+<status status="PASS" start="2025-04-14T10:46:27.842513" elapsed="0.112346"/>
 </kw>
 <var name="${quantidade_de_clicks}">4</var>
-<status status="PASS" start="2025-04-10T16:53:41.254122" elapsed="0.106716"/>
+<status status="PASS" start="2025-04-14T10:46:27.842513" elapsed="0.113345"/>
 </iter>
 <iter>
 <kw name="Press Keys" owner="RPA.Desktop">
-<msg time="2025-04-10T16:53:41.363832" level="INFO">Pressing keys: Key.right</msg>
+<msg time="2025-04-14T10:46:27.957852" level="INFO">Pressing keys: Key.right</msg>
 <arg>${tecla}</arg>
 <doc>Press multiple keys down simultaneously.</doc>
-<status status="PASS" start="2025-04-10T16:53:41.362833" elapsed="0.105715"/>
+<status status="PASS" start="2025-04-14T10:46:27.956855" elapsed="0.109118"/>
 </kw>
 <var name="${quantidade_de_clicks}">5</var>
-<status status="PASS" start="2025-04-10T16:53:41.361834" elapsed="0.106714"/>
+<status status="PASS" start="2025-04-14T10:46:27.956855" elapsed="0.109118"/>
 </iter>
 <iter>
 <kw name="Press Keys" owner="RPA.Desktop">
-<msg time="2025-04-10T16:53:41.471542" level="INFO">Pressing keys: Key.right</msg>
+<msg time="2025-04-14T10:46:28.072535" level="INFO">Pressing keys: Key.right</msg>
 <arg>${tecla}</arg>
 <doc>Press multiple keys down simultaneously.</doc>
-<status status="PASS" start="2025-04-10T16:53:41.470545" elapsed="0.108842"/>
+<status status="PASS" start="2025-04-14T10:46:28.068004" elapsed="0.104724"/>
 </kw>
 <var name="${quantidade_de_clicks}">6</var>
-<status status="PASS" start="2025-04-10T16:53:41.469547" elapsed="0.109840"/>
+<status status="PASS" start="2025-04-14T10:46:28.068004" elapsed="0.104724"/>
 </iter>
 <iter>
 <kw name="Press Keys" owner="RPA.Desktop">
-<msg time="2025-04-10T16:53:41.582377" level="INFO">Pressing keys: Key.right</msg>
+<msg time="2025-04-14T10:46:28.172728" level="INFO">Pressing keys: Key.right</msg>
 <arg>${tecla}</arg>
 <doc>Press multiple keys down simultaneously.</doc>
-<status status="PASS" start="2025-04-10T16:53:41.581380" elapsed="0.109017"/>
+<status status="PASS" start="2025-04-14T10:46:28.172728" elapsed="0.109621"/>
 </kw>
 <var name="${quantidade_de_clicks}">7</var>
-<status status="PASS" start="2025-04-10T16:53:41.580382" elapsed="0.110015"/>
+<status status="PASS" start="2025-04-14T10:46:28.172728" elapsed="0.109621"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="RPA.Desktop">
+<msg time="2025-04-14T10:46:28.282349" level="INFO">Pressing keys: Key.right</msg>
+<arg>${tecla}</arg>
+<doc>Press multiple keys down simultaneously.</doc>
+<status status="PASS" start="2025-04-14T10:46:28.282349" elapsed="0.119959"/>
+</kw>
+<var name="${quantidade_de_clicks}">8</var>
+<status status="PASS" start="2025-04-14T10:46:28.282349" elapsed="0.119959"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="RPA.Desktop">
+<msg time="2025-04-14T10:46:28.402308" level="INFO">Pressing keys: Key.right</msg>
+<arg>${tecla}</arg>
+<doc>Press multiple keys down simultaneously.</doc>
+<status status="PASS" start="2025-04-14T10:46:28.402308" elapsed="0.120382"/>
+</kw>
+<var name="${quantidade_de_clicks}">9</var>
+<status status="PASS" start="2025-04-14T10:46:28.402308" elapsed="0.120382"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="RPA.Desktop">
+<msg time="2025-04-14T10:46:28.532263" level="INFO">Pressing keys: Key.right</msg>
+<arg>${tecla}</arg>
+<doc>Press multiple keys down simultaneously.</doc>
+<status status="PASS" start="2025-04-14T10:46:28.522690" elapsed="0.119992"/>
+</kw>
+<var name="${quantidade_de_clicks}">10</var>
+<status status="PASS" start="2025-04-14T10:46:28.522690" elapsed="0.119992"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="RPA.Desktop">
+<msg time="2025-04-14T10:46:28.642682" level="INFO">Pressing keys: Key.right</msg>
+<arg>${tecla}</arg>
+<doc>Press multiple keys down simultaneously.</doc>
+<status status="PASS" start="2025-04-14T10:46:28.642682" elapsed="0.100114"/>
+</kw>
+<var name="${quantidade_de_clicks}">11</var>
+<status status="PASS" start="2025-04-14T10:46:28.642682" elapsed="0.100114"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="RPA.Desktop">
+<msg time="2025-04-14T10:46:28.742796" level="INFO">Pressing keys: Key.right</msg>
+<arg>${tecla}</arg>
+<doc>Press multiple keys down simultaneously.</doc>
+<status status="PASS" start="2025-04-14T10:46:28.742796" elapsed="0.120119"/>
+</kw>
+<var name="${quantidade_de_clicks}">12</var>
+<status status="PASS" start="2025-04-14T10:46:28.742796" elapsed="0.120119"/>
 </iter>
 <var>${quantidade_de_clicks}</var>
 <value>1</value>
 <value>${quantidade_de_clicks}+1</value>
-<status status="PASS" start="2025-04-10T16:53:41.021744" elapsed="0.669651"/>
+<status status="PASS" start="2025-04-14T10:46:27.604751" elapsed="1.258164"/>
 </for>
 <arg>right</arg>
-<arg>7</arg>
-<status status="PASS" start="2025-04-10T16:53:41.019750" elapsed="0.671645"/>
+<arg>12</arg>
+<status status="PASS" start="2025-04-14T10:46:27.603752" elapsed="1.263677"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-10T16:53:42.699091" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-10T16:53:41.693389" elapsed="1.007707"/>
-</kw>
-<status status="PASS" start="2025-04-10T16:53:38.336923" elapsed="4.364173"/>
+<status status="PASS" start="2025-04-14T10:46:25.492784" elapsed="3.374645"/>
 </kw>
 <kw name="Click" owner="RPA.Windows">
-<msg time="2025-04-10T16:53:42.706083" level="INFO">Getting element with locator: Análise de Terceiro</msg>
-<msg time="2025-04-10T16:53:42.799832" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000017764110610&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
-<msg time="2025-04-10T16:53:42.800830" level="INFO">Locator 'Análise de Terceiro' produced matcher: MatchObject(locators=[('Name', 'Análise de Terceiro', 0)], _classes=set(), max_level=0)</msg>
-<msg time="2025-04-10T16:53:43.746726" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.MenuItemControl object at 0x0000017764110BE0&gt;, locator='Análise de Terceiro', name='Análise de Terceiro', automation_id='320', control_type='MenuItemControl', class_name='', left=432, right=685, top=300, bottom=322, width=253, height=22, xcenter=558, ycenter=311)</msg>
-<arg>Análise de Terceiro</arg>
+<msg time="2025-04-14T10:46:28.892626" level="INFO">Getting element with locator: Configurar de Dup/Boletos/Carnês</msg>
+<msg time="2025-04-14T10:46:28.937410" level="INFO">Resulted root element: WindowsElement(item=&lt;PaneControl ClassName='#32769' AutomationId= Rect=(0,0,1366,768)[1366x768] Name='Área de Trabalho 1' Handle=0x10010(65552)&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-04-14T10:46:28.937410" level="INFO">Locator 'Configurar de Dup/Boletos/Carnês' produced matcher: MatchObject(locators=[('Name', 'Configurar de Dup/Boletos/Carnês', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-04-14T10:46:29.362428" level="INFO">Returning element: WindowsElement(item=&lt;MenuItemControl ClassName='' AutomationId=379 Rect=(896,336,1207,358)[311x22] Name='Configurar de Dup/Boletos/Carnês' Handle=0x0(0)&gt;, locator='Configurar de Dup/Boletos/Carnês', name='Configurar de Dup/Boletos/Carnês', automation_id='379', control_type='MenuItemControl', class_name='', left=896, right=1207, top=336, bottom=358, width=311, height=22, xcenter=1051, ycenter=347)</msg>
+<arg>Configurar de Dup/Boletos/Carnês</arg>
 <tag>action</tag>
 <tag>mouse</tag>
 <doc>Mouse click on element matching given locator.</doc>
-<status status="PASS" start="2025-04-10T16:53:42.703092" elapsed="1.622101"/>
+<status status="PASS" start="2025-04-14T10:46:28.887586" elapsed="1.064724"/>
 </kw>
 <kw name="Get Text" owner="RPA.Windows">
-<msg time="2025-04-10T16:53:44.426798" level="INFO">Getting element with locator: Consulta de Terceiros</msg>
-<msg time="2025-04-10T16:53:44.449737" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x00000177640DF790&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
-<msg time="2025-04-10T16:53:44.450734" level="INFO">Locator 'Consulta de Terceiros' produced matcher: MatchObject(locators=[('Name', 'Consulta de Terceiros', 0)], _classes=set(), max_level=0)</msg>
-<msg time="2025-04-10T16:53:54.436690" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.WindowControl object at 0x00000177640DFBE0&gt;, locator='Consulta de Terceiros', name='Consulta de Terceiros', automation_id='', control_type='WindowControl', class_name='TfrmConsultaTerceiros', left=-8, right=1374, top=-8, bottom=736, width=1382, height=744, xcenter=683, ycenter=364)</msg>
-<arg>Consulta de Terceiros</arg>
+<msg time="2025-04-14T10:46:29.967865" level="INFO">Getting element with locator: Configuração de Duplicatas/Carnes/Boletos (1)</msg>
+<msg time="2025-04-14T10:46:29.993813" level="INFO">Resulted root element: WindowsElement(item=&lt;PaneControl ClassName='#32769' AutomationId= Rect=(0,0,1366,768)[1366x768] Name='Área de Trabalho 1' Handle=0x10010(65552)&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-04-14T10:46:29.993813" level="INFO">Locator 'Configuração de Duplicatas/Carnes/Boletos (1)' produced matcher: MatchObject(locators=[('Name', 'Configuração de Duplicatas/Carnes/Boletos (1)', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-04-14T10:46:30.322626" level="INFO">Returning element: WindowsElement(item=&lt;WindowControl ClassName='TfrmCadConfDuplicata' AutomationId=65280 Rect=(-8,55,1374,716)[1382x661] Name='Configuração de Duplicatas/Carnes/Boletos (1)' Handle=0x4B06D6(4916950)&gt;, locator='Configuração de Duplicatas/Carnes/Boletos (1)', name='Configuração de Duplicatas/Carnes/Boletos (1)', automation_id='65280', control_type='WindowControl', class_name='TfrmCadConfDuplicata', left=-8, right=1374, top=55, bottom=716, width=1382, height=661, xcenter=683, ycenter=385)</msg>
+<arg>Configuração de Duplicatas/Carnes/Boletos (1)</arg>
 <tag>action</tag>
 <doc>Get text from Control element defined by the locator.</doc>
-<status status="PASS" start="2025-04-10T16:53:44.423809" elapsed="10.015875"/>
+<status status="PASS" start="2025-04-14T10:46:29.962368" elapsed="0.360258"/>
 </kw>
 <kw name="Screenshot" owner="BaseDesktop">
 <kw name="Screenshot" owner="RPA.Windows">
-<msg time="2025-04-10T16:53:54.445671" level="INFO">Getting element with locator: Consulta de Terceiros</msg>
-<msg time="2025-04-10T16:53:54.457637" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000017764120F70&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
-<msg time="2025-04-10T16:53:54.458633" level="INFO">Locator 'Consulta de Terceiros' produced matcher: MatchObject(locators=[('Name', 'Consulta de Terceiros', 0)], _classes=set(), max_level=0)</msg>
-<msg time="2025-04-10T16:53:55.234833" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.WindowControl object at 0x0000017764145130&gt;, locator='Consulta de Terceiros', name='Consulta de Terceiros', automation_id='', control_type='WindowControl', class_name='TfrmConsultaTerceiros', left=-8, right=1374, top=-8, bottom=736, width=1382, height=744, xcenter=683, ycenter=364)</msg>
+<msg time="2025-04-14T10:46:30.334084" level="INFO">Getting element with locator: Configuração de Duplicatas/Carnes/Boletos (1)</msg>
+<msg time="2025-04-14T10:46:30.342614" level="INFO">Resulted root element: WindowsElement(item=&lt;PaneControl ClassName='#32769' AutomationId= Rect=(0,0,1366,768)[1366x768] Name='Área de Trabalho 1' Handle=0x10010(65552)&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-04-14T10:46:30.342614" level="INFO">Locator 'Configuração de Duplicatas/Carnes/Boletos (1)' produced matcher: MatchObject(locators=[('Name', 'Configuração de Duplicatas/Carnes/Boletos (1)', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-04-14T10:46:30.666046" level="INFO">Returning element: WindowsElement(item=&lt;WindowControl ClassName='TfrmCadConfDuplicata' AutomationId=65280 Rect=(-8,55,1374,716)[1382x661] Name='Configuração de Duplicatas/Carnes/Boletos (1)' Handle=0x4B06D6(4916950)&gt;, locator='Configuração de Duplicatas/Carnes/Boletos (1)', name='Configuração de Duplicatas/Carnes/Boletos (1)', automation_id='65280', control_type='WindowControl', class_name='TfrmCadConfDuplicata', left=-8, right=1374, top=55, bottom=716, width=1382, height=661, xcenter=683, ycenter=385)</msg>
 <arg>${janela}</arg>
 <arg>${Caminho}.png</arg>
 <tag>action</tag>
 <doc>Take a screenshot of the element defined by the locator.</doc>
-<status status="PASS" start="2025-04-10T16:53:54.443674" elapsed="0.897272"/>
+<status status="PASS" start="2025-04-14T10:46:30.333361" elapsed="0.469202"/>
 </kw>
-<arg>Consulta de Terceiros</arg>
-<arg>${Caminho_Screenshots}Análise de Terceiro</arg>
-<status status="PASS" start="2025-04-10T16:53:54.442678" elapsed="0.898268"/>
+<arg>Configuração de Duplicatas/Carnes/Boletos (1)</arg>
+<arg>${Caminho_Screenshots}Configurar de Dup_Boletos_Carnês</arg>
+<status status="PASS" start="2025-04-14T10:46:30.322626" elapsed="0.479937"/>
+</kw>
+<kw name="Fechar janela" owner="BaseDesktop">
+<kw name="Set Anchor" owner="RPA.Windows">
+<msg time="2025-04-14T10:46:30.802563" level="INFO">Getting element with locator: Aplicativo</msg>
+<msg time="2025-04-14T10:46:30.825387" level="INFO">Resulted root element: WindowsElement(item=&lt;PaneControl ClassName='#32769' AutomationId= Rect=(0,0,1366,768)[1366x768] Name='Área de Trabalho 1' Handle=0x10010(65552)&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg time="2025-04-14T10:46:30.825387" level="INFO">Locator 'Aplicativo' produced matcher: MatchObject(locators=[('Name', 'Aplicativo', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-04-14T10:46:31.932710" level="INFO">Returning element: WindowsElement(item=&lt;MenuBarControl ClassName='' AutomationId=MenuBar Rect=(0,23,1366,42)[1366x19] Name='Aplicativo' Handle=0x0(0)&gt;, locator='Aplicativo', name='Aplicativo', automation_id='MenuBar', control_type='MenuBarControl', class_name='', left=0, right=1366, top=23, bottom=42, width=1366, height=19, xcenter=683, ycenter=32)</msg>
+<arg>Aplicativo</arg>
+<doc>Set anchor to an element specified by the locator.</doc>
+<status status="PASS" start="2025-04-14T10:46:30.802563" elapsed="1.130147"/>
 </kw>
 <kw name="Click" owner="RPA.Windows">
-<msg time="2025-04-10T16:53:55.343943" level="INFO">Getting element with locator: Fechar</msg>
-<msg time="2025-04-10T16:53:55.349925" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x00000177641209A0&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
-<msg time="2025-04-10T16:53:55.350921" level="INFO">Locator 'Fechar' produced matcher: MatchObject(locators=[('Name', 'Fechar', 0)], _classes=set(), max_level=0)</msg>
-<msg time="2025-04-10T16:53:56.556923" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.ButtonControl object at 0x0000017764120580&gt;, locator='Fechar', name='Fechar', automation_id='', control_type='ButtonControl', class_name='', left=1318, right=1374, top=8, bottom=22, width=56, height=14, xcenter=1346, ycenter=15)</msg>
+<msg time="2025-04-14T10:46:31.932710" level="INFO">Getting element with locator: Fechar</msg>
+<msg time="2025-04-14T10:46:31.942617" level="INFO">Resulted root element: WindowsElement(item=&lt;MenuBarControl ClassName='' AutomationId=MenuBar Rect=(0,23,1366,42)[1366x19] Name='Aplicativo' Handle=0x0(0)&gt;, locator='Aplicativo', name='Aplicativo', automation_id='MenuBar', control_type='MenuBarControl', class_name='', left=0, right=1366, top=23, bottom=42, width=1366, height=19, xcenter=683, ycenter=32)</msg>
+<msg time="2025-04-14T10:46:31.942617" level="INFO">Locator 'Fechar' produced matcher: MatchObject(locators=[('Name', 'Fechar', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-04-14T10:46:33.012566" level="INFO">Returning element: WindowsElement(item=&lt;ButtonControl ClassName='' AutomationId= Rect=(1347,23,1366,42)[19x19] Name='Fechar' Handle=0x0(0)&gt;, locator='Fechar', name='Fechar', automation_id='', control_type='ButtonControl', class_name='', left=1347, right=1366, top=23, bottom=42, width=19, height=19, xcenter=1356, ycenter=32)</msg>
 <arg>Fechar</arg>
 <tag>action</tag>
 <tag>mouse</tag>
 <doc>Mouse click on element matching given locator.</doc>
-<status status="PASS" start="2025-04-10T16:53:55.341945" elapsed="1.803634"/>
+<status status="PASS" start="2025-04-14T10:46:31.932710" elapsed="1.678569"/>
 </kw>
-<kw name="Get Text" owner="RPA.Windows">
-<msg time="2025-04-10T16:53:57.150571" level="INFO">Getting element with locator: Análise de Terceiros (1)</msg>
-<msg time="2025-04-10T16:53:57.157547" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000017764145490&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
-<msg time="2025-04-10T16:53:57.157547" level="INFO">Locator 'Análise de Terceiros (1)' produced matcher: MatchObject(locators=[('Name', 'Análise de Terceiros (1)', 0)], _classes=set(), max_level=0)</msg>
-<msg time="2025-04-10T16:53:58.443322" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.WindowControl object at 0x0000017764145550&gt;, locator='Análise de Terceiros (1)', name='Análise de Terceiros (1)', automation_id='', control_type='WindowControl', class_name='TfrmConsAnaliseTerceiro', left=-8, right=1374, top=-8, bottom=736, width=1382, height=744, xcenter=683, ycenter=364)</msg>
-<arg>Análise de Terceiros (1)</arg>
-<tag>action</tag>
-<doc>Get text from Control element defined by the locator.</doc>
-<status status="PASS" start="2025-04-10T16:53:57.146575" elapsed="1.298739"/>
+<kw name="Clear Anchor" owner="RPA.Windows">
+<doc>Clears control anchor set by ``Set Anchor``</doc>
+<status status="PASS" start="2025-04-14T10:46:33.612303" elapsed="0.000000"/>
 </kw>
-<kw name="Screenshot" owner="BaseDesktop">
-<kw name="Screenshot" owner="RPA.Windows">
-<msg time="2025-04-10T16:53:58.453294" level="INFO">Getting element with locator: Análise de Terceiros (1)</msg>
-<msg time="2025-04-10T16:53:58.459277" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000017764145E20&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
-<msg time="2025-04-10T16:53:58.460275" level="INFO">Locator 'Análise de Terceiros (1)' produced matcher: MatchObject(locators=[('Name', 'Análise de Terceiros (1)', 0)], _classes=set(), max_level=0)</msg>
-<msg time="2025-04-10T16:53:59.250765" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.WindowControl object at 0x0000017764145FD0&gt;, locator='Análise de Terceiros (1)', name='Análise de Terceiros (1)', automation_id='', control_type='WindowControl', class_name='TfrmConsAnaliseTerceiro', left=-8, right=1374, top=-8, bottom=736, width=1382, height=744, xcenter=683, ycenter=364)</msg>
-<arg>${janela}</arg>
-<arg>${Caminho}.png</arg>
-<tag>action</tag>
-<doc>Take a screenshot of the element defined by the locator.</doc>
-<status status="PASS" start="2025-04-10T16:53:58.452296" elapsed="0.857520"/>
-</kw>
-<arg>Análise de Terceiros (1)</arg>
-<arg>${Caminho_Screenshots}Análise de Terceiro</arg>
-<status status="PASS" start="2025-04-10T16:53:58.450301" elapsed="0.860514"/>
-</kw>
-<kw name="Click" owner="RPA.Windows">
-<msg time="2025-04-10T16:53:59.315801" level="INFO">Getting element with locator: Fechar</msg>
-<msg time="2025-04-10T16:53:59.319790" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000017764145AF0&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
-<msg time="2025-04-10T16:53:59.321785" level="INFO">Locator 'Fechar' produced matcher: MatchObject(locators=[('Name', 'Fechar', 0)], _classes=set(), max_level=0)</msg>
-<msg time="2025-04-10T16:54:00.716790" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.ButtonControl object at 0x0000017764145E50&gt;, locator='Fechar', name='Fechar', automation_id='', control_type='ButtonControl', class_name='', left=1318, right=1374, top=8, bottom=22, width=56, height=14, xcenter=1346, ycenter=15)</msg>
-<arg>Fechar</arg>
-<tag>action</tag>
-<tag>mouse</tag>
-<doc>Mouse click on element matching given locator.</doc>
-<status status="PASS" start="2025-04-10T16:53:59.313806" elapsed="1.985024"/>
+<status status="PASS" start="2025-04-14T10:46:30.802563" elapsed="2.809740"/>
 </kw>
 <kw name="Caso aconteça erro" owner="BaseDesktop" type="TEARDOWN">
 <kw name="Run Keywords" owner="BuiltIn">
@@ -250,19 +273,19 @@ or by path to executable.</doc>
 <arg>Take Screenshot</arg>
 <arg>${Caminho_Screenshots}${nome_print}.png</arg>
 <doc>Runs the given keyword with the given arguments, if the test failed.</doc>
-<status status="PASS" start="2025-04-10T16:54:01.303818" elapsed="0.000000"/>
+<status status="PASS" start="2025-04-14T10:46:33.622699" elapsed="0.000000"/>
 </kw>
 <kw name="Run Keyword If Test Failed" owner="BuiltIn">
 <arg>Run Keyword And Ignore Error</arg>
 <arg>Fechar janela</arg>
 <doc>Runs the given keyword with the given arguments, if the test failed.</doc>
-<status status="PASS" start="2025-04-10T16:54:01.304815" elapsed="0.000000"/>
+<status status="PASS" start="2025-04-14T10:46:33.622699" elapsed="0.000000"/>
 </kw>
 <kw name="Run Keyword If Test Failed" owner="BuiltIn">
 <arg>RPA.Desktop.Press Keys</arg>
 <arg>Enter</arg>
 <doc>Runs the given keyword with the given arguments, if the test failed.</doc>
-<status status="PASS" start="2025-04-10T16:54:01.305817" elapsed="0.000000"/>
+<status status="PASS" start="2025-04-14T10:46:33.622699" elapsed="0.000000"/>
 </kw>
 <arg>Run Keyword If Test Failed</arg>
 <arg>Take Screenshot</arg>
@@ -276,16 +299,16 @@ or by path to executable.</doc>
 <arg>RPA.Desktop.Press Keys</arg>
 <arg>Enter</arg>
 <doc>Executes all the given keywords in a sequence.</doc>
-<status status="PASS" start="2025-04-10T16:54:01.302820" elapsed="0.003991"/>
+<status status="PASS" start="2025-04-14T10:46:33.622699" elapsed="0.000000"/>
 </kw>
 <arg>${Caminho_Screenshots}</arg>
-<arg>ERRO Análise de Terceiro</arg>
-<status status="PASS" start="2025-04-10T16:54:01.300827" elapsed="0.005984"/>
+<arg>ERRO Configurar de Dup_Boletos_Carnês</arg>
+<status status="PASS" start="2025-04-14T10:46:33.612303" elapsed="0.010396"/>
 </kw>
-<status status="PASS" start="2025-04-10T16:53:38.328943" elapsed="22.983851"/>
+<status status="PASS" start="2025-04-14T10:46:25.492784" elapsed="8.129915"/>
 </test>
-<doc>Smoke Test: Relatórios_Consultas</doc>
-<status status="PASS" start="2025-04-10T16:53:20.223928" elapsed="41.101832"/>
+<doc>Smoke Test: Utilitários</doc>
+<status status="PASS" start="2025-04-14T10:46:09.022375" elapsed="24.622815"/>
 </suite>
 <statistics>
 <total>
@@ -294,7 +317,7 @@ or by path to executable.</doc>
 <tag>
 </tag>
 <suite>
-<stat name="Relatórios Consultas" id="s1" pass="1" fail="0" skip="0">Relatórios Consultas</stat>
+<stat name="Utilitários" id="s1" pass="1" fail="0" skip="0">Utilitários</stat>
 </suite>
 </statistics>
 <errors>
