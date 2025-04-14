@@ -306,7 +306,7 @@ Pagamentos Eletrônicos > Pagamentos a Funcionarios
     RPA.Windows.Click         Pagamentos Eletrônicos
     RPA.Desktop.Press Keys    a
     RPA.Windows.Get Text      Pagamento a Funcionários (1)
-    BaseDesktop.Screenshot                Pagamento a Funcionários (1)    ${Caminho_Screenshots}Pagamentos Eletrônicos/Pagamentos a Funcionarios
+    BaseDesktop.Screenshot    Pagamento a Funcionários (1)    ${Caminho_Screenshots}Pagamentos Eletrônicos/Pagamentos a Funcionarios
     Fechar janela
 
 Encerrar
