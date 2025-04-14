@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    Smoke Test: Relatórios
+Documentation    Smoke Test: Front
 Resource         C:/Users/Gustavo Zanotto/AppData/Local/Programs/Python/Python39/Scripts/RobotFramework/EstruturasBase/DESKTOP/Resources/BaseDesktop.robot
 Suite Setup      Iniciar sessao front
 

@@ -38,7 +38,6 @@ Iniciar sessao front
     Sleep                           3s
     Press keys                      enter
     Sleep                           4s                              Carregando a base...
-    #Press keys      enter
     Type text                       1
     Press keys                      enter
     Press keys                      enter
@@ -49,7 +48,16 @@ Iniciar sessao financeiro
     Sleep                           3s
     Press keys                      enter
     Sleep                           4s                              Carregando a base...
-    #Press keys      enter
+    Type text                       1
+    Press keys                      enter
+    Press keys                      enter
+
+Iniciar sessao balança
+    Carregar os elementos do app
+    ${front}=                       RPA.Desktop.Open Application    C:\\Limber\\ERP 8.009R2\\cde_win_Balanca.exe
+    Sleep                           3s
+    Press keys                      enter
+    Sleep                           4s                              Carregando a base...
     Type text                       1
     Press keys                      enter
     Press keys                      enter
