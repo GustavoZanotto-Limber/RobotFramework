@@ -1,8 +1,8 @@
 *** Settings ***
 Documentation    Smoke Test: Front
 Resource         C:/Users/Gustavo Zanotto/AppData/Local/Programs/Python/Python39/Scripts/RobotFramework/EstruturasBase/DESKTOP/Resources/BaseDesktop.robot
-Suite Setup      Iniciar sessao front
-Library  SikuliLibrary  RUN_ON_FAILURE=Nothing
+Suite Setup      Iniciar sessao Front
+
 
 *** Variables ***
 

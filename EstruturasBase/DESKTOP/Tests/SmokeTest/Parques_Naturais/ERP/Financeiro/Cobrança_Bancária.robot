@@ -79,30 +79,30 @@ Geração de Remessas > Manutenção
     Fechar janela
 
 Recepção de Arquivos Retornos > Débito em C_C
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Geração de Remessas/                        ERRO Débito em C_C
+    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Recepção de Arquivos Retornos/                        ERRO Débito em C_C
     Cobrança Bancária
     RPA.Windows.Click         Recepção de Arquivos Retornos
     RPA.Desktop.Press Keys    D
     RPA.Windows.Get Text      Recepção de Arquivos (1) - DÉBITO EM CONTA
-    BaseDesktop.Screenshot    Recepção de Arquivos (1) - DÉBITO EM CONTA    ${Caminho_Screenshots}Geração de Remessas/Débito em C_C
+    BaseDesktop.Screenshot    Recepção de Arquivos (1) - DÉBITO EM CONTA    ${Caminho_Screenshots}Recepção de Arquivos Retornos/Débito em C_C
     Fechar janela
 
 Recepção de Arquivos Retornos > Cobrança
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Geração de Remessas/                        ERRO Cobrança
+    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Recepção de Arquivos Retornos/                        ERRO Cobrança
     Cobrança Bancária
     RPA.Windows.Click         Recepção de Arquivos Retornos
     RPA.Desktop.Press Keys    C
     RPA.Windows.Get Text      Recepção de Arquivos (1) - COBRANÇA
-    BaseDesktop.Screenshot    Recepção de Arquivos (1) - COBRANÇA    ${Caminho_Screenshots}Geração de Remessas/Cobrança
+    BaseDesktop.Screenshot    Recepção de Arquivos (1) - COBRANÇA    ${Caminho_Screenshots}Recepção de Arquivos Retornos/Cobrança
     Fechar janela
 
 Recepção de Arquivos Retornos > Log Arquivos de Retorno
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Geração de Remessas/                        ERRO Log Arquivos de Retorno
+    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Recepção de Arquivos Retornos/                        ERRO Log Arquivos de Retorno
     Cobrança Bancária
     RPA.Windows.Click         Recepção de Arquivos Retornos
     RPA.Desktop.Press Keys    L
     RPA.Windows.Get Text      Consulta do Log Recepção Arquivos (1)
-    BaseDesktop.Screenshot    Consulta do Log Recepção Arquivos (1)    ${Caminho_Screenshots}Geração de Remessas/Log Arquivos de Retorno
+    BaseDesktop.Screenshot    Consulta do Log Recepção Arquivos (1)    ${Caminho_Screenshots}Recepção de Arquivos Retornos/Log Arquivos de Retorno
     Fechar janela
 
 Duplicatas Descontadas

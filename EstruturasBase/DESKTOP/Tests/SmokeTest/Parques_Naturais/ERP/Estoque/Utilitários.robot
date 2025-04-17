@@ -1,21 +1,19 @@
 *** Settings ***
-Documentation    Smoke Test: Balança
+Documentation    Smoke Test: Estoque
 Resource         C:/Users/Gustavo Zanotto/AppData/Local/Programs/Python/Python39/Scripts/RobotFramework/EstruturasBase/DESKTOP/Resources/BaseDesktop.robot
-Suite Setup      Iniciar sessao balança
-
+Suite Setup      Iniciar sessao Estoque
 
 *** Variables ***
 
-${Caminho_Screenshots}=    ${EXECDIR}/EstruturasBase/DESKTOP/ScreenShots/SmokeTest/Parques_Naturais/ERP/Balanças/Utilitários/    
+${Caminho_Screenshots}=    ${EXECDIR}/EstruturasBase/DESKTOP/ScreenShots/SmokeTest/Parques_Naturais/ERP/Estoque/Utilitários/ 
 
 *** Keywords ***
 
 Utilitários
-
     Cadastros
-    repetidor de teclas    right    5
+    repetidor de teclas    right   5
 
-*** Test Cases ***
+*** Test Cases    ***
 
 Favoritos
     [Teardown]              Caso aconteça erro                ${Caminho_Screenshots}             ERRO Favoritos
@@ -24,7 +22,7 @@ Favoritos
     RPA.Windows.Get Text    Configuração de Favoritos (1)
     BaseDesktop.Screenshot  Configuração de Favoritos (1)    ${Caminho_Screenshots}Favoritos
     RPA.Windows.Click       Fechar
-
+    
 Papel de Parede
     [Teardown]              Caso aconteça erro            ${Caminho_Screenshots}                   ERRO Papel de Parede
     Utilitários
@@ -92,6 +90,15 @@ Relatórios Personalizados > Cadastro de Relatórios
     BaseDesktop.Screenshot  Cadastro de Relatórios Personalizados (1)    ${Caminho_Screenshots}Relatórios Personalizados/Cadastro de Relatórios
     Fechar janela
 
+Configurador de Impressões > Transferência entre Terceiros
+    [Teardown]              Caso aconteça erro                         ${Caminho_Screenshots}Configurador de Impressões/                            ERRO Transferência entre Terceiros
+    Utilitários
+    RPA.Windows.Click       Configurador de Impressões
+    RPA.Desktop.Press Keys  T
+    RPA.Windows.Get Text    Configurador de Impressões - Transferência entre Terceiros - Estoque (1)
+    BaseDesktop.Screenshot  Configurador de Impressões - Transferência entre Terceiros - Estoque (1)    ${Caminho_Screenshots}Configurador de Impressões/Transferência entre Terceiros
+    Fechar janela
+
 Criar Usuario de Log
     [Teardown]              Caso aconteça erro                         ${Caminho_Screenshots}                            ERRO Criar Usuario de Log
     Utilitários
@@ -99,14 +106,6 @@ Criar Usuario de Log
     RPA.Windows.Get Text    Cadastro Usuario de Log (1)
     BaseDesktop.Screenshot  Cadastro Usuario de Log (1)    ${Caminho_Screenshots}Criar Usuario de Log
     Fechar janela
-
-
-
-
-
-
-
-
 
 Verifica transações abertas
     [Teardown]              Caso aconteça erro                         ${Caminho_Screenshots}                            ERRO Verifica transações abertas
@@ -116,13 +115,50 @@ Verifica transações abertas
     BaseDesktop.Screenshot  Verifica transações abertas (1)    ${Caminho_Screenshots}Verifica transações abertas
     Fechar janela
 
-Configuração da Balança
-    [Teardown]              Caso aconteça erro                         ${Caminho_Screenshots}                            ERRO Verifica transações abertas
+
+Registro Magnético
+    [Teardown]              Caso aconteça erro                         ${Caminho_Screenshots}                            ERRO Registro Magnético
     Utilitários
-    RPA.Windows.Click       Configuração da Balança
-    RPA.Windows.Get Text    Configuração da Balança (1)
-    BaseDesktop.Screenshot  Configuração da Balança (1)    ${Caminho_Screenshots}Verifica transações abertas
+    RPA.Windows.Click       Registro Magnético
+    RPA.Windows.Get Text    Registro Magnético (1)
+    BaseDesktop.Screenshot  Registro Magnético (1)    ${Caminho_Screenshots}Registro Magnético
     Fechar janela
+
+Agenda Telefônica
+    [Teardown]              Caso aconteça erro                         ${Caminho_Screenshots}                            ERRO Agenda Telefônica
+    Utilitários
+    RPA.Windows.Click       Agenda Telefônica
+    RPA.Windows.Get Text    Agenda Telefônica (1)
+    BaseDesktop.Screenshot  Agenda Telefônica (1)    ${Caminho_Screenshots}Agenda Telefônica
+    Fechar janela
+
+Configurador de Etiquetas
+    [Teardown]              Caso aconteça erro                         ${Caminho_Screenshots}                            ERRO Configurador de Etiquetas
+    Utilitários
+    RPA.Windows.Click       Configurador de Etiquetas
+    RPA.Windows.Get Text    Configurador de Etiqueta (1)
+    BaseDesktop.Screenshot  Configurador de Etiqueta (1)    ${Caminho_Screenshots}Configurador de Etiquetas
+    Fechar janela
+
+Etiquetas de Produtos para Transporte > Etiqueta de produtos naturais para transporte
+    [Teardown]              Caso aconteça erro                         ${Caminho_Screenshots}Etiquetas de Produtos para Transporte/                            ERRO Etiqueta de produtos naturais para transporte
+    Utilitários
+    RPA.Windows.Click       Etiquetas de Produtos para Transporte
+    RPA.Desktop.Press Keys  E
+    RPA.Windows.Get Text    Etiqueta de produtos naturais para transporte (1)
+    BaseDesktop.Screenshot  Etiqueta de produtos naturais para transporte (1)    ${Caminho_Screenshots}Etiquetas de Produtos para Transporte/Etiqueta de produtos naturais para transporte
+    Fechar janela
+
+Etiquetas de Produtos para Transporte > Monitor de Envio de Etiquetas 
+    [Teardown]              Caso aconteça erro                         ${Caminho_Screenshots}Etiquetas de Produtos para Transporte/                            ERRO Monitor de Envio de Etiquetas 
+    Utilitários
+    RPA.Windows.Click       Etiquetas de Produtos para Transporte
+    RPA.Desktop.Press Keys  M
+    RPA.Windows.Get Text    Envio de Etiquetas de produtos naturais para transporte (1)
+    BaseDesktop.Screenshot  Envio de Etiquetas de produtos naturais para transporte (1)    ${Caminho_Screenshots}Etiquetas de Produtos para Transporte/Monitor de Envio de Etiquetas 
+    Fechar janela
+
+
 
 Encerrar
     Encerrar tudo
