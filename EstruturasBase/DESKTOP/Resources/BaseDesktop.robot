@@ -36,31 +36,51 @@ Iniciar sessao front
     Carregar os elementos do app
     ${front}=                       RPA.Desktop.Open Application    C:\\Limber\\Turismo-PARQUES-NATURAIS\\cde_win_bca_frontR10-25.exe
     Sleep                           3s
-    Press keys                      enter
+    RPA.Desktop.Press keys                      enter
     Sleep                           4s                              Carregando a base...
     Type text                       1
-    Press keys                      enter
-    Press keys                      enter
+    RPA.Desktop.Press keys                      enter
+    RPA.Desktop.Press keys                      enter
 
 Iniciar sessao financeiro
     Carregar os elementos do app
     ${front}=                       RPA.Desktop.Open Application    C:\\Limber\\ERP 8.009R2\\cde_win_fin.exe
     Sleep                           3s
-    Press keys                      enter
+    RPA.Desktop.Press keys                      enter
     Sleep                           4s                              Carregando a base...
     Type text                       1
-    Press keys                      enter
-    Press keys                      enter
+    RPA.Desktop.Press keys                      enter
+    RPA.Desktop.Press keys                      enter
 
 Iniciar sessao balança
     Carregar os elementos do app
     ${front}=                       RPA.Desktop.Open Application    C:\\Limber\\ERP 8.009R2\\cde_win_Balanca.exe
     Sleep                           3s
-    Press keys                      enter
+    RPA.Desktop.Press keys                      enter
     Sleep                           4s                              Carregando a base...
     Type text                       1
-    Press keys                      enter
-    Press keys                      enter
+    RPA.Desktop.Press keys                      enter
+    RPA.Desktop.Press keys                      enter
+
+Iniciar sessao Estoque
+    Carregar os elementos do app
+    ${front}=                       RPA.Desktop.Open Application    C:\\Limber\\ERP 8.009R2\\cde_win_est.exe
+    Sleep                           3s
+    RPA.Desktop.Press keys                      enter
+    Sleep                           4s                              Carregando a base...
+    Type text                       1
+    RPA.Desktop.Press keys                      enter
+    RPA.Desktop.Press keys                      enter
+
+Iniciar sessao Compras
+    Carregar os elementos do app
+    ${front}=                       RPA.Desktop.Open Application    C:\\Limber\\ERP 8.009R2\\cde_win_compras.exe
+    Sleep                           3s
+    RPA.Desktop.Press keys                      enter
+    Sleep                           4s                              Carregando a base...
+    Type text                       1
+    RPA.Desktop.Press keys                      enter
+    RPA.Desktop.Press keys                      enter
 
 
 Screenshot
@@ -73,8 +93,8 @@ Terminar sessao
 #O nome da aplication deve ser o mesmo que aparece no aplicativo na barra inferior
 Encerrar teste front
     SikuliLibrary.Close application    [Limber Bilheteria Front - Standard Version]
-    Press Keys                         Left
-    Press Keys                         Enter
+    RPA.Desktop.Press Keys                         Left
+    RPA.Desktop.Press Keys                         Enter
 
 Encerrar tudo
     RPA.Desktop.Close all applications

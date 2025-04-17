@@ -41,12 +41,12 @@ Transferência de Orçamentos
     Fechar janela
 
 Consultas > Previsão X Realizado
-    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}                        ERRO Previsão X Realizado
+    [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}Consultas/                        ERRO Previsão X Realizado
     Orçamentos
     RPA.Windows.Click         Consultas
     RPA.Desktop.Press Keys    P
     RPA.Windows.Get Text      Consulta de Acompanhamento Previsto X Realizado (1)
-    BaseDesktop.Screenshot    Consulta de Acompanhamento Previsto X Realizado (1)    ${Caminho_Screenshots}Previsão X Realizado
+    BaseDesktop.Screenshot    Consulta de Acompanhamento Previsto X Realizado (1)    ${Caminho_Screenshots}Consultas/Previsão X Realizado
     Fechar janela
 
 Consultas > Previsão X Realizado 2

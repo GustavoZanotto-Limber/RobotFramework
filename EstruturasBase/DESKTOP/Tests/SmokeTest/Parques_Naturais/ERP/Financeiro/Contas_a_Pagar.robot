@@ -250,7 +250,7 @@ Comissões de Venda > Relatório de Comissões
     RPA.Windows.Click         Comissões de Venda
     RPA.Desktop.Press Keys    r
     RPA.Windows.Get Text      Relatório de Comissões de Vendas (1)
-    BaseDesktop.Screenshot                Relatório de Comissões de Vendas (1)   ${Caminho_Screenshots}Comissões de Venda/Relatório de Comissões
+    BaseDesktop.Screenshot    Relatório de Comissões de Vendas (1)   ${Caminho_Screenshots}Comissões de Venda/Relatório de Comissões
     Fechar janela
 
 Comissões de Venda > Relatório de Comissões por Vendedor

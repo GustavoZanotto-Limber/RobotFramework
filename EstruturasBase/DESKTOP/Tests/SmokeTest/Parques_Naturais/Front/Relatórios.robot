@@ -29,7 +29,7 @@ Fechamento de Caixa
     [Teardown]              Caso aconteça erro         ${Caminho_Screenshots}                       ERRO Fechamento de Caixa   
     Relatorios              Fechamento de Caixa
     RPA.Windows.Get Text    Fechamento de Caixa (1)
-    BaseDesktop.Screenshot              Fechamento de Caixa (1)    ${Caminho_Screenshots}Fechamento de Caixa
+    BaseDesktop.Screenshot  Fechamento de Caixa (1)    ${Caminho_Screenshots}Fechamento de Caixa
     Fechar janela
 
 Formas de Pagamento

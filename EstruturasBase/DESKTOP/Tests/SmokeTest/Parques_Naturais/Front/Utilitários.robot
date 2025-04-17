@@ -97,7 +97,7 @@ Criar Usuario de Log
     Utilitários
     RPA.Windows.Click       Criar Usuário de Log
     RPA.Windows.Get Text    Cadastro Usuario de Log (1)
-    BaseDesktop.Screenshot              Cadastro Usuario de Log (1)    ${Caminho_Screenshots}Criar Usuario de Log
+    BaseDesktop.Screenshot  Cadastro Usuario de Log (1)    ${Caminho_Screenshots}Criar Usuario de Log
     Fechar janela
 
 Verifica transações abertas

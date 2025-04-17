@@ -114,7 +114,7 @@ Processos Personalizados
 Pesagem de Descarga - Romaneio
     [Teardown]                Caso aconteça erro           ${Caminho_Screenshots}                        ERRO Pesagem de Descarga - Romaneio
     Manutenções
-    RPA.Windows.Click         Pesagem de Descarga -  Romaneio
+    RPA.Windows.Click         Pesagem de Descarga - Romaneio
     RPA.Windows.Get Text      Pesagem Romaneio Descarga (1)
     BaseDesktop.Screenshot    Pesagem Romaneio Descarga (1)    ${Caminho_Screenshots}Pesagem de Descarga - Romaneio
     Fechar janela

@@ -9,6 +9,8 @@ ${Caminho_Screenshots}=    ${EXECDIR}/EstruturasBase/DESKTOP/ScreenShots/SmokeTe
 
 *** Keywords ***
 
+
+
 Utilitários
     Cadastros
     repetidor de teclas    right    12
@@ -38,7 +40,7 @@ Configurar Menu Principal
     RPA.Windows.Click       Configurar Menu Principal
     RPA.Windows.Get Text    Configurador de Menus (1)
     BaseDesktop.Screenshot  Configurador de Menus (1)    ${Caminho_Screenshots}Configurar Menu Principal
-    RPA.Windows.Click       Fechar
+    Fechar janela
 
 Configurar Barra de Atalhos
     [Teardown]              Caso aconteça erro                         ${Caminho_Screenshots}                            ERRO Configurar Barra de Atalhos
